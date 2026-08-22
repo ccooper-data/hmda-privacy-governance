@@ -34,6 +34,7 @@ The initial implementation contains the two components where early design mistak
 2. A privacy-safe risk engine for equivalence classes, sample uniqueness, k-distributions, prosecutor risk, and aggregate cohort concentration.
 3. An assumption-labeled population-uniqueness subsampling diagnostic and an identity-free synthetic linkage simulation.
 4. A protection engine for geographic and numeric generalization, k-suppression, l-diversity, t-closeness, and differentially private aggregate counts.
+5. A fair-lending power diagnostic and privacy–utility frontier with the current CFPB-style configuration explicitly marked.
 
 The default quasi-identifier set is explicitly versioned in `config/quasi_identifiers.yml`. It can be changed only through configuration and CI review.
 
@@ -79,6 +80,9 @@ estimator must be added and compared before the expert-determination memo is fin
 Protection configurations are versioned in `config/protection.yml`. The differential-privacy
 implementation documents its event-level contribution assumption and does not expose true
 counts in its returned public table.
+
+The first utility metric is an unadjusted two-proportion power analysis. It is deliberately
+identified as a diagnostic rather than the final adjusted fair-lending model.
 
 ## Architecture
 
