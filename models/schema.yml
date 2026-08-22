@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: stg_lar
+    description: Normalized HMDA LAR slice loaded from an immutable bronze file.
+    columns:
+      - {name: activity_year, data_type: integer, meta: {classification: public}}
+      - {name: lei, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_sex, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: income, data_type: double, meta: {classification: sensitive}}
+      - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_dwelling_category, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: action_taken, data_type: integer, meta: {classification: sensitive}}
+
+  - name: fct_application
+    description: Silver application-grain table. Never published row by row.
+    columns:
+      - {name: activity_year, data_type: integer, meta: {classification: public}}
+      - {name: lei, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_sex, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: income, data_type: double, meta: {classification: sensitive}}
+      - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_dwelling_category, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: action_taken, data_type: integer, meta: {classification: sensitive}}
+      - {name: is_denied, data_type: boolean, meta: {classification: sensitive}}
+
+  - name: risk_cohort_counts
+    description: Small-cell-suppressed aggregate cohort mart.
+    columns:
+      - {name: activity_year, data_type: integer, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: denial_rate, data_type: double, meta: {classification: sensitive}}
+

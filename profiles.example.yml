@@ -1,0 +1,8 @@
+hmda_privacy_governance:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/hmda_privacy.duckdb
+      threads: 4
+

@@ -12,4 +12,7 @@ artifacts/**
 !data/**/.gitkeep
 !artifacts/.gitkeep
 .DS_Store
-
+target/
+dbt_packages/
+logs/
+profiles.yml

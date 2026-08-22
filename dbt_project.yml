@@ -1,0 +1,17 @@
+name: hmda_privacy_governance
+version: 1.0.0
+config-version: 2
+profile: hmda_privacy_governance
+model-paths: ["models"]
+test-paths: ["dbt_tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+models:
+  hmda_privacy_governance:
+    staging:
+      +materialized: view
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table
+
