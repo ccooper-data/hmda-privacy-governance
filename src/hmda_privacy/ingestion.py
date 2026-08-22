@@ -49,6 +49,8 @@ def ingest_slice(
     state: str | None = None,
     county: str | None = None,
     lei: str | None = None,
+    actions_taken: int | None = None,
+    race: str | None = None,
     session: requests.Session | None = None,
 ) -> IngestionManifest:
     if not 2018 <= year <= 2025:
@@ -63,6 +65,10 @@ def ingest_slice(
         params["counties"] = county
     if lei:
         params["leis"] = lei
+    if actions_taken is not None:
+        params["actions_taken"] = actions_taken
+    if race:
+        params["races"] = race
 
     destination = Path(output_dir) / f"year={year}"
     destination.mkdir(parents=True, exist_ok=True)

@@ -37,6 +37,20 @@ The initial implementation contains the two components where early design mistak
 5. A fair-lending power diagnostic and privacy–utility frontier with the current CFPB-style configuration explicitly marked.
 6. Executable governance gates for column classification, restricted publication, expiring exceptions, retention, and a synthetic-only subject-rights path.
 7. A DuckDB/dbt bronze-to-silver-to-gold warehouse with classified schema metadata and CI schema-drift enforcement.
+8. Live CFPB aggregation validation contracts and aggregate-only reconciliation for downloaded HMDA slices.
+
+Validate the confirmed live contract:
+
+```bash
+python scripts/validate_live_contract.py
+```
+
+Download the corresponding filtered CSV slice:
+
+```bash
+hmda ingest --year 2023 --state TX --actions-taken 1 \
+  --race 'Black or African American' --output data/bronze
+```
 
 The default quasi-identifier set is explicitly versioned in `config/quasi_identifiers.yml`. It can be changed only through configuration and CI review.
 

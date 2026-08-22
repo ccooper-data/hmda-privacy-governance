@@ -23,6 +23,8 @@ def _parser() -> argparse.ArgumentParser:
     ingest.add_argument("--state")
     ingest.add_argument("--county")
     ingest.add_argument("--lei")
+    ingest.add_argument("--actions-taken", type=int)
+    ingest.add_argument("--race")
     ingest.add_argument("--output", type=Path, required=True)
     risk = commands.add_parser("risk")
     risk.add_argument("--input", type=Path, required=True)
@@ -50,6 +52,8 @@ def main() -> None:
             state=args.state,
             county=args.county,
             lei=args.lei,
+            actions_taken=args.actions_taken,
+            race=args.race,
             output_dir=args.output,
         )
         print(json.dumps(manifest.__dict__, indent=2))

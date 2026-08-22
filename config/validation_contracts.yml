@@ -1,0 +1,12 @@
+version: 1
+contracts:
+  texas_2023_black_originations:
+    year: 2023
+    state: TX
+    actions_taken: 1
+    race: Black or African American
+    expected_count: 38026
+    expected_loan_amount_sum: 11390150000
+    count_tolerance: 0
+    sum_tolerance: 1
+
