@@ -33,6 +33,7 @@ The initial implementation contains the two components where early design mistak
 1. A resumable, SHA-256-manifested HTTP ingestion layer for keyless FFIEC/CFPB CSV endpoints.
 2. A privacy-safe risk engine for equivalence classes, sample uniqueness, k-distributions, prosecutor risk, and aggregate cohort concentration.
 3. An assumption-labeled population-uniqueness subsampling diagnostic and an identity-free synthetic linkage simulation.
+4. A protection engine for geographic and numeric generalization, k-suppression, l-diversity, t-closeness, and differentially private aggregate counts.
 
 The default quasi-identifier set is explicitly versioned in `config/quasi_identifiers.yml`. It can be changed only through configuration and CI review.
 
@@ -74,6 +75,10 @@ hmda synthetic-linkage --input <file>.csv --records 10000 \
 The current population-uniqueness routine is explicitly labeled a repeated-subsampling
 proxy. It is not represented as a Zayatz or Pitman implementation. A validated standard-model
 estimator must be added and compared before the expert-determination memo is finalized.
+
+Protection configurations are versioned in `config/protection.yml`. The differential-privacy
+implementation documents its event-level contribution assumption and does not expose true
+counts in its returned public table.
 
 ## Architecture
 
