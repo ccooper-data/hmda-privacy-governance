@@ -1,0 +1,31 @@
+version: 1
+allowed_classifications:
+  - public
+  - internal
+  - quasi_identifier
+  - sensitive
+restricted_in_published_marts:
+  - internal
+retention:
+  bronze_days: 2555
+  synthetic_control_days: 30
+purposes:
+  - disclosure_risk_research
+  - fair_lending_utility_analysis
+published_marts:
+  risk_metrics:
+    columns:
+      configuration: public
+      cohort: quasi_identifier
+      record_count: public
+      sample_uniqueness_rate: sensitive
+      prosecutor_expected_match_risk: sensitive
+  privacy_utility_frontier:
+    columns:
+      configuration: public
+      is_current_baseline: public
+      retained_records: public
+      retained_share: public
+      sample_uniqueness_rate: sensitive
+      minimum_detectable_disparity_points: sensitive
+
