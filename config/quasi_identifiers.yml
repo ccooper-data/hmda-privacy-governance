@@ -1,0 +1,33 @@
+version: 1
+name: public_hmda_baseline
+description: >-
+  Public post-modification HMDA fields plausibly knowable by an adversary. Changes
+  alter every downstream risk estimate and require explicit review.
+fields:
+  - census_tract
+  - applicant_age
+  - applicant_sex
+  - derived_race
+  - derived_ethnicity
+  - income
+  - loan_amount
+  - loan_purpose
+  - occupancy_type
+  - lien_status
+  - derived_dwelling_category
+  - lei
+forbidden_direct_identifiers:
+  - uli
+  - universal_loan_identifier
+  - property_address
+  - applicant_name
+  - nmls_identifier
+sensitive_attributes:
+  - action_taken
+  - denial_reason_1
+  - denial_reason_2
+  - denial_reason_3
+reporting:
+  minimum_cell_size: 20
+  k_thresholds: [1, 5, 10]
+
