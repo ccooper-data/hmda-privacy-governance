@@ -8,7 +8,9 @@ import pandas as pd
 
 from .config import load_qi_config
 from .ingestion import ingest_slice
+from .population import estimate_population_uniqueness_subsample
 from .risk import summarize_risk
+from .synthetic_linkage import simulate_synthetic_linkage
 
 DEFAULT_CONFIG = Path("config/quasi_identifiers.yml")
 
@@ -26,6 +28,17 @@ def _parser() -> argparse.ArgumentParser:
     risk.add_argument("--input", type=Path, required=True)
     risk.add_argument("--output", type=Path, required=True)
     risk.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    population = commands.add_parser("population-uniqueness")
+    population.add_argument("--input", type=Path, required=True)
+    population.add_argument("--sample-fraction", type=float, required=True)
+    population.add_argument("--replicates", type=int, default=200)
+    population.add_argument("--output", type=Path, required=True)
+    population.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    linkage = commands.add_parser("synthetic-linkage")
+    linkage.add_argument("--input", type=Path, required=True)
+    linkage.add_argument("--records", type=int, default=10_000)
+    linkage.add_argument("--output", type=Path, required=True)
+    linkage.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     return parser
 
 
@@ -43,11 +56,22 @@ def main() -> None:
         return
     config = load_qi_config(args.config)
     frame = pd.read_csv(args.input, low_memory=False)
-    summary = summarize_risk(frame, config)
+    if args.command == "risk":
+        summary = summarize_risk(frame, config)
+    elif args.command == "population-uniqueness":
+        summary = estimate_population_uniqueness_subsample(
+            frame,
+            config,
+            sample_fraction=args.sample_fraction,
+            replicates=args.replicates,
+        )
+    else:
+        summary = simulate_synthetic_linkage(
+            frame, config, synthetic_records=args.records
+        )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(summary.to_dict(), indent=2) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
     main()
-

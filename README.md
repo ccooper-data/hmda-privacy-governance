@@ -32,6 +32,7 @@ The initial implementation contains the two components where early design mistak
 
 1. A resumable, SHA-256-manifested HTTP ingestion layer for keyless FFIEC/CFPB CSV endpoints.
 2. A privacy-safe risk engine for equivalence classes, sample uniqueness, k-distributions, prosecutor risk, and aggregate cohort concentration.
+3. An assumption-labeled population-uniqueness subsampling diagnostic and an identity-free synthetic linkage simulation.
 
 The default quasi-identifier set is explicitly versioned in `config/quasi_identifiers.yml`. It can be changed only through configuration and CI review.
 
@@ -56,6 +57,24 @@ Profile a local CSV without emitting row-level matches:
 hmda risk --input data/bronze/<file>.csv --output artifacts/risk-summary.json
 ```
 
+Estimate population uniqueness using a declared sampling fraction:
+
+```bash
+hmda population-uniqueness --input <file>.csv --sample-fraction 0.10 \
+  --output artifacts/population-uniqueness.json
+```
+
+Run a synthetic-only linkage simulation:
+
+```bash
+hmda synthetic-linkage --input <file>.csv --records 10000 \
+  --output artifacts/synthetic-linkage.json
+```
+
+The current population-uniqueness routine is explicitly labeled a repeated-subsampling
+proxy. It is not represented as a Zayatz or Pitman implementation. A validated standard-model
+estimator must be added and compared before the expert-determination memo is finalized.
+
 ## Architecture
 
 - **Bronze:** immutable source files plus request/receipt metadata and SHA-256 manifests
@@ -69,4 +88,3 @@ No HMDA loan-level data is committed to Git. Generated data and analysis artifac
 ## Status
 
 This repository is under active development. Results are not an expert determination until the methodology, data validation, uncertainty analysis, and memo are complete.
-
