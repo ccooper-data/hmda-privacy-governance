@@ -17,6 +17,8 @@ probability of no additional population members is
 HMDA is a census of reportable applications rather than a probability sample of residents or
 property owners. Consequently, the coverage fraction is not identified by the release. Results
 are reported across declared sensitivity scenarios; none is labeled the true population risk.
+Fits whose gamma shape or rate collapses to a search boundary are rejected as non-reportable;
+their apparent point estimates are not treated as empirical findings.
 
 ## Interpretation constraints
 

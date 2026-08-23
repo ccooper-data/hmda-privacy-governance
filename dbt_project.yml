@@ -14,4 +14,5 @@ models:
       +materialized: table
     gold:
       +materialized: table
-
+vars:
+  census_tract_context_path: tests/fixtures/census_tract_context.csv

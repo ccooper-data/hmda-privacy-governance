@@ -1,6 +1,14 @@
 version: 2
 
 models:
+  - name: stg_census_tract_context
+    description: Aggregate Census tract population and land-area context; contains no person records.
+    columns:
+      - {name: census_tract, data_type: varchar, meta: {classification: public}}
+      - {name: population, data_type: bigint, meta: {classification: public}}
+      - {name: land_area_sqmi, data_type: double, meta: {classification: public}}
+      - {name: population_density_per_sqmi, data_type: double, meta: {classification: public}}
+
   - name: stg_lar
     description: Normalized HMDA LAR slice loaded from an immutable bronze file.
     columns:
@@ -128,6 +136,25 @@ models:
     description: Demographic/geographic risk by HMDA application-volume quintile and cohort.
     columns:
       - {name: release_density_quintile, data_type: integer, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
+
+  - name: tract_residential_density
+    description: Aggregate ACS population density by tract and statewide tract quintile.
+    columns:
+      - {name: census_tract, data_type: varchar, meta: {classification: public}}
+      - {name: population, data_type: bigint, meta: {classification: public}}
+      - {name: land_area_sqmi, data_type: double, meta: {classification: public}}
+      - {name: population_density_per_sqmi, data_type: double, meta: {classification: public}}
+      - {name: residential_density_quintile, data_type: bigint, meta: {classification: public}}
+
+  - name: risk_by_residential_density
+    description: Demographic/geographic risk by Census residential-density quintile and cohort.
+    columns:
+      - {name: residential_density_quintile, data_type: bigint, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: record_count, data_type: bigint, meta: {classification: public}}

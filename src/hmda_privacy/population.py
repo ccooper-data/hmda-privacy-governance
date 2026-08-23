@@ -35,9 +35,10 @@ class GammaPoissonUniquenessEstimate:
     sample_unique_records: int
     gamma_shape: float
     gamma_rate: float
-    probability_sample_unique_is_population_unique: float
-    estimated_population_unique_records: float
+    probability_sample_unique_is_population_unique: float | None
+    estimated_population_unique_records: float | None
     log_likelihood: float
+    fit_status: str
     assumption_status: str
 
     def to_dict(self) -> dict[str, str | int | float]:
@@ -117,9 +118,12 @@ def estimate_population_uniqueness_gamma_poisson(
 
     shape = float(np.exp(log_shape))
     rate = float(np.exp(log_rate))
-    population_unique_probability = float(
-        ((rate + coverage_fraction) / (rate + 1.0)) ** (shape + 1.0)
-    )
+    boundary_fit = shape < 1e-4 or rate < 1e-5 or rate > 1e5
+    population_unique_probability = None
+    if not boundary_fit:
+        population_unique_probability = float(
+            ((rate + coverage_fraction) / (rate + 1.0)) ** (shape + 1.0)
+        )
     sample_unique_records = int(frequencies[sizes == 1].sum()) if np.any(sizes == 1) else 0
     return GammaPoissonUniquenessEstimate(
         method="zero_truncated_gamma_poisson",
@@ -129,8 +133,13 @@ def estimate_population_uniqueness_gamma_poisson(
         gamma_shape=shape,
         gamma_rate=rate,
         probability_sample_unique_is_population_unique=population_unique_probability,
-        estimated_population_unique_records=sample_unique_records * population_unique_probability,
+        estimated_population_unique_records=(
+            None
+            if population_unique_probability is None
+            else sample_unique_records * population_unique_probability
+        ),
         log_likelihood=float(score),
+        fit_status="boundary_fit_not_reportable" if boundary_fit else "estimated",
         assumption_status="scenario_only_hmda_coverage_fraction_not_identified",
     )
 

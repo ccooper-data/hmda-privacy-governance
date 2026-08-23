@@ -42,6 +42,7 @@ def test_gamma_poisson_estimator_is_bounded_and_coverage_sensitive() -> None:
     assert 0 <= high.probability_sample_unique_is_population_unique <= 1
     assert high.probability_sample_unique_is_population_unique > low.probability_sample_unique_is_population_unique
     assert high.sample_unique_records == 100
+    assert high.fit_status == "estimated"
 
 
 def test_gamma_poisson_estimator_rejects_invalid_classes() -> None:
@@ -63,3 +64,11 @@ def test_gamma_poisson_recovers_known_synthetic_population_risk() -> None:
         released[observed], coverage_fraction=coverage
     )
     assert abs(estimate.probability_sample_unique_is_population_unique - true_probability) < 0.04
+
+
+def test_gamma_poisson_rejects_boundary_fit_as_not_reportable() -> None:
+    estimate = estimate_population_uniqueness_gamma_poisson(
+        [1] * 10_000 + [10] * 100, coverage_fraction=0.25
+    )
+    assert estimate.fit_status == "boundary_fit_not_reportable"
+    assert estimate.probability_sample_unique_is_population_unique is None
