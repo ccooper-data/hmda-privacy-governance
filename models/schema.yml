@@ -47,3 +47,31 @@ models:
       - {name: record_count, data_type: bigint, meta: {classification: public}}
       - {name: denial_rate, data_type: double, meta: {classification: sensitive}}
 
+  - name: qi_profile
+    description: Internal aggregate QI equivalence classes formed across the full release universe.
+    columns:
+      - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_sex, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: income, data_type: double, meta: {classification: sensitive}}
+      - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_dwelling_category, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: lei, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: k, data_type: bigint, meta: {classification: sensitive}}
+
+  - name: risk_metrics_by_race
+    description: Aggregate-only race and ethnicity risk after full-universe equivalence scoring.
+    columns:
+      - {name: equivalence_universe, data_type: varchar, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: share_records_k_lt_5, data_type: double, meta: {classification: sensitive}}
+      - {name: share_records_k_lt_10, data_type: double, meta: {classification: sensitive}}
+      - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}

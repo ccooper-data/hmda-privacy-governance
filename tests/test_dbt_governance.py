@@ -11,6 +11,11 @@ def test_explicit_select_parser_handles_aliases() -> None:
     assert selected_sql_columns(sql) == ["activity_year", "record_count"]
 
 
+def test_parser_uses_final_select_after_cte() -> None:
+    sql = "with staged as (select raw from source) select raw as published from staged"
+    assert selected_sql_columns(sql) == ["published"]
+
+
 def test_new_unclassified_column_fails(tmp_path: Path) -> None:
     models = tmp_path / "models"
     models.mkdir()
@@ -34,4 +39,3 @@ models:
     assert [(item.code, item.column) for item in violations] == [
         ("UNCLASSIFIED_COLUMN", "new_column")
     ]
-

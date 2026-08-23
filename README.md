@@ -39,6 +39,15 @@ The initial implementation contains the two components where early design mistak
 7. A DuckDB/dbt bronze-to-silver-to-gold warehouse with classified schema metadata and CI schema-drift enforcement.
 8. Live CFPB aggregation validation contracts and aggregate-only reconciliation for downloaded HMDA slices.
 9. Enforced analysis-scope ordering: form equivalence classes on a full state-year or national-year release before publishing aggregate cohort risk.
+10. DuckDB-native full-universe QI profiling and small-cell-suppressed race/ethnicity risk marts for large state files.
+
+For the full Texas file, build the warehouse and export only the aggregate mart:
+
+```bash
+dbt build --vars '{hmda_lar_path: data/bronze/year=2023/hmda_2023_TX_all.csv}'
+python scripts/export_aggregate_race_risk.py \
+  --output artifacts/texas_2023_risk_by_race.json
+```
 
 Validate the confirmed live contract:
 

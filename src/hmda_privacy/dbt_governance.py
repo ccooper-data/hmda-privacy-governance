@@ -27,11 +27,12 @@ def declared_dbt_columns(schema_path: str | Path) -> dict[str, dict[str, str | N
 
 def selected_sql_columns(sql: str) -> list[str]:
     """Parse this project's simple explicit SELECT lists for drift checking."""
-    match = re.search(r"\bselect\b(.*?)\bfrom\b", sql, flags=re.IGNORECASE | re.DOTALL)
-    if not match:
+    matches = re.findall(r"\bselect\b(.*?)\bfrom\b", sql, flags=re.IGNORECASE | re.DOTALL)
+    if not matches:
         raise ValueError("SQL must contain an explicit SELECT ... FROM block")
     columns: list[str] = []
-    for expression in match.group(1).split(","):
+    # dbt marts may use CTEs; the final SELECT defines the model's published columns.
+    for expression in matches[-1].split(","):
         cleaned = expression.strip()
         alias = re.search(r"\bas\s+([a-zA-Z_][\w]*)\s*$", cleaned, flags=re.IGNORECASE)
         if alias:
@@ -63,4 +64,3 @@ def check_dbt_classification_drift(
             elif classification not in allowed:
                 violations.append(DbtClassificationViolation("INVALID_CLASSIFICATION", model, column))
     return violations
-

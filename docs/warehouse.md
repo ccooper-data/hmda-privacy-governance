@@ -13,3 +13,7 @@ The staging model reads an immutable manifested bronze CSV. The silver applicati
 
 Every modeled column is classified in `models/schema.yml`. CI parses each explicit SELECT list and fails if a newly selected column has no approved classification.
 
+`qi_profile` forms equivalence classes over the full loaded release. `risk_metrics_by_race`
+then joins those class sizes back internally and publishes only small-cell-suppressed aggregate
+metrics. The singular dbt test verifies that the sum of equivalence-class sizes equals the
+application record count.
