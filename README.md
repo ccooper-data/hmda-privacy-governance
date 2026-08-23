@@ -33,7 +33,7 @@ The initial implementation contains the two components where early design mistak
 1. A resumable, SHA-256-manifested HTTP ingestion layer for keyless FFIEC/CFPB CSV endpoints.
 2. A privacy-safe risk engine for equivalence classes, sample uniqueness, k-distributions, prosecutor risk, and aggregate cohort concentration.
 3. An assumption-labeled population-uniqueness subsampling diagnostic and an identity-free synthetic linkage simulation.
-4. A protection engine for geographic and numeric generalization, k-suppression, l-diversity, t-closeness, and differentially private aggregate counts.
+4. A protection engine for geographic and numeric generalization, k-suppression, l-diversity, and t-closeness.
 5. A fair-lending power diagnostic and privacy–utility frontier with the current CFPB-style configuration explicitly marked.
 6. Executable governance gates for column classification, restricted publication, expiring exceptions, retention, and a synthetic-only subject-rights path.
 7. A DuckDB/dbt bronze-to-silver-to-gold warehouse with classified schema metadata and CI schema-drift enforcement.
@@ -46,19 +46,17 @@ The initial implementation contains the two components where early design mistak
 14. A configuration-specific adjusted fair-lending model fitted only after k≥5 protection, with aggregate-only coefficient export.
 15. A zero-truncated gamma–Poisson population-uniqueness sensitivity model that refuses to label an unidentified HMDA coverage fraction as truth.
 16. Residential-density risk concentration using public HMDA tract population and Census Gazetteer land area, with no resident-level data.
-17. Reproducible Dagster asset orchestration, aggregate release figures, and a completed technical disclosure-risk determination memo.
+17. Reproducible orchestration, generated aggregate results, and a draft technical disclosure-risk determination memo.
 
 ## Texas 2023 findings
 
-- Institution-aware sample uniqueness is **94.18%**; financial and loan context is the dominant
-  risk amplifier, and LEI adds **6.89 percentage points**.
-- Black non-Hispanic applicants carry higher demographic/geographic risk than White non-Hispanic
-  applicants: **16.03% versus 5.66%** sample uniqueness.
-- The low-residential-density hypothesis was rejected. Uniqueness is highest in the most densely
-  populated tract quintile, including **28.97%** for Black non-Hispanic applicants.
-- The recommended derivative-release configuration is state geography, $50,000 income bands,
-  $100,000 loan-amount bands, and k≥5 suppression. It retains **49.71%** of records and detects an
-  unadjusted disparity of approximately **0.69 percentage points**.
+- The selected 14-field institution-aware QI set produces **95.70%** sample uniqueness.
+- The raw Black/White demographic uniqueness ratio is **2.83**, but a preregistered equal-size
+  tract comparison is **0.98** (95% CI 0.88–1.08); the unqualified racial-disparity claim is withdrawn.
+- Black non-Hispanic density risk is U-shaped: **16.57%, 10.31%, 15.89%, 20.72%, 28.97%**.
+- State-banded plus k≥5 is a controlled-access candidate, not a final public-release recommendation:
+  it retains **24.68%** and has a corrected decision-cohort MDE of **2.23 points**, versus **0.56**
+  for today's unsuppressed public file.
 - Population uniqueness is not reported because the fitted gamma–Poisson model reached a boundary
   solution under every declared coverage scenario.
 
@@ -178,9 +176,8 @@ Population uniqueness includes a repeated-subsampling proxy and a zero-truncated
 comparison. The real-data gamma–Poisson fits reached a parameter boundary, so the release artifact
 correctly reports the result as non-estimable instead of publishing unstable point estimates.
 
-Protection configurations are versioned in `config/protection.yml`. The differential-privacy
-implementation documents its event-level contribution assumption and does not expose true
-counts in its returned public table.
+Protection configurations are versioned in `config/protection.yml` and drive the dbt band widths
+used by the orchestrated protection sweep.
 
 The frontier's MDE metric is an unadjusted two-proportion power analysis. The separate adjusted
 model is also a diagnostic: it estimates descriptive conditional disparity and does not establish
@@ -195,10 +192,11 @@ causation or discrimination. See `docs/methodology/adjusted-fair-lending-utility
 - **Serve:** aggregate figures and `docs/expert-determination-memo.md`
 - **Orchestrate:** optional Dagster assets spanning context ingestion, dbt, aggregate exports, and figures
 
-No HMDA loan-level data is committed to Git. Generated data and analysis artifacts are ignored by default.
+No HMDA loan-level data is committed to Git. Raw and intermediate artifacts are ignored; the
+aggregate-only inputs behind the generated release summary are committed under `docs/results/`.
 
 ## Status
 
-The Texas 2023 technical analysis is complete and reproducible. The determination memo contains a
-scoped recommendation and awaits independent organizational acceptance; it is not legal advice or
+The Texas 2023 analysis is under documented remediation after independent adversarial review. The
+memo is a draft technical recommendation pending independent acceptance; it is not legal advice or
 a universal certification for other states, years, or field configurations.

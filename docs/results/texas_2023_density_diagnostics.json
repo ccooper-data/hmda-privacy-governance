@@ -1,0 +1,6244 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "minimum_cell_size": 20,
+    "residential_universe": "HMDA-active tracts with population and positive land area"
+  },
+  "density_association": {
+    "tract_quintile_correlation": -0.2421267871924147,
+    "matched_tracts": 6771
+  },
+  "two_way_risk": [
+    {
+      "residential_density_quintile": 1,
+      "release_density_quintile": 1,
+      "record_count": 5273,
+      "sample_uniqueness_rate": 0.3193627915797459,
+      "prosecutor_expected_match_risk": 0.5336620519628315
+    },
+    {
+      "residential_density_quintile": 1,
+      "release_density_quintile": 2,
+      "record_count": 15830,
+      "sample_uniqueness_rate": 0.22703727100442198,
+      "prosecutor_expected_match_risk": 0.42672141503474215
+    },
+    {
+      "residential_density_quintile": 1,
+      "release_density_quintile": 3,
+      "record_count": 26578,
+      "sample_uniqueness_rate": 0.1833471292046053,
+      "prosecutor_expected_match_risk": 0.3594326134396858
+    },
+    {
+      "residential_density_quintile": 1,
+      "release_density_quintile": 4,
+      "record_count": 46004,
+      "sample_uniqueness_rate": 0.15796452482392837,
+      "prosecutor_expected_match_risk": 0.3167550647769734
+    },
+    {
+      "residential_density_quintile": 1,
+      "release_density_quintile": 5,
+      "record_count": 145095,
+      "sample_uniqueness_rate": 0.08308349701919432,
+      "prosecutor_expected_match_risk": 0.19050277404460164
+    },
+    {
+      "residential_density_quintile": 2,
+      "release_density_quintile": 1,
+      "record_count": 6867,
+      "sample_uniqueness_rate": 0.3652249890782001,
+      "prosecutor_expected_match_risk": 0.5709916994320672
+    },
+    {
+      "residential_density_quintile": 2,
+      "release_density_quintile": 2,
+      "record_count": 12888,
+      "sample_uniqueness_rate": 0.2571384233395407,
+      "prosecutor_expected_match_risk": 0.4503414028553678
+    },
+    {
+      "residential_density_quintile": 2,
+      "release_density_quintile": 3,
+      "record_count": 23383,
+      "sample_uniqueness_rate": 0.201043493136039,
+      "prosecutor_expected_match_risk": 0.3804900996450385
+    },
+    {
+      "residential_density_quintile": 2,
+      "release_density_quintile": 4,
+      "record_count": 34759,
+      "sample_uniqueness_rate": 0.1648781610518139,
+      "prosecutor_expected_match_risk": 0.32791507235535833
+    },
+    {
+      "residential_density_quintile": 2,
+      "release_density_quintile": 5,
+      "record_count": 240305,
+      "sample_uniqueness_rate": 0.07409333971411332,
+      "prosecutor_expected_match_risk": 0.17263477663804477
+    },
+    {
+      "residential_density_quintile": 3,
+      "release_density_quintile": 1,
+      "record_count": 6258,
+      "sample_uniqueness_rate": 0.3772770853307766,
+      "prosecutor_expected_match_risk": 0.574145094279323
+    },
+    {
+      "residential_density_quintile": 3,
+      "release_density_quintile": 2,
+      "record_count": 17480,
+      "sample_uniqueness_rate": 0.270766590389016,
+      "prosecutor_expected_match_risk": 0.4672196796338671
+    },
+    {
+      "residential_density_quintile": 3,
+      "release_density_quintile": 3,
+      "record_count": 28378,
+      "sample_uniqueness_rate": 0.21640002819085208,
+      "prosecutor_expected_match_risk": 0.3998519980266356
+    },
+    {
+      "residential_density_quintile": 3,
+      "release_density_quintile": 4,
+      "record_count": 46928,
+      "sample_uniqueness_rate": 0.17656836004091375,
+      "prosecutor_expected_match_risk": 0.3456145584725485
+    },
+    {
+      "residential_density_quintile": 3,
+      "release_density_quintile": 5,
+      "record_count": 93202,
+      "sample_uniqueness_rate": 0.10408574923284908,
+      "prosecutor_expected_match_risk": 0.2305529924250558
+    },
+    {
+      "residential_density_quintile": 4,
+      "release_density_quintile": 1,
+      "record_count": 5972,
+      "sample_uniqueness_rate": 0.3796048225050234,
+      "prosecutor_expected_match_risk": 0.5859008707300745
+    },
+    {
+      "residential_density_quintile": 4,
+      "release_density_quintile": 2,
+      "record_count": 20009,
+      "sample_uniqueness_rate": 0.2786246189214853,
+      "prosecutor_expected_match_risk": 0.47488630116447417
+    },
+    {
+      "residential_density_quintile": 4,
+      "release_density_quintile": 3,
+      "record_count": 32731,
+      "sample_uniqueness_rate": 0.22605481042436834,
+      "prosecutor_expected_match_risk": 0.41214750542298667
+    },
+    {
+      "residential_density_quintile": 4,
+      "release_density_quintile": 4,
+      "record_count": 49749,
+      "sample_uniqueness_rate": 0.18291824961305755,
+      "prosecutor_expected_match_risk": 0.3549820096886344
+    },
+    {
+      "residential_density_quintile": 4,
+      "release_density_quintile": 5,
+      "record_count": 51107,
+      "sample_uniqueness_rate": 0.12452305946347858,
+      "prosecutor_expected_match_risk": 0.26814330717905577
+    },
+    {
+      "residential_density_quintile": 5,
+      "release_density_quintile": 1,
+      "record_count": 11266,
+      "sample_uniqueness_rate": 0.4131013669447896,
+      "prosecutor_expected_match_risk": 0.6140600035505057
+    },
+    {
+      "residential_density_quintile": 5,
+      "release_density_quintile": 2,
+      "record_count": 22823,
+      "sample_uniqueness_rate": 0.28436226613503923,
+      "prosecutor_expected_match_risk": 0.483415852429563
+    },
+    {
+      "residential_density_quintile": 5,
+      "release_density_quintile": 3,
+      "record_count": 27463,
+      "sample_uniqueness_rate": 0.22878054109165058,
+      "prosecutor_expected_match_risk": 0.4191457597494783
+    },
+    {
+      "residential_density_quintile": 5,
+      "release_density_quintile": 4,
+      "record_count": 27096,
+      "sample_uniqueness_rate": 0.19036020076764099,
+      "prosecutor_expected_match_risk": 0.3651092412164122
+    },
+    {
+      "residential_density_quintile": 5,
+      "release_density_quintile": 5,
+      "record_count": 17889,
+      "sample_uniqueness_rate": 0.1298004360221365,
+      "prosecutor_expected_match_risk": 0.2811783777740475
+    }
+  ],
+  "join_exclusion_audit": [
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "3",
+      "record_count": 12014
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "5",
+      "record_count": 4494
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "4",
+      "record_count": 3453
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "6",
+      "record_count": 1959
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "8",
+      "record_count": 1788
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "1",
+      "record_count": 1734
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "7",
+      "record_count": 768
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "action_taken",
+      "category": "2",
+      "record_count": 276
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "1",
+      "record_count": 463666
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "3",
+      "record_count": 179008
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "6",
+      "record_count": 150185
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "4",
+      "record_count": 141496
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "5",
+      "record_count": 49557
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "2",
+      "record_count": 28818
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "8",
+      "record_count": 1490
+    },
+    {
+      "join_status": "retained",
+      "dimension": "action_taken",
+      "category": "7",
+      "record_count": 1113
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_dwelling_category",
+      "category": "Single Family (1-4 Units):Manufactured",
+      "record_count": 16466
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_dwelling_category",
+      "category": "Single Family (1-4 Units):Site-Built",
+      "record_count": 9867
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_dwelling_category",
+      "category": "Multifamily:Site-Built",
+      "record_count": 146
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_dwelling_category",
+      "category": "Single Family (1-4 Units):Site-Built",
+      "record_count": 928594
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_dwelling_category",
+      "category": "Single Family (1-4 Units):Manufactured",
+      "record_count": 84501
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_dwelling_category",
+      "category": "Multifamily:Site-Built",
+      "record_count": 2107
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_dwelling_category",
+      "category": "Multifamily:Manufactured",
+      "record_count": 131
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_ethnicity",
+      "category": "Hispanic or Latino",
+      "record_count": 10714
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_ethnicity",
+      "category": "Not Hispanic or Latino",
+      "record_count": 8518
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_ethnicity",
+      "category": "Ethnicity Not Available",
+      "record_count": 6554
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_ethnicity",
+      "category": "Joint",
+      "record_count": 699
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_ethnicity",
+      "category": "Not Hispanic or Latino",
+      "record_count": 470170
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_ethnicity",
+      "category": "Ethnicity Not Available",
+      "record_count": 278868
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_ethnicity",
+      "category": "Hispanic or Latino",
+      "record_count": 226782
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_ethnicity",
+      "category": "Joint",
+      "record_count": 38808
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_ethnicity",
+      "category": "Free Form Text Only",
+      "record_count": 705
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "White",
+      "record_count": 14736
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "Race Not Available",
+      "record_count": 8508
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "Black or African American",
+      "record_count": 1909
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "Asian",
+      "record_count": 633
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "Joint",
+      "record_count": 429
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "American Indian or Alaska Native",
+      "record_count": 191
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "Native Hawaiian or Other Pacific Islander",
+      "record_count": 47
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "derived_race",
+      "category": "2 or more minority races",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "White",
+      "record_count": 508540
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Race Not Available",
+      "record_count": 309995
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Black or African American",
+      "record_count": 81687
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Asian",
+      "record_count": 80849
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Joint",
+      "record_count": 21302
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "American Indian or Alaska Native",
+      "record_count": 8457
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "2 or more minority races",
+      "record_count": 2509
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Native Hawaiian or Other Pacific Islander",
+      "record_count": 1645
+    },
+    {
+      "join_status": "retained",
+      "dimension": "derived_race",
+      "category": "Free Form Text Only",
+      "record_count": 349
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300XQVJ1XBNFA5536",
+      "record_count": 12448
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300NOCASXPA34X033",
+      "record_count": 2288
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493000V86JDJLM0OV13",
+      "record_count": 1973
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "T68X8LLAQYRNDV034K14",
+      "record_count": 1020
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300CPM35KXH0BZ823",
+      "record_count": 825
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900JXCS783CPF1D02",
+      "record_count": 822
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300BLL6VL7AXWYP56",
+      "record_count": 699
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300249G20MDIDRR27",
+      "record_count": 522
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300VORTI31GZTJL53",
+      "record_count": 513
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900Y6EUNN0KGMJW67",
+      "record_count": 331
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300R77W0P105C3S50",
+      "record_count": 310
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493004T38NMC864VL66",
+      "record_count": 276
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "54930043BMDE130FJ617",
+      "record_count": 259
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900QNIR86GUIRYH95",
+      "record_count": 252
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300SGEJUQK4Q7ZY34",
+      "record_count": 251
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300Z4E78BSM0XM758",
+      "record_count": 205
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300QCYEU2QLIWN517",
+      "record_count": 202
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300CN50N3250U7V79",
+      "record_count": 192
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300ZLEJNF277L8Q40",
+      "record_count": 168
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300CEKZ808Q0WJL95",
+      "record_count": 150
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300B7YGT5O5MJ7M45",
+      "record_count": 132
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300Q02LGIN9AXKP98",
+      "record_count": 98
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300TK6RZQSFXZHV09",
+      "record_count": 92
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900TIRELTI8ENRL83",
+      "record_count": 85
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493007Z7FTUKQGFMZ98",
+      "record_count": 81
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300FX7K8PTEQUU487",
+      "record_count": 79
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300Z7KF7I03AULW22",
+      "record_count": 79
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "213800XR2TCBQJSF1X93",
+      "record_count": 77
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493001XZBZCQEIYKY53",
+      "record_count": 75
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300VZVN841I2ILS84",
+      "record_count": 72
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300OPCWU6E72WUT29",
+      "record_count": 72
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300ZMO1A0DHCESP30",
+      "record_count": 69
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300V315P16H3FSD37",
+      "record_count": 57
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300623VT8YKPHWM78",
+      "record_count": 57
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300NCCC6N26G65F26",
+      "record_count": 56
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300B2JJHSM77T5Y41",
+      "record_count": 51
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493006O6Q2F0MR0ZM22",
+      "record_count": 46
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300GWD9H4FQ2VR805",
+      "record_count": 43
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300M8WGW2D17CZD19",
+      "record_count": 41
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300WZWPMDWIL12842",
+      "record_count": 40
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300XWUSRVVOHPRY47",
+      "record_count": 39
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300D5DG8D4966HK70",
+      "record_count": 39
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900RM3T6WAVE6SA24",
+      "record_count": 37
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493004RSPU71QRHYI22",
+      "record_count": 35
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "PAOOWF3GUFM46FBSP561",
+      "record_count": 34
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "254900QC7DVGIYVGB494",
+      "record_count": 33
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300I3SDXHG6BUD309",
+      "record_count": 32
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300HC2W2SFF3LU356",
+      "record_count": 31
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300OPB0G5OMY0SM65",
+      "record_count": 31
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "CKHJ2UYFJET57VN40289",
+      "record_count": 31
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493008N1D96CHCTQC27",
+      "record_count": 29
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300DDJB48AVV1SO96",
+      "record_count": 27
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300NZWZUYUWEOA562",
+      "record_count": 26
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300RD5IG88VPO6P22",
+      "record_count": 26
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "98450064457HF042AA24",
+      "record_count": 26
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "5493007X0QZ825CCEZ27",
+      "record_count": 26
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300K4ZLGS7SRDTL86",
+      "record_count": 25
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300LP3GMTWS4OB353",
+      "record_count": 24
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "549300PL8ER6H23P0Z91",
+      "record_count": 23
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "54930070QGIMJWTCDT08",
+      "record_count": 21
+    },
+    {
+      "join_status": "dropped",
+      "dimension": "lei",
+      "category": "54930031G7ALOZB0HI92",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "RVDPPPGHCGZ40J4VQ731",
+      "record_count": 37511
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HW662MN1WU8550",
+      "record_count": 34014
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FGXN1K3HLB1R50",
+      "record_count": 28555
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "B4TYDEB6GKMZO031MB27",
+      "record_count": 26089
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900HA4DQWAE0W3342",
+      "record_count": 24986
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XQVJ1XBNFA5536",
+      "record_count": 24127
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001SXWZ4OFP8Z903",
+      "record_count": 23846
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NOCASXPA34X033",
+      "record_count": 21435
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "X05BVSK68TQ7YTOSNR22",
+      "record_count": 20322
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "G5AHTAP80NWA3Q8RDC78",
+      "record_count": 18658
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000YNV8IX4VD3X12",
+      "record_count": 17809
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300H3IZO24NSOO931",
+      "record_count": 17486
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AG64NHILB7ZP05",
+      "record_count": 14588
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "7H6GLXDRUGQFU57RNE97",
+      "record_count": 14566
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MGPZBLQDIL7538",
+      "record_count": 14428
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003GQDUH26DNNH17",
+      "record_count": 14242
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U3721PJGQZYY68",
+      "record_count": 13975
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GKFNPRWNS0GF29",
+      "record_count": 13673
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LU6Y2TXG48QY48",
+      "record_count": 13082
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "KB1H1DSPRFMYMCUFXT09",
+      "record_count": 11576
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DD5QQUHO6PCH70",
+      "record_count": 11576
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FNXYY540N23N64",
+      "record_count": 11066
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CB67L6KPJLHE19",
+      "record_count": 10982
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CY7WNAHKHYSJ73",
+      "record_count": 10781
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930021WPEXNHYZUL09",
+      "record_count": 9906
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "AD6GFRVSDT01YPT1CS68",
+      "record_count": 9763
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XWUSRVVOHPRY47",
+      "record_count": 9452
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300121SF0K2LN2804",
+      "record_count": 9023
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D003QRZFSQ4N43",
+      "record_count": 8270
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ONBM4MGXXBTA44",
+      "record_count": 8187
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AQ3T62GXDU7D76",
+      "record_count": 7947
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VZVN841I2ILS84",
+      "record_count": 7621
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VORTI31GZTJL53",
+      "record_count": 7388
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930034MNPILHP25H80",
+      "record_count": 6880
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "JJKC32MCHWDI71265Z06",
+      "record_count": 6845
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001GDRY0EL7VG372",
+      "record_count": 6818
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008N1D96CHCTQC27",
+      "record_count": 6703
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YIQ7S7Z8PIHE53",
+      "record_count": 6687
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "SS1TRMSN6BRNMOREEV51",
+      "record_count": 6345
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LBCBNR1OT00651",
+      "record_count": 5920
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "6BYL5QZYBDK8S7L73M02",
+      "record_count": 5916
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004WMLN60ZJ2ON46",
+      "record_count": 5515
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900Z5QRSHW4Y8CR51",
+      "record_count": 5214
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002QI2ILHHZH8D20",
+      "record_count": 5203
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FFVDRROF85IC57",
+      "record_count": 5121
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IVURCTJ6QVMD67",
+      "record_count": 5106
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PIL8LFAQ04XC20",
+      "record_count": 5095
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "8WH0EE09O9V05QJZ3V89",
+      "record_count": 4944
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DMHEHNYZ2OLB41",
+      "record_count": 4863
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "PAOOWF3GUFM46FBSP561",
+      "record_count": 4795
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LYRWPSYPK6S325",
+      "record_count": 4540
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300E2UX99HKDBR481",
+      "record_count": 4399
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930043BMDE130FJ617",
+      "record_count": 4313
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C20KZIWPASBC15",
+      "record_count": 4272
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "Q7C315HKI8VX0SSKBS64",
+      "record_count": 4209
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q3ROEQU3D1IW91",
+      "record_count": 4087
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FX7K8PTEQUU487",
+      "record_count": 3977
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900QRD0ZXHH08TX87",
+      "record_count": 3808
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CPM35KXH0BZ823",
+      "record_count": 3740
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930020YWIK7HGH2R34",
+      "record_count": 3711
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "EQTWLK1G7ODGC2MGLV11",
+      "record_count": 3685
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "337KMNHEWWWR6B7Q7W10",
+      "record_count": 3673
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JYXTZDSPJEPI44",
+      "record_count": 3657
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DD4R4SYK5RAQ92",
+      "record_count": 3355
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900AX110CHF6FVV28",
+      "record_count": 3335
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TM179TSKK3HQ94",
+      "record_count": 3264
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZFWS2106HWPH46",
+      "record_count": 3216
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KHXD7JSQUZIJ22",
+      "record_count": 3154
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007XAKU2Q6LGXD23",
+      "record_count": 3146
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JKR164SLNO6Y85",
+      "record_count": 3142
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VQUTI5IU7GXT57",
+      "record_count": 3141
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009XSE00M8B9R434",
+      "record_count": 3006
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OQMU3ID8QA6M46",
+      "record_count": 2967
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R9S3MVDV4MGF56",
+      "record_count": 2953
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "E57ODZWZ7FF32TWEFA76",
+      "record_count": 2877
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "C5654JQHZUHN0772B561",
+      "record_count": 2844
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Z7KF7I03AULW22",
+      "record_count": 2843
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IV3BQZRSE82O16",
+      "record_count": 2750
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UI36AJZ0WZ4U93",
+      "record_count": 2630
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "70WY0ID1N53Q4254VH70",
+      "record_count": 2496
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "FU7RSW4CQQY98A2O7J66",
+      "record_count": 2465
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ASIS4D2QDWH380",
+      "record_count": 2432
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VCMRO4ST680C11",
+      "record_count": 2395
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KIOYNU323LVJ37",
+      "record_count": 2358
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WTZMQSET2VY242",
+      "record_count": 2355
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300M8WGW2D17CZD19",
+      "record_count": 2334
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009F6BJDCZMZ7Y26",
+      "record_count": 2265
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004OB0KD7VERQW98",
+      "record_count": 2239
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GTVXJ2PGXNLM73",
+      "record_count": 2223
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DMYENRV818D594",
+      "record_count": 2215
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PXL1KA5TOL2O82",
+      "record_count": 2192
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JPGMCMBEJEK584",
+      "record_count": 2164
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VHBALPLHRR4080",
+      "record_count": 2164
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "DRMSV1Q0EKMEXLAU1P80",
+      "record_count": 2039
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CYYO0YQ3EVCV77",
+      "record_count": 2023
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KOAKQX3BEWWT56",
+      "record_count": 1928
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NWBS6MQJX15N44",
+      "record_count": 1908
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MZ8VZJOVC63092",
+      "record_count": 1906
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004AS1SPBQOFDR49",
+      "record_count": 1896
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OPCWU6E72WUT29",
+      "record_count": 1888
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930001NSTOD85LT125",
+      "record_count": 1860
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300J7I82PNDVU8H22",
+      "record_count": 1857
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007NTZZX7VJJPB03",
+      "record_count": 1794
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GY97XGRF7XZO52",
+      "record_count": 1769
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GQDT484LGI9C04",
+      "record_count": 1756
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XY701IELCE5Q08",
+      "record_count": 1742
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QURAICH2YGJV94",
+      "record_count": 1740
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300O6Z0I6KYMESL47",
+      "record_count": 1730
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AZ4UOXI3Q53W34",
+      "record_count": 1727
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Z4DV0VEDFHP667",
+      "record_count": 1718
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006VAGP3GQ8FJT49",
+      "record_count": 1711
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008NWHQT1R22C024",
+      "record_count": 1665
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005GNZ6EJFS7LM83",
+      "record_count": 1664
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I7M2M0Q6LCLA63",
+      "record_count": 1657
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YN94MOAVYW0F52",
+      "record_count": 1597
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004RLLKTQS8K7U51",
+      "record_count": 1594
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "875500CPQ9Z7QEFE5G90",
+      "record_count": 1584
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930049L5WINET09Q97",
+      "record_count": 1552
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UG7QXKM7KGV847",
+      "record_count": 1545
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OBO7DOF2KOP535",
+      "record_count": 1530
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000V86JDJLM0OV13",
+      "record_count": 1500
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "T68X8LLAQYRNDV034K14",
+      "record_count": 1477
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "COOWI3L2W9TPYR3WJX37",
+      "record_count": 1466
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "QFROUN1UWUYU0DVIWD51",
+      "record_count": 1462
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KJ8PAJ7E52HG32",
+      "record_count": 1430
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PC4MFWQBNVKG88",
+      "record_count": 1382
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U2B1ZNGX3H8U54",
+      "record_count": 1376
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004N9PMBSLEZOF16",
+      "record_count": 1369
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004RSPU71QRHYI22",
+      "record_count": 1366
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RN01LBYR8ZVX74",
+      "record_count": 1331
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900LKAJBFGO0IIP75",
+      "record_count": 1317
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007VW2EU20PZYU97",
+      "record_count": 1305
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900O723MCLR701H50",
+      "record_count": 1299
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006P5IHSK77SZ855",
+      "record_count": 1299
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K5OUR2FD1NV703",
+      "record_count": 1289
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RPOGWJRH63HS39",
+      "record_count": 1272
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Y5Y88FQLI7VE83",
+      "record_count": 1248
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004M1U54OO4KKE09",
+      "record_count": 1234
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YCCZTMBHGTNQ79",
+      "record_count": 1218
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DG3IV05V4C4E03",
+      "record_count": 1204
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549008TT6UNYR7AXF54",
+      "record_count": 1200
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930087FQP1S845Z665",
+      "record_count": 1199
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JUPH9GRBKWSS23",
+      "record_count": 1188
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300249G20MDIDRR27",
+      "record_count": 1183
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008R64K2UUN2NP30",
+      "record_count": 1177
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006KQF5UKZ3Y9N07",
+      "record_count": 1167
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005PKOSG7MYX0B34",
+      "record_count": 1141
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PBTV7FCWLSMM53",
+      "record_count": 1121
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NFPC3Y4W3Y7R87",
+      "record_count": 1101
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BEFX6JRSCS5N78",
+      "record_count": 1093
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZW2DR74NU0ZY74",
+      "record_count": 1078
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LO3MP4RAI32X70",
+      "record_count": 1065
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300G4ESSS6M0MEG51",
+      "record_count": 1054
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Y5YUNNHUW2EQ06",
+      "record_count": 1051
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930052M48FOD3CWA54",
+      "record_count": 1048
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "213800XR2TCBQJSF1X93",
+      "record_count": 1041
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SK2GVCQXPD4S58",
+      "record_count": 1014
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TN9GZ5XRCOXX47",
+      "record_count": 1010
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WEP08K7U7S3A80",
+      "record_count": 1005
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S5YL3OH0IVCS62",
+      "record_count": 995
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K4ZLGS7SRDTL86",
+      "record_count": 990
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Y817BTHHMVNH95",
+      "record_count": 970
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005JPZ3LXXMB0S24",
+      "record_count": 966
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ALNLUNS3Y53T24",
+      "record_count": 959
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004FXPNKCLIN8250",
+      "record_count": 959
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V6F7N9BL5STN83",
+      "record_count": 959
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930054ET8KM4O1D485",
+      "record_count": 936
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BLL6VL7AXWYP56",
+      "record_count": 925
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PL8ER6H23P0Z91",
+      "record_count": 912
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009BD405QQTMXO12",
+      "record_count": 902
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003WN6DPWM6VYA67",
+      "record_count": 885
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HTRLFU2IIL4380",
+      "record_count": 885
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900E6AIE4Z8YQM970",
+      "record_count": 867
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "RA4FKR1AA05ZK88M8034",
+      "record_count": 856
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QFJDBOCX7WKY08",
+      "record_count": 851
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ESJ15K604ZW846",
+      "record_count": 848
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZZME37MXI1EF14",
+      "record_count": 846
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549005SIVTHG14U2905",
+      "record_count": 839
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900DTLHVWQ7NP7R34",
+      "record_count": 839
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BTD4RDILZY5V14",
+      "record_count": 837
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TIRELTI8ENRL83",
+      "record_count": 836
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LG8MECYD8F2A55",
+      "record_count": 834
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "NSGZD26XPW2CUM2JKU70",
+      "record_count": 828
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T7QCXC3PXO0W07",
+      "record_count": 822
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KSOOZZVXCMA627",
+      "record_count": 803
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JOT0D4J0SZIK67",
+      "record_count": 798
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R77W0P105C3S50",
+      "record_count": 795
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "25490066WMF8ZMQXQB18",
+      "record_count": 780
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CEKZ808Q0WJL95",
+      "record_count": 778
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930091JQKCU3Z6IP44",
+      "record_count": 774
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZPJVCRRFETOG85",
+      "record_count": 774
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D5DG8D4966HK70",
+      "record_count": 773
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BEM32ZRV7MJ178",
+      "record_count": 769
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QCYEU2QLIWN517",
+      "record_count": 769
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LP3GMTWS4OB353",
+      "record_count": 765
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IJO7NO6VDZPD35",
+      "record_count": 764
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300F52SJSXL6QRM73",
+      "record_count": 760
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DPRWSBUY619V27",
+      "record_count": 759
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EKFFG3BU8DNX74",
+      "record_count": 755
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900RM3T6WAVE6SA24",
+      "record_count": 749
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZPTT694OV6U433",
+      "record_count": 746
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001R92DY5DI1DI85",
+      "record_count": 744
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GS0W0TEUQS8571",
+      "record_count": 741
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "D8RBTOL3JO2Q6IEO0F34",
+      "record_count": 731
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SGEJUQK4Q7ZY34",
+      "record_count": 730
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VZN1TWBN1WY406",
+      "record_count": 728
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002B2WMHY23GFK92",
+      "record_count": 726
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FOPGYPVP42FW34",
+      "record_count": 723
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YHSRT5YOR5W454",
+      "record_count": 723
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TK6RZQSFXZHV09",
+      "record_count": 720
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300X8AUU3UC1ULZ79",
+      "record_count": 718
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900O2K17TNH5CL873",
+      "record_count": 716
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VVH8HHFMWL8536",
+      "record_count": 711
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FWQNRPTKXB8G79",
+      "record_count": 709
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GRGZDEH4ZGQS06",
+      "record_count": 700
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001WHVQBGRSWEU75",
+      "record_count": 699
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DDLYW49R2HCV81",
+      "record_count": 690
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003GO99ZQDTH5407",
+      "record_count": 678
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001XKL0FTNOJ0866",
+      "record_count": 676
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZMO1A0DHCESP30",
+      "record_count": 672
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VMX06UV1F7NS76",
+      "record_count": 670
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UXY7OP0IC38293",
+      "record_count": 668
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TYV7NDBX6FUR63",
+      "record_count": 667
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RXHLK3XT6SD946",
+      "record_count": 661
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IH3DF6NS2IYJ30",
+      "record_count": 661
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IVOJIAJUT2E435",
+      "record_count": 657
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EMNQ2QLOEPQ289",
+      "record_count": 654
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BDFK1ZR5QSYO15",
+      "record_count": 643
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008E4KBJCB6UKR64",
+      "record_count": 641
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300J6A8R0TUC01239",
+      "record_count": 641
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000NYUJT9UC6G261",
+      "record_count": 641
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CR5XDK0TP7I727",
+      "record_count": 640
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "F28JOQ8OBWCFUYM0UX93",
+      "record_count": 636
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300370QILXLFUWD20",
+      "record_count": 616
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZGTXNHL5BKQZ27",
+      "record_count": 609
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300A2N0IEBKSB5I23",
+      "record_count": 605
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HC2W2SFF3LU356",
+      "record_count": 604
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C04BJ0G297NC13",
+      "record_count": 589
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300M59800JNGYFP30",
+      "record_count": 589
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RA3E0BUFO7YZ21",
+      "record_count": 588
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300M16XETIG2Z5N24",
+      "record_count": 588
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900YJQZQTI7TUKN67",
+      "record_count": 584
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TETFK3GXOHZ594",
+      "record_count": 578
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UX6CADCIYJ3506",
+      "record_count": 576
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MCIFZSDHUT8X63",
+      "record_count": 573
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WAN5TOEYBJJR25",
+      "record_count": 573
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300J6N77Q8OHYNF23",
+      "record_count": 572
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZPSJZO10ZAX556",
+      "record_count": 566
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MHH03ICJYEPE85",
+      "record_count": 562
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WTZC5SSKIN2M11",
+      "record_count": 546
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TG14TB8RKS3U42",
+      "record_count": 539
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Z54IIB4Q3AKI90",
+      "record_count": 534
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005PD34O8ZT7QT17",
+      "record_count": 533
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Z4E78BSM0XM758",
+      "record_count": 533
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RBX56T2MW5HO19",
+      "record_count": 533
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AENO88GEUWCZ39",
+      "record_count": 530
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300F8C5JA44WNMI75",
+      "record_count": 530
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WN576XI5QFH005",
+      "record_count": 525
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LXKO1O7CSK5J52",
+      "record_count": 510
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300N34GCCEN8EJE06",
+      "record_count": 506
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BXWU32AYWT1A56",
+      "record_count": 502
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DDJB48AVV1SO96",
+      "record_count": 500
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B7YGT5O5MJ7M45",
+      "record_count": 498
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900M1AHTCIYKM7V90",
+      "record_count": 494
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008VVXQIDO1EZ460",
+      "record_count": 488
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XJN2FXJNUZ8F52",
+      "record_count": 479
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SWDNGYGQBG4K69",
+      "record_count": 477
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GY4NTTEM7WWB64",
+      "record_count": 475
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HO5ZZCX2Z8V467",
+      "record_count": 473
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IRQPG1Q6VZ8Y58",
+      "record_count": 470
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PL267CW8182203",
+      "record_count": 468
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300G4JDIJPBEO8J84",
+      "record_count": 463
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300A0SVCQJPHVGV20",
+      "record_count": 460
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300323EON4W3CCM44",
+      "record_count": 455
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "984500F03B9034CQB904",
+      "record_count": 453
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FRF7HYNM1S7Y12",
+      "record_count": 453
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930048P8RWCQHQM310",
+      "record_count": 449
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GRZDILCBTHSL98",
+      "record_count": 448
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300P6J0MZZT4UMT05",
+      "record_count": 441
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300F7S6KEMTKK0546",
+      "record_count": 441
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Z2FPZZD55OG155",
+      "record_count": 430
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "01J4SO3XTWZF4PP38209",
+      "record_count": 427
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300W45D2J6BT4LX65",
+      "record_count": 424
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900I68BOSEM149Q58",
+      "record_count": 422
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ISCZS1R0CJMO47",
+      "record_count": 422
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KST6N97GYH0O45",
+      "record_count": 420
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MQDQ3TUIDR0R90",
+      "record_count": 418
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900RUCO27MVGTO768",
+      "record_count": 415
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QWA589VRBWSZ92",
+      "record_count": 414
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TWPFOYZ33TOU32",
+      "record_count": 411
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UR5AOWTJJ7KZ64",
+      "record_count": 405
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D1LJKPCKRRHC31",
+      "record_count": 402
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T9P3WXNMXX0I34",
+      "record_count": 395
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HD2NONVMCRN332",
+      "record_count": 394
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DDDXGC8OXLNZ36",
+      "record_count": 390
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008T2QQO3QJ0EM38",
+      "record_count": 390
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IC1SF2RZ8ROR54",
+      "record_count": 383
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RD5IG88VPO6P22",
+      "record_count": 383
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300748YYU6VG08N83",
+      "record_count": 382
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OSY236S7MBKO83",
+      "record_count": 380
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TA4MQM8WN2XG31",
+      "record_count": 377
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZWNETGFXTBBY03",
+      "record_count": 375
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006JISETNI0GLE61",
+      "record_count": 373
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000WAJ1FMTFL5D75",
+      "record_count": 368
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YPBBHUEKV1YC68",
+      "record_count": 367
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TMY3OACQC9U777",
+      "record_count": 365
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R7HGHP2I754087",
+      "record_count": 360
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZIXM1VUXPG4D03",
+      "record_count": 357
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PG87MHQ7H4CO08",
+      "record_count": 354
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KKOHQFSTKHSN59",
+      "record_count": 354
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002Y5XYV7DV1ZV88",
+      "record_count": 351
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900DRSIZBQXDCJ875",
+      "record_count": 350
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300H6M7CI9LXTKS03",
+      "record_count": 349
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ACU16O36WZP625",
+      "record_count": 347
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000JFVFQFL816N45",
+      "record_count": 346
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007L4GYNO2PUBS09",
+      "record_count": 345
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KLIO6FT2J64B78",
+      "record_count": 343
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930079VLB4FPPZ7Y58",
+      "record_count": 335
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005J49KPXDXUC959",
+      "record_count": 333
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BX448ALT10FI43",
+      "record_count": 327
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000XBNMBCC02KC17",
+      "record_count": 323
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "3Y4U8VZURTYWI1W2K376",
+      "record_count": 321
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QKL5FUBZ8LSF50",
+      "record_count": 320
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "UPMVBH3EU3LS6P1KR697",
+      "record_count": 318
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TVVKZJG3FJDS34",
+      "record_count": 316
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XECJ0294F1ZG19",
+      "record_count": 315
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930067KY3OO1D8HC58",
+      "record_count": 315
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008EOM1VM8BBK206",
+      "record_count": 312
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2WHM8VNJH63UN14OL754",
+      "record_count": 310
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V422J2GUSZPZ35",
+      "record_count": 309
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C1YZ5ZORJBI935",
+      "record_count": 309
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300A8TEVE8WYT0T29",
+      "record_count": 305
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HOJG1DA7FIZ225",
+      "record_count": 305
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QMMJSALZQVP721",
+      "record_count": 304
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZP8FK47JENCV60",
+      "record_count": 302
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006TJ2N1MYD0XD45",
+      "record_count": 296
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900JOP4NNUK6I6R61",
+      "record_count": 291
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300W8XIPJGDECVX07",
+      "record_count": 281
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QJOGSPJ8EAX798",
+      "record_count": 281
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DLHIZLJ7617Q04",
+      "record_count": 280
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009B17HXCVXTD608",
+      "record_count": 279
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U1V61ZDK023383",
+      "record_count": 274
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NCCC6N26G65F26",
+      "record_count": 272
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "C398JSK21YCXWM603F55",
+      "record_count": 268
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D8S1ETG70FFW35",
+      "record_count": 267
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001C1MX62NVN0U50",
+      "record_count": 267
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549002DGXCCIY4BGZ41",
+      "record_count": 266
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L8D4DNZNL31O66",
+      "record_count": 265
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T2PYPUFN0IWJ63",
+      "record_count": 265
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930091CYUK2SDZ6D37",
+      "record_count": 265
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SKTBTC2QFDKG02",
+      "record_count": 265
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006HWKBRUZIDS752",
+      "record_count": 263
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IJB00VM6H8PP97",
+      "record_count": 261
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EAO0HUFDR48U74",
+      "record_count": 261
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LH06ZZHKPX5U83",
+      "record_count": 259
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VG0KDMI6ULUX54",
+      "record_count": 258
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LLESTPOVRG3X73",
+      "record_count": 257
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900YTMXVNCWHCVS50",
+      "record_count": 254
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UF3FPC7U6RFC59",
+      "record_count": 253
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PFJ7GCGDLB2E65",
+      "record_count": 250
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GWD9H4FQ2VR805",
+      "record_count": 249
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MBTZED1WNWX005",
+      "record_count": 248
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NJ26KCZVDMI076",
+      "record_count": 247
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900VELJPWWT51WN03",
+      "record_count": 247
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WX4YO71NFO5362",
+      "record_count": 245
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q2EZNO3H86ED06",
+      "record_count": 242
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "WKN6AF1FCL7BBYGTGI83",
+      "record_count": 242
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003NV9L53LK1XI52",
+      "record_count": 239
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EW5YD0HPCTME62",
+      "record_count": 236
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "984500U2F9A83N391A91",
+      "record_count": 236
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L4Z4LTG4TJTM66",
+      "record_count": 236
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300REENMLD2RN3W58",
+      "record_count": 235
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300INFJ8TYNZ1G568",
+      "record_count": 235
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GZJ5RFM7VED177",
+      "record_count": 233
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GV8F4RLYWAB272",
+      "record_count": 230
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300J7XKT2BI5WX213",
+      "record_count": 230
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KX4S1573HISS22",
+      "record_count": 228
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300644OBRFUPV7098",
+      "record_count": 227
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900O28OG3UMHXQY81",
+      "record_count": 227
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B0SOOJLUT6U297",
+      "record_count": 227
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OBLIP1F3NM5751",
+      "record_count": 226
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004CKM8OCTXNKO02",
+      "record_count": 224
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900LTD432L5CHIZ48",
+      "record_count": 222
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SLOQGL2LEMSD33",
+      "record_count": 222
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930059GZZ7G4G40O53",
+      "record_count": 222
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300W6OBJ6KNM5Y833",
+      "record_count": 221
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XQ7B5FIVUNFE29",
+      "record_count": 220
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900GKRYTQSJG61D90",
+      "record_count": 219
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GKNMX0ZXKVPE54",
+      "record_count": 219
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KQHWNSVCE2MY88",
+      "record_count": 218
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006XPYTPLP6BLN10",
+      "record_count": 218
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004CU9LAM5CYA280",
+      "record_count": 218
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "ZXMJHJK466PBZTM5F379",
+      "record_count": 217
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006RIR31ORKYB608",
+      "record_count": 217
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XCVBRR56D08F03",
+      "record_count": 217
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S8SHBRCI7UU819",
+      "record_count": 214
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "Q708HHR4LD2B7XIZNO92",
+      "record_count": 214
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000321W4GKLZ1Y10",
+      "record_count": 214
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005XMJQ1GSXUGT67",
+      "record_count": 213
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BRSSSUNB0U6552",
+      "record_count": 213
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RYTR2RVL4SFJ90",
+      "record_count": 212
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006TY8FGNLX44X28",
+      "record_count": 210
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001LCP9RF6ADEZ78",
+      "record_count": 209
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "L9VVX1KT5TFTKS0MLF66",
+      "record_count": 207
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q02LGIN9AXKP98",
+      "record_count": 204
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AHVQ1LDFNP8P69",
+      "record_count": 203
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008PQSMR41Y70C36",
+      "record_count": 203
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SQRR7T3EUSDD87",
+      "record_count": 202
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UV5JQXLGVWIP44",
+      "record_count": 201
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900UQIE22KBNLG837",
+      "record_count": 199
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DQLGJ1YQRRHH73",
+      "record_count": 199
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XTGDMRB8FMR522",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BG31WZXGJRH472",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007XRAHUC7QUVO11",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DNUPSQ3UW3EM09",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FVD3YHE65PKH97",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R0SXC1JU7ZU290",
+      "record_count": 198
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C8GOC4OYUV0Z32",
+      "record_count": 197
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZLEJNF277L8Q40",
+      "record_count": 197
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KW705BBINDIZ26",
+      "record_count": 196
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T7AIY7RU1YDP31",
+      "record_count": 194
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JLXD89NGKXMS84",
+      "record_count": 192
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SELI3XCH3UZW80",
+      "record_count": 189
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549002VH9C0PKB8K153",
+      "record_count": 186
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QGLK6W51MPXW45",
+      "record_count": 185
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003JGY7VFGEGT744",
+      "record_count": 183
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SD5OZMLCCZ6H34",
+      "record_count": 182
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900CBU2F2TON68T25",
+      "record_count": 182
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004Z576VEJBK3N72",
+      "record_count": 182
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007CLWQN2S6IZK91",
+      "record_count": 182
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KWKWPEKL40WD44",
+      "record_count": 181
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900XJUBW1WCO2J645",
+      "record_count": 181
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900FBWEZ3YUPOBN33",
+      "record_count": 180
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549009X2AG1P20YAJ63",
+      "record_count": 180
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FZGNW8VUSEDB98",
+      "record_count": 180
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FHWDJMELT59Z22",
+      "record_count": 179
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GZ7AZQEUEDGU30",
+      "record_count": 178
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BBKMRS6J0CB539",
+      "record_count": 178
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "25490070QB5LWJ9JID79",
+      "record_count": 178
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FRM3OFF8EM0191",
+      "record_count": 177
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZX1UPIG2E7TH11",
+      "record_count": 176
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L34FQYD6PROV86",
+      "record_count": 176
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "213800QUAI2VH5YM6310",
+      "record_count": 175
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PZATEYE8VIEN67",
+      "record_count": 175
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900YJOY30UROEAG69",
+      "record_count": 174
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300X7PN8KSYQHY415",
+      "record_count": 174
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005ICQ3QGEIWV618",
+      "record_count": 173
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JX4XZ2XQAMU684",
+      "record_count": 172
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L7HZ4C5U35BO37",
+      "record_count": 172
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549005Q4HZ55QX7YC64",
+      "record_count": 171
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549003K48UGTWEK6O31",
+      "record_count": 170
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PJ2WT35S77Q208",
+      "record_count": 169
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001SBOA8GKVW1N27",
+      "record_count": 168
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002YXAOJOQPEGS38",
+      "record_count": 167
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900Y3KT6SZM11MQ06",
+      "record_count": 166
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C720KB2QRAC051",
+      "record_count": 166
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B3LJV7BU7IY610",
+      "record_count": 165
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "25490018IFQOT83Q7H49",
+      "record_count": 164
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PV2KIL739QYQ35",
+      "record_count": 163
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930021DZJ9CEN11D61",
+      "record_count": 163
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MCPCNPQAOB4032",
+      "record_count": 163
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "VNOO6EITDJ2YUEBMSZ83",
+      "record_count": 162
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RLNUFWOJLX7W13",
+      "record_count": 162
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S63J8KM7BY5617",
+      "record_count": 162
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B4IYL7TZT8FA34",
+      "record_count": 161
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300F6Y1YO2YXN6135",
+      "record_count": 161
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L0KQ09W67V4228",
+      "record_count": 160
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K6K2IS7FRS7S09",
+      "record_count": 160
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SDQ83FUC7IK543",
+      "record_count": 159
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007WOQE7MEFUB492",
+      "record_count": 159
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300X0DCWAGU4DZH55",
+      "record_count": 157
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "IUGPUX5LWRZ3B6KIZ697",
+      "record_count": 157
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "LDVFX8JEECFFE8HRWA73",
+      "record_count": 155
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I1HK1BBZLKOB84",
+      "record_count": 155
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NJVKCDJA5YC939",
+      "record_count": 155
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NWKILSNQAIG053",
+      "record_count": 152
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "984500FAD1FB7FEGTE82",
+      "record_count": 152
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ODE6V13YFWTW21",
+      "record_count": 150
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900GHFQ9KF6G4PN32",
+      "record_count": 150
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930025OQ7Y7X795P35",
+      "record_count": 150
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RY2RZTSD07CW96",
+      "record_count": 149
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300L6SV1WXLO6BB96",
+      "record_count": 149
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001JT9MT3Z3Y3M39",
+      "record_count": 146
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ALAL7EW71UE133",
+      "record_count": 146
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004GBTNTG3N1GE77",
+      "record_count": 145
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900HEJ9F73IMPX887",
+      "record_count": 145
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "CKVBED0S4DMLKJJ5XH28",
+      "record_count": 145
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "FT6J43S06X6CLJ0R0B48",
+      "record_count": 144
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EC7M6N4U9DR727",
+      "record_count": 144
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "COINQMNIM6RBU631DD85",
+      "record_count": 144
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KOEN7O8EYN8207",
+      "record_count": 144
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "WWB2V0FCW3A0EE3ZJN75",
+      "record_count": 143
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930067OMWEWTHVDO95",
+      "record_count": 143
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549008XU46NWFIFUY72",
+      "record_count": 142
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UE4FFDNV7ELD54",
+      "record_count": 141
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GXMSA3UUO46130",
+      "record_count": 141
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005DKMV1IHIM8E20",
+      "record_count": 140
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900B7OQXWTD0I4K81",
+      "record_count": 140
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TTZ395IC926125",
+      "record_count": 139
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "1IE8VN30JCEQV1H4R804",
+      "record_count": 139
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LUMAIOXHIFK142",
+      "record_count": 139
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900IHP9HX92C8DX39",
+      "record_count": 138
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300P6CCUZE02WB068",
+      "record_count": 138
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TMS3AOKJGVNU61",
+      "record_count": 136
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JRDGV1559XM376",
+      "record_count": 133
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OUFGVRFN8PZB89",
+      "record_count": 133
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DCGBXW5FJMV921",
+      "record_count": 132
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S5FVOSK5DQJN30",
+      "record_count": 130
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K31SPZG5JQ7275",
+      "record_count": 130
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QEVTCM4MW2YI14",
+      "record_count": 129
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QRLVIA94OVXY15",
+      "record_count": 127
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GMJ6RM02VXK542",
+      "record_count": 127
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XKEC7P1D7OKJ16",
+      "record_count": 127
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EFCZM6KD6B8K69",
+      "record_count": 125
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BOXNV8VLRBDT24",
+      "record_count": 125
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I4IUWMEMGLST06",
+      "record_count": 124
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TM81D0YC1B9584",
+      "record_count": 124
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900JZN2V0PWFMW808",
+      "record_count": 123
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RQGV5F7NXZZ089",
+      "record_count": 123
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NFA0VY9215VV25",
+      "record_count": 123
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XYLNCM8KWF7B15",
+      "record_count": 122
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HRLROF7PLJ6735",
+      "record_count": 121
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "FYRC3KHM4DQBX5PWG390",
+      "record_count": 121
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UVXY7S004OQL53",
+      "record_count": 119
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NN0PRX3I4QGG46",
+      "record_count": 117
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JPWAKLM047FK81",
+      "record_count": 117
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JX8UXNIMMZYW86",
+      "record_count": 116
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CLRXFVF83ZL806",
+      "record_count": 116
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TSSJ6QLFK4C243",
+      "record_count": 116
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930047YAX7UHRKN043",
+      "record_count": 115
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CUUEEQ66ZVK149",
+      "record_count": 115
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006XE7ZLYUW25E11",
+      "record_count": 112
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S3XVSI9XULIM45",
+      "record_count": 111
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002RF1ERFA2XR050",
+      "record_count": 111
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VR7DBNPPSMHV60",
+      "record_count": 110
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549006VBLRP288VX853",
+      "record_count": 110
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900HQK1GFTN5BRG15",
+      "record_count": 110
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZW58TM1KU8CK35",
+      "record_count": 108
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900YA1AQXNM8QVZ06",
+      "record_count": 108
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SHQJPJG8CN8153",
+      "record_count": 107
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900BBWJ82FQDQ6823",
+      "record_count": 107
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SI264HNSER6O81",
+      "record_count": 106
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900QC7DVGIYVGB494",
+      "record_count": 106
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I3SDXHG6BUD309",
+      "record_count": 105
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RYBJHWWDENV610",
+      "record_count": 103
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TJ1PI0CYX4D722",
+      "record_count": 103
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V1GCCNY7J42I93",
+      "record_count": 103
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005O0QVSV3RWRR20",
+      "record_count": 102
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CZYL6IDJDBUR04",
+      "record_count": 102
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WHVRE44NRBU558",
+      "record_count": 102
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OPB0G5OMY0SM65",
+      "record_count": 101
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VEIFZEX6HJVA94",
+      "record_count": 101
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I0ICF6REKHOC74",
+      "record_count": 101
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900F9ZTVTX763V835",
+      "record_count": 101
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300P55E0GN57DEV03",
+      "record_count": 100
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300X844WCY1CCL322",
+      "record_count": 100
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WLIQVZ1HPUUJ36",
+      "record_count": 100
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BTTR873E71L054",
+      "record_count": 100
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900378RFGMBEKAF12",
+      "record_count": 99
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007MVCEU8QCNWC60",
+      "record_count": 99
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V315P16H3FSD37",
+      "record_count": 98
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q1WJSOIS2FON98",
+      "record_count": 98
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004XJQQPBYQSMT39",
+      "record_count": 98
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549009BJ1OZ4H7KTG46",
+      "record_count": 98
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549009E2AX2506YWP38",
+      "record_count": 97
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HQ25HXXXOWJ140",
+      "record_count": 95
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RM1IZYGQDSNL85",
+      "record_count": 95
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BOONATEIE9GC38",
+      "record_count": 94
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549006T1BV8J2I7XC10",
+      "record_count": 94
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900VE4XTOQUE8NZ77",
+      "record_count": 94
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LZUXCJFE5ONM48",
+      "record_count": 94
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QSUEE20YO86W39",
+      "record_count": 93
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TB3TMP4RV5T078",
+      "record_count": 93
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002EOK9UP4QZ5N22",
+      "record_count": 93
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900VX7NAZSPBPUE16",
+      "record_count": 92
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "KD3XUN7C6T14HNAYLU02",
+      "record_count": 92
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900PZMV3V09E3HO84",
+      "record_count": 92
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q1YFRSB8UEGH03",
+      "record_count": 92
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000EAQ6YVQD0ZB49",
+      "record_count": 91
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R4F5COFJE0DN81",
+      "record_count": 91
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YDU8N5KZBYRU81",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "SI7YQSVPFZBSQ878IC17",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300J5XPZQYI2FNC72",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300038578ZJ284Y20",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900JH11ROOV921P96",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CUL44QXBGFJM68",
+      "record_count": 90
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LROQOOQU77WS20",
+      "record_count": 89
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JODTD5ROHSII79",
+      "record_count": 88
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PTX8QF0BPQ5U19",
+      "record_count": 88
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T94GSH3C4U5M59",
+      "record_count": 87
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YBAW8FZJWPB842",
+      "record_count": 86
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900LBMDUHY340Y645",
+      "record_count": 86
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009ZFRBMAYWB2F82",
+      "record_count": 86
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MFY0P4D234OB91",
+      "record_count": 85
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300W1HU6IVVIEJ389",
+      "record_count": 85
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LL55GPEKSXNY85",
+      "record_count": 84
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000349C5XXDRQX28",
+      "record_count": 84
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FWYXJ79KO49290",
+      "record_count": 83
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UTE20103B0T339",
+      "record_count": 83
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005EYZOUVJUXAX38",
+      "record_count": 83
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900Y2VQW872IK0096",
+      "record_count": 83
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JL3TGNE3Y7PE33",
+      "record_count": 82
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "25490031FYE1X5QNTK83",
+      "record_count": 82
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DKYWYDD1KM2515",
+      "record_count": 82
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900R9A6TW85BTVS20",
+      "record_count": 82
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300A5HHOL2ED18C72",
+      "record_count": 81
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900TZ5NHC3GYO2U31",
+      "record_count": 81
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I72FXKCNGRQC43",
+      "record_count": 81
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008SP1FN4D81IS17",
+      "record_count": 81
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PXIFIEPL7D7R86",
+      "record_count": 81
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008EWJQJ6SK2V234",
+      "record_count": 80
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "984500P059VACEAAFA22",
+      "record_count": 80
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005DYVXTSXZPZF85",
+      "record_count": 79
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NFAQXBUC5NPK66",
+      "record_count": 79
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q4JBLTKDC7J303",
+      "record_count": 79
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930002O9LLXKR6TF11",
+      "record_count": 79
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SVKVT1EF3U0N48",
+      "record_count": 78
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549005IUIJTSX4P5695",
+      "record_count": 78
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YK8RG6J51VOI08",
+      "record_count": 77
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300N7MKAZNGCKT625",
+      "record_count": 77
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AOB4S7B0DB7863",
+      "record_count": 76
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JF52QHLC8BF081",
+      "record_count": 76
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VYK2WBD7SST478",
+      "record_count": 76
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RZIWJWJ035S336",
+      "record_count": 76
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900FL0I8OUMMBOZ11",
+      "record_count": 75
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007LQQOUAPFNHY39",
+      "record_count": 75
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900BAR7I9CB7YO393",
+      "record_count": 75
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ABHFY5HY2P3871",
+      "record_count": 75
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007X0QZ825CCEZ27",
+      "record_count": 74
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001SDQVS1NWYH012",
+      "record_count": 74
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YDBNK66R6ZES34",
+      "record_count": 73
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900H6Q0VRU6MPSX83",
+      "record_count": 73
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549001SI0EMFPT39035",
+      "record_count": 73
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300911X1OUPJU7Y90",
+      "record_count": 73
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "D38AC76TAMYI50NBPX33",
+      "record_count": 72
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D7GVUYHQEDEE56",
+      "record_count": 72
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UT4EN6IH579Q63",
+      "record_count": 72
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001HHBUTXHS7TZ96",
+      "record_count": 71
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300G7KW08JJ121L78",
+      "record_count": 71
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930060G4MDPWHISD89",
+      "record_count": 71
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WS8BW0I0BDA390",
+      "record_count": 70
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IPUHFA5O769M51",
+      "record_count": 70
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "HUX2X73FUCYHUVH1BK78",
+      "record_count": 70
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002GI63WHHUTUD85",
+      "record_count": 70
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DW87L2IZ7ZHF47",
+      "record_count": 69
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001F7QT2YW3K8D98",
+      "record_count": 68
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I3HDJ5QJNFPZ87",
+      "record_count": 68
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900695MEPYT475810",
+      "record_count": 68
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000HP3PE9SZG4B02",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006Q0EMYD3OJ8N13",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SUCQ1358EGVE89",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZCR1XCLNEEI724",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U8R3GGLSE3HV47",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YD7XJM19TH5O82",
+      "record_count": 67
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930020NKD4V7LL4W50",
+      "record_count": 66
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ASFUWYQO0RW077",
+      "record_count": 66
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MXJA09WZJ0DV55",
+      "record_count": 66
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WJGWD3H4OFK051",
+      "record_count": 66
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TX687EP8MPL372",
+      "record_count": 66
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300X08QKYUH256I80",
+      "record_count": 65
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "25490021P4C9ZH17EO78",
+      "record_count": 65
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000I1D48IYADQB06",
+      "record_count": 65
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IVS7RAU1H3GS10",
+      "record_count": 64
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002TJKC8NLH1ZP82",
+      "record_count": 63
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004T9SQFCNRQ2L76",
+      "record_count": 63
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900VK6BPC7QRSZD77",
+      "record_count": 63
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900JWLQKPGK4C0B30",
+      "record_count": 63
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AG10BX85DF5S49",
+      "record_count": 63
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SS41NEZDLCGD86",
+      "record_count": 62
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OHLAHJ10DFF198",
+      "record_count": 61
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300O5WDIJU8S7OI05",
+      "record_count": 61
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300AT7EB9FJAF0E61",
+      "record_count": 61
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549004NC9AQ00THAD39",
+      "record_count": 61
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300E5EFGSFSL7WF75",
+      "record_count": 60
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GNIV169ZIHU012",
+      "record_count": 60
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NT030LXB2A8T82",
+      "record_count": 60
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900GNK8YXIZQ6LW40",
+      "record_count": 59
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HMP6CQXPB0L958",
+      "record_count": 59
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Q6YL1SFVPEGV90",
+      "record_count": 58
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900REMJXT9T25JI51",
+      "record_count": 58
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Y7G2MW6V1OR474",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WBAI0VC58ALC63",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008JUW0FLRMO0W64",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JZD4L02YZI3Z50",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900D3ZSLR3VYI9A24",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "7DMUJTL9FFTVIAG9H788",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HIVO8XPBPNVG69",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QVGNXYT00KCW22",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HVUN4WJ2BRSZ39",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WEOD0TL2O6EU67",
+      "record_count": 57
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900IEGKUDRDS23V26",
+      "record_count": 56
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300A68YW07V5R5G22",
+      "record_count": 56
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DCAVODU8W5UW13",
+      "record_count": 56
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JPKIA8GCDBEI29",
+      "record_count": 56
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300Y4BSP3BSFW7J29",
+      "record_count": 56
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HERTPSZ6EH0667",
+      "record_count": 55
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003V40VGM7YDFM54",
+      "record_count": 55
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900NHZBDILTNDA759",
+      "record_count": 55
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930054UTIC988TNU54",
+      "record_count": 54
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TKFZR4QBNE5D40",
+      "record_count": 54
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "593C3GZG957YOJPS2Z63",
+      "record_count": 54
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "984500C3963FSB42CA10",
+      "record_count": 54
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008S3V47SHFD8R45",
+      "record_count": 54
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WR7Z70C25QD821",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300P3IKHVYBR1E510",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EBBK4MF6IWR304",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007QTEURUDVZQ980",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QQT0E10LWS3326",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LLKEKXL2RM1F61",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IRXW9RSZM2B951",
+      "record_count": 53
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JQALY53TH22D13",
+      "record_count": 52
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XUMLWCTTKR4B35",
+      "record_count": 52
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YBM0K5N6REP663",
+      "record_count": 52
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ERGGNLW2R5J379",
+      "record_count": 52
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004F7BXDIUFVPV87",
+      "record_count": 52
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RYWXR8TL5LIK35",
+      "record_count": 51
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K77JMKPUYBOI69",
+      "record_count": 51
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D214S3L7KZ0515",
+      "record_count": 51
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "98450087981AP406JG03",
+      "record_count": 51
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900D4M439MIWMBX82",
+      "record_count": 49
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300T3F9S1MKFKHC53",
+      "record_count": 49
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KPHGEE40YQXO21",
+      "record_count": 49
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MY5ML47R0EMV87",
+      "record_count": 49
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QVGK8WC4HQ3C28",
+      "record_count": 48
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004KLDVVA608R237",
+      "record_count": 48
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001CF53JP3UQ0024",
+      "record_count": 48
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SWHFQY2F7RN335",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WYBPIWKK6SQC06",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007E9BI08H1N1T92",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GUS13Z72B6KD63",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KUIZTYQRC0R888",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WOJCNL7B110W30",
+      "record_count": 47
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JGMQJ4R419LR70",
+      "record_count": 46
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007WNCT2YQ8O4H14",
+      "record_count": 46
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U1HSN2YJRJ0U33",
+      "record_count": 46
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930031J0Z4IG9PQZ65",
+      "record_count": 45
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930007CZ6K4RNOYC20",
+      "record_count": 45
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CK7U1WMTIG6687",
+      "record_count": 44
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930031G7ALOZB0HI92",
+      "record_count": 43
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B2JJHSM77T5Y41",
+      "record_count": 43
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005QU87D4OE5GZ21",
+      "record_count": 43
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MVSM4XYFQL3X62",
+      "record_count": 43
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300U1RXPGUIKOLB91",
+      "record_count": 42
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930045J8O98TUGTW86",
+      "record_count": 42
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009LZZ8VZRVIX755",
+      "record_count": 42
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FK3AFCFVAPH234",
+      "record_count": 42
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900V6GCDMRQZ34D96",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KPBZCTMM3Y0061",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900IQQH2FDQ54AX07",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QR0KFPEDZPEI42",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900EWUWDU43PY5R60",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MUXFVZKH4XLG17",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DNWSJUNAWUM003",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UP64TRM5LC7R70",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ZZPN19KA3GL698",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930076PACNHY6U9F09",
+      "record_count": 41
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I7G0WB7Z0BCX80",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TUQC6OYE8A0Y96",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V8CF81JGIV7038",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007CXTOHZ2JBEJ61",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000H6DFDDJRORG89",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TDRENNEZ2S6M03",
+      "record_count": 40
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HVFLWKU7133506",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000H6FXB15JQW781",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900QA42CLV3RMFZ29",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZY6PRWY54O6995",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "8945002AZSML1PBU6N20",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TTMTYIYZ986C56",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LLQD0X2OTG0Y27",
+      "record_count": 39
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005WCUTOOZMTV053",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900RW4F62S7FHDV91",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300G5DVGM0ZHRQC33",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FF2P6I0N4FHD29",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005KZM1DEUYVS783",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930039IUN6515TBG78",
+      "record_count": 38
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300WRDGBHKR1BXL98",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930065B0NVUO52TY13",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900GS7VFHDE55TH92",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300N3JBQ15RQ7AV97",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "4EP6JBYBTPTQ47LZOB67",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QRAZQ8G8BM6H64",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493004ZMFHUD3MB7B40",
+      "record_count": 37
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300G8SAGXEDF5FK39",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005HCI0Y8LUK5S48",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LBSJDS5R7PIK62",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900VHUBSJJKOMBF27",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549005AK04LGIZGXS10",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LFR4FQMI48MF92",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300B190GPYLAX3Y92",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SOZES6XPZ50475",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GSCUJKJINRJ980",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002N80S5V3OY3S68",
+      "record_count": 36
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PEWJWBNEOSS013",
+      "record_count": 35
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300M6F8O82D8W2395",
+      "record_count": 35
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LHIG86DP0JR819",
+      "record_count": 35
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HCNXMTNGIMAR91",
+      "record_count": 35
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I0JGZE27J13Z50",
+      "record_count": 35
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300R8VPSFM828B312",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900LQPR8CYPBIJ478",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300UB5TJ0YPVPT503",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NRFBF7DSU0LE80",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493001X0T84TYRJ5Y59",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930072OCHTUJOZQB56",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HVW3AI97UKTO72",
+      "record_count": 34
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GDBIZCOI6TMO49",
+      "record_count": 33
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SP0WF5J8HGAC84",
+      "record_count": 33
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007BX4I89K17ZM64",
+      "record_count": 33
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493007ZMQ2ZFZA66L83",
+      "record_count": 33
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300W4FT4H1UWPGU95",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IFOE4SCP384147",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900B71NF607TXAW72",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YX5RPSSMR88K92",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900EY91VUW4KYE555",
+      "record_count": 32
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DRA4BDXW23LD45",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IBT3SCF2K09D58",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900WT4HAMDFWH3048",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VJQJVZKJBDWS17",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PHUZ7U5WPH7Z38",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YW2UBCMDRMBT48",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300TZUUEG8RUJI536",
+      "record_count": 31
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493006X4VPGZ5GVIB71",
+      "record_count": 30
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000OM9RKJW8W5K82",
+      "record_count": 30
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900114YHTRFBALC74",
+      "record_count": 30
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002G4JO4BZ22MC13",
+      "record_count": 30
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300EHWBP6UP4Y8J37",
+      "record_count": 30
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900LGGK2DOWIZA524",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300CDOC4F7XSRG390",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007ZL90U2M5ZNA78",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549008CUN0J8JKWUL22",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300FKEPZ2QELUY416",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900EQ7TPQ6NBKRF55",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LE3ZOZXUS7W648",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XRXBA38J60S618",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900A9IPKYRVXEJ156",
+      "record_count": 29
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549000PNXYVRN44TV91",
+      "record_count": 28
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D1D2WPHU5URX88",
+      "record_count": 28
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002QRULT2T40BH09",
+      "record_count": 28
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OYEKEORA1GI088",
+      "record_count": 28
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900RFZH9I62FGU045",
+      "record_count": 28
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300K77IQXQEIYGA47",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300DM6DAOPSF8HL78",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300IKS3MMB5YK6T18",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RFPLMCMJL7BS81",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YAYQAARPBTRA72",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ARLAZ571P0Z136",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300I23OUVH341T124",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549008DKNX6KPDOUX53",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HTMO7FGRKRLV06",
+      "record_count": 27
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "6PTKHDJ8HDUF78PFWH30",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HH9YMUECXXU380",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300XW2H531FLD3I90",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300BM4NS8HDJT3X28",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300HINJH60UG3KG47",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300JP8LGXT0Z0S678",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300VIRTE6O2776X89",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493002F9OWLKRICTY67",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KW3HYVC06WS898",
+      "record_count": 26
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300C1ICNCM0V37Y02",
+      "record_count": 25
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300YN7OQX9PTS2T45",
+      "record_count": 25
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "38PG5GG0OEQK4QMSKE59",
+      "record_count": 25
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930039OWZFM2IGRN69",
+      "record_count": 25
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900YB9XQDO5W4KU33",
+      "record_count": 24
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "894500VAX8CTDV1CWC26",
+      "record_count": 24
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "HIDXEG9BLUJZKBGUT764",
+      "record_count": 24
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300QV3GEYMP1WSO93",
+      "record_count": 24
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300MXE3M1W481QB61",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930022CQGV47Q8PM03",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007JQKHU8KQ0FC19",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005XCKCOIX4JMI33",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493003OO8EG0RKSFX83",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300GCEUZLVML1J263",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300V5KPYZDV1U4679",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300KR4ZW8KJC82O47",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900RQX8N4HXJIDK44",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300OBJRCHJ0G6XU24",
+      "record_count": 23
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LP0CV2MNC1GV68",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SG7DAVFO3NTC34",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300ZS1TR1B4LHX377",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300LI3FDGO7UKFF39",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300NLJI4QKZ3D0G94",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300D4ZYLSQ5LMTV35",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930044OSTKOJMHF287",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493008RSN6F31BTGT93",
+      "record_count": 22
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900FERTTAUD38US42",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "MMO6VV34TNP4Z1T8NG83",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300465MKS092D5K02",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900INHDNXVATC1I76",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "254900ACUWEGW702BR80",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493009Y8ROUG903AQ21",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300SQKZC6HESYGO25",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000BR75YQF0VQC27",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300RWXUAFD1WAE410",
+      "record_count": 21
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493000B61DDZ2PG1515",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "2549007G9V4FYWWWDZ31",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "54930078TNN7GKZ7NU89",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "YWC0TIKBQM2JV8L4IV08",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "5493005T6ET3508ZXP66",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300S93XI20FLTGK89",
+      "record_count": 20
+    },
+    {
+      "join_status": "retained",
+      "dimension": "lei",
+      "category": "549300PRAPL43XPYR044",
+      "record_count": 20
+    }
+  ]
+}

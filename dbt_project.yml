@@ -15,5 +15,8 @@ models:
     gold:
       +materialized: table
 vars:
-  census_tract_context_path: tests/fixtures/census_tract_context.csv
   minimum_cell_size: 20
+  county_income_band_width: 25000
+  county_loan_amount_band_width: 50000
+  state_income_band_width: 50000
+  state_loan_amount_band_width: 100000

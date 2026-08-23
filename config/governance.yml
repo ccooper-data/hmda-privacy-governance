@@ -59,11 +59,26 @@ published_marts:
       configuration: public
       is_current_baseline: public
       record_count: public
+      pre_suppression_uniqueness_rate: sensitive
+      pre_suppression_prosecutor_risk: sensitive
+      post_suppression_uniqueness_rate: sensitive
+      suppression_cost_share: public
+      retained_share: public
+      reference_n: sensitive
+      comparison_n: sensitive
+      utility_estimable: public
+      reference_denial_rate: sensitive
+      minimum_detectable_disparity_points: sensitive
+  risk_by_density_cross:
+    columns:
+      residential_density_quintile: public
+      release_density_quintile: public
+      record_count: public
       sample_uniqueness_rate: sensitive
       prosecutor_expected_match_risk: sensitive
-      retained_share_k5: public
-      reference_n_k5: sensitive
-      comparison_n_k5: sensitive
-      utility_estimable_k5: public
-      reference_denial_rate: sensitive
-      minimum_detectable_disparity_points_k5: sensitive
+  density_join_exclusion_audit:
+    columns:
+      join_status: public
+      dimension: public
+      category: quasi_identifier
+      record_count: public

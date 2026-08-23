@@ -26,7 +26,7 @@ utility estimate measures the actual protected release.
 
 The model is a logistic regression fit by iteratively reweighted least squares. The focal term is
 an indicator for Black non-Hispanic applicants. Adjustment fields are log income, log loan amount,
-age band, sex, loan type, debt-to-income band, loan purpose, occupancy type, lien status, and
+age band, sex, protected geography, loan type, debt-to-income band, loan purpose, occupancy type, lien status, and
 dwelling category. Missing categorical values are explicit levels; missing continuous values are
 median-imputed within the protected cohort. Continuous terms are standardized for numerical
 stability. Reported outputs are the adjusted odds ratio, its model-based 95% confidence interval,
@@ -38,6 +38,10 @@ The modeling relation is internal and row-grain and is prohibited from publicati
 contains only configuration-level counts, rates, coefficients, confidence intervals, convergence
 status, and method metadata. No record-level predictions, residuals, influential observations, or
 high-risk cases are exported.
+
+The export also reports exact-covariate common-support shares. K-suppression preferentially retains
+modal QI cells, so coefficients from different configurations are not treated as estimates on the
+same population or directly compared as though only precision changed.
 
 ## Limitations
 

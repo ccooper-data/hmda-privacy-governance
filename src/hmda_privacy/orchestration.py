@@ -4,6 +4,8 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
+import yaml
+
 
 @dataclass(frozen=True)
 class PipelinePaths:
@@ -12,11 +14,21 @@ class PipelinePaths:
     artifact_dir: Path
 
 
-def pipeline_commands(paths: PipelinePaths) -> list[list[str]]:
-    variables = (
-        "{hmda_lar_path: "
-        f"{paths.hmda_lar}, census_tract_context_path: {paths.tract_context}"
-        "}"
+def pipeline_commands(
+    paths: PipelinePaths, protection_path: Path = Path("config/protection.yml")
+) -> list[list[str]]:
+    protection = yaml.safe_load(protection_path.read_text(encoding="utf-8"))["configurations"]
+    county = protection["county_banded"]
+    state = protection["state_banded"]
+    variables = str(
+        {
+            "hmda_lar_path": str(paths.hmda_lar),
+            "census_tract_context_path": str(paths.tract_context),
+            "county_income_band_width": county["income_band_width"],
+            "county_loan_amount_band_width": county["loan_amount_band_width"],
+            "state_income_band_width": state["income_band_width"],
+            "state_loan_amount_band_width": state["loan_amount_band_width"],
+        }
     )
     return [
         [
@@ -48,6 +60,50 @@ def pipeline_commands(paths: PipelinePaths) -> list[list[str]]:
             "--output",
             str(paths.artifact_dir / "texas_2023_residential_density_risk.json"),
         ],
+        [
+            "python",
+            "scripts/export_release_density_risk.py",
+            "--output",
+            str(paths.artifact_dir / "texas_2023_release_density_risk.json"),
+        ],
+        [
+            "python",
+            "scripts/export_density_diagnostics.py",
+            "--output",
+            str(paths.artifact_dir / "texas_2023_density_diagnostics.json"),
+        ],
+        [
+            "python",
+            "scripts/export_aggregate_race_risk.py",
+            "--output",
+            str(paths.artifact_dir / "texas_2023_race_risk.json"),
+        ],
+        [
+            "python",
+            "scripts/export_qi_sensitivity.py",
+            "--output",
+            str(paths.artifact_dir / "texas_2023_qi_sensitivity.json"),
+        ],
+        [
+            "python",
+            "scripts/export_population_uniqueness_sensitivity.py",
+            "--output",
+            str(paths.artifact_dir / "texas_2023_population_uniqueness_sensitivity.json"),
+        ],
+        [
+            "python",
+            "scripts/export_group_size_decomposition.py",
+            "--input",
+            str(paths.hmda_lar),
+            "--output",
+            str(paths.artifact_dir / "texas_2023_group_size_decomposition.json"),
+        ],
+        [
+            "python",
+            "scripts/build_release_summary.py",
+            "--input-dir",
+            str(paths.artifact_dir),
+        ],
         ["python", "scripts/build_release_figures.py"],
     ]
 
@@ -62,7 +118,9 @@ def build_dagster_definitions():
     try:
         from dagster import Definitions, asset
     except ImportError as error:
-        raise RuntimeError("Install the orchestration extra: pip install -e '.[orchestration]'") from error
+        raise RuntimeError(
+            "Install the orchestration extra: pip install -e '.[orchestration]'"
+        ) from error
 
     paths = PipelinePaths(
         Path("data/bronze/year=2023/hmda_2023_TX_all.csv"),

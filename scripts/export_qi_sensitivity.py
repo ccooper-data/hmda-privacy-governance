@@ -24,12 +24,18 @@ def main() -> None:
            order by qi_tier, record_count desc"""
     ).fetchdf()
     overall = connection.execute(
-        """select qi_tier, sum(record_count) as record_count,
-                  sum(record_count * sample_uniqueness_rate) / sum(record_count)
+        """with profiles as (
+               select 'demographic_geo' as qi_tier, k from qi_profile_demographic_geo
+               union all
+               select 'financial_context', k from qi_profile_financial_context
+               union all
+               select 'institution_aware', k from qi_profile
+           )
+           select qi_tier, sum(k) as record_count,
+                  sum(case when k = 1 then 1 else 0 end) / sum(k)
                       as sample_uniqueness_rate,
-                  sum(record_count * prosecutor_expected_match_risk) / sum(record_count)
-                      as prosecutor_expected_match_risk
-           from qi_sensitivity_by_race
+                  count(*) / sum(k) as prosecutor_expected_match_risk
+           from profiles
            group by qi_tier order by qi_tier"""
     ).fetchdf()
     payload = {

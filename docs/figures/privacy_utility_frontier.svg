@@ -1,35 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="34" font-family="Arial" font-size="24" font-weight="700" fill="#172033">Texas 2023 privacy–utility frontier</text>
-<text x="90" y="59" font-family="Arial" font-size="14" fill="#556070">Uniqueness falls as k≥5 retention and disparity-detection utility improve</text>
+<text x="90" y="59" font-family="Arial" font-size="14" fill="#556070">Pre-suppression risk, retained share, and decision MDE by release state</text>
 <line x1="90" y1="440.0" x2="865" y2="440.0" stroke="#e5e9f0"/>
 <text x="78" y="445.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">0%</text>
 <line x1="90" y1="369.0" x2="865" y2="369.0" stroke="#e5e9f0"/>
-<text x="78" y="374.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">21%</text>
+<text x="78" y="374.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">22%</text>
 <line x1="90" y1="298.0" x2="865" y2="298.0" stroke="#e5e9f0"/>
-<text x="78" y="303.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">42%</text>
+<text x="78" y="303.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">45%</text>
 <line x1="90" y1="227.0" x2="865" y2="227.0" stroke="#e5e9f0"/>
-<text x="78" y="232.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">63%</text>
+<text x="78" y="232.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">67%</text>
 <line x1="90" y1="156.0" x2="865" y2="156.0" stroke="#e5e9f0"/>
-<text x="78" y="161.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">84%</text>
+<text x="78" y="161.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">90%</text>
 <line x1="90" y1="85.0" x2="865" y2="85.0" stroke="#e5e9f0"/>
-<text x="78" y="90.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">105%</text>
-<text x="90.0" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">cfpb current (current)</text>
-<text x="348.3" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">county geo</text>
-<text x="606.7" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">county banded</text>
+<text x="78" y="90.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">112%</text>
+<text x="90.0" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">cfpb current unsuppressed (current)</text>
+<text x="477.5" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">county banded</text>
 <text x="865.0" y="468" text-anchor="middle" font-family="Arial" font-size="12" fill="#384152">state banded</text>
-<circle cx="90.0" cy="123.0" r="5" fill="#c43d4d"/>
-<circle cx="348.3" cy="146.0" r="5" fill="#c43d4d"/>
-<circle cx="606.7" cy="206.2" r="5" fill="#c43d4d"/>
-<circle cx="865.0" cy="338.2" r="5" fill="#c43d4d"/>
-<polyline points="90.0,123.0 348.3,146.0 606.7,206.2 865.0,338.2" fill="none" stroke="#c43d4d" stroke-width="3"/>
+<circle cx="90.0" cy="136.7" r="5" fill="#c43d4d"/>
+<circle cx="477.5" cy="179.2" r="5" fill="#c43d4d"/>
+<circle cx="865.0" cy="258.2" r="5" fill="#c43d4d"/>
+<polyline points="90.0,136.7 477.5,179.2 865.0,258.2" fill="none" stroke="#c43d4d" stroke-width="3"/>
 <rect x="90" y="492" width="16" height="4" fill="#c43d4d"/>
-<text x="114" y="500" font-family="Arial" font-size="13" fill="#384152">Sample uniqueness</text>
-<circle cx="90.0" cy="434.3" r="5" fill="#237a57"/>
-<circle cx="348.3" cy="413.1" r="5" fill="#237a57"/>
-<circle cx="606.7" cy="390.7" r="5" fill="#237a57"/>
-<circle cx="865.0" cy="272.7" r="5" fill="#237a57"/>
-<polyline points="90.0,434.3 348.3,413.1 606.7,390.7 865.0,272.7" fill="none" stroke="#237a57" stroke-width="3"/>
+<text x="114" y="500" font-family="Arial" font-size="13" fill="#384152">Pre-suppression uniqueness</text>
+<circle cx="90.0" cy="123.0" r="5" fill="#237a57"/>
+<circle cx="477.5" cy="406.5" r="5" fill="#237a57"/>
+<circle cx="865.0" cy="361.8" r="5" fill="#237a57"/>
+<polyline points="90.0,123.0 477.5,406.5 865.0,361.8" fill="none" stroke="#237a57" stroke-width="3"/>
 <rect x="335" y="492" width="16" height="4" fill="#237a57"/>
-<text x="359" y="500" font-family="Arial" font-size="13" fill="#384152">Records retained at k≥5</text>
+<text x="359" y="500" font-family="Arial" font-size="13" fill="#384152">Records retained</text>
+<circle cx="90.0" cy="438.2" r="5" fill="#3478bf"/>
+<circle cx="477.5" cy="407.8" r="5" fill="#3478bf"/>
+<circle cx="865.0" cy="432.9" r="5" fill="#3478bf"/>
+<polyline points="90.0,438.2 477.5,407.8 865.0,432.9" fill="none" stroke="#3478bf" stroke-width="3"/>
+<rect x="580" y="492" width="16" height="4" fill="#3478bf"/>
+<text x="604" y="500" font-family="Arial" font-size="13" fill="#384152">MDE (percentage points)</text>
 </svg>

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "equivalence_universe": "full_state_year",
+    "coverage_interpretation": "declared sensitivity scenarios, not HMDA sampling rates",
+    "warning": "HMDA is not a probability sample of residents; no scenario is labeled true"
+  },
+  "estimates": [
+    {
+      "method": "zero_truncated_gamma_poisson",
+      "coverage_fraction": 0.1,
+      "observed_equivalence_classes": 1012517,
+      "sample_unique_records": 997028,
+      "gamma_shape": 3.3377193807910583e-07,
+      "gamma_rate": 1.7116511781897161,
+      "probability_sample_unique_is_population_unique": null,
+      "estimated_population_unique_records": null,
+      "log_likelihood": -127728.92618398376,
+      "fit_status": "boundary_fit_not_reportable",
+      "assumption_status": "scenario_only_hmda_coverage_fraction_not_identified"
+    },
+    {
+      "method": "zero_truncated_gamma_poisson",
+      "coverage_fraction": 0.25,
+      "observed_equivalence_classes": 1012517,
+      "sample_unique_records": 997028,
+      "gamma_shape": 4.7207488474705087e-07,
+      "gamma_rate": 4.277756047506481,
+      "probability_sample_unique_is_population_unique": null,
+      "estimated_population_unique_records": null,
+      "log_likelihood": -127728.9285785711,
+      "fit_status": "boundary_fit_not_reportable",
+      "assumption_status": "scenario_only_hmda_coverage_fraction_not_identified"
+    },
+    {
+      "method": "zero_truncated_gamma_poisson",
+      "coverage_fraction": 0.5,
+      "observed_equivalence_classes": 1012517,
+      "sample_unique_records": 997028,
+      "gamma_shape": 3.866272743086575e-07,
+      "gamma_rate": 8.5568717036901,
+      "probability_sample_unique_is_population_unique": null,
+      "estimated_population_unique_records": null,
+      "log_likelihood": -127728.92677426906,
+      "fit_status": "boundary_fit_not_reportable",
+      "assumption_status": "scenario_only_hmda_coverage_fraction_not_identified"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "alpha": 0.05,
+    "power": 0.8,
+    "utility_metric": "decision-only two-proportion MDE for each declared release state",
+    "limitations": "Adjusted fair-lending model remains required for final determination"
+  },
+  "frontier": [
+    {
+      "configuration": "cfpb_current_unsuppressed",
+      "is_current_baseline": true,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.9570069273069506,
+      "pre_suppression_prosecutor_risk": 0.9718741931179984,
+      "post_suppression_uniqueness_rate": 0.9570069273069506,
+      "suppression_cost_share": 0.0,
+      "retained_share": 1.0,
+      "reference_n": 233686.0,
+      "comparison_n": 56249.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.23394212747019505,
+      "minimum_detectable_disparity_points": 0.5570130667302308,
+      "utility_status": "estimated"
+    },
+    {
+      "configuration": "cfpb_current",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.9570069273069506,
+      "pre_suppression_prosecutor_risk": 0.9718741931179984,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.9880295905526776,
+      "retained_share": 0.011970409447322423,
+      "reference_n": null,
+      "comparison_n": null,
+      "utility_estimable": null,
+      "reference_denial_rate": null,
+      "minimum_detectable_disparity_points": null,
+      "utility_status": "insufficient_protected_cohort_retention"
+    },
+    {
+      "configuration": "county_geo",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.8934325444247033,
+      "pre_suppression_prosecutor_risk": 0.9157655984388843,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.9348927212884388,
+      "retained_share": 0.06510727871156122,
+      "reference_n": null,
+      "comparison_n": null,
+      "utility_estimable": null,
+      "reference_denial_rate": null,
+      "minimum_detectable_disparity_points": null,
+      "utility_status": "insufficient_protected_cohort_retention"
+    },
+    {
+      "configuration": "county_banded",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.8228905404873591,
+      "pre_suppression_prosecutor_risk": 0.8600812617162866,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.8944423167555977,
+      "retained_share": 0.10555768324440234,
+      "reference_n": 687.0,
+      "comparison_n": 184.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.7438136826783115,
+      "minimum_detectable_disparity_points": 10.151626899911589,
+      "utility_status": "estimated"
+    },
+    {
+      "configuration": "state_banded",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.5734134240208711,
+      "pre_suppression_prosecutor_risk": 0.662039183389821,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.7531941728841574,
+      "retained_share": 0.2468058271158426,
+      "reference_n": 26019.0,
+      "comparison_n": 4496.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.4201929359314347,
+      "minimum_detectable_disparity_points": 2.2334084936541947,
+      "utility_status": "estimated"
+    }
+  ]
+}

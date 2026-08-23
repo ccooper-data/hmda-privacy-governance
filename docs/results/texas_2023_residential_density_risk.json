@@ -1,0 +1,1411 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "minimum_cell_size": 20,
+    "density_definition": "HMDA tract_population divided by Census Gazetteer land square miles",
+    "quintile_order": "1 is lowest residential density; 5 is highest",
+    "risk_qi_tier": "demographic_geo"
+  },
+  "cohorts": [
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 36,
+      "sample_uniqueness_rate": 0.8333333333333334,
+      "prosecutor_expected_match_risk": 0.9166666666666666
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 98,
+      "sample_uniqueness_rate": 0.826530612244898,
+      "prosecutor_expected_match_risk": 0.9081632653061225
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Joint",
+      "record_count": 53,
+      "sample_uniqueness_rate": 0.9622641509433962,
+      "prosecutor_expected_match_risk": 0.9811320754716981
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 233,
+      "sample_uniqueness_rate": 0.703862660944206,
+      "prosecutor_expected_match_risk": 0.8326180257510729
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 238780,
+      "sample_uniqueness_rate": 0.12343161068766229,
+      "prosecutor_expected_match_risk": 0.25686824692180193
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 131,
+      "sample_uniqueness_rate": 0.8396946564885496,
+      "prosecutor_expected_match_risk": 0.916030534351145
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 1025,
+      "sample_uniqueness_rate": 0.5287804878048781,
+      "prosecutor_expected_match_risk": 0.719024390243902
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Joint",
+      "record_count": 96,
+      "sample_uniqueness_rate": 0.8125,
+      "prosecutor_expected_match_risk": 0.8958333333333334
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 716,
+      "sample_uniqueness_rate": 0.6801675977653632,
+      "prosecutor_expected_match_risk": 0.8170391061452511
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 585,
+      "sample_uniqueness_rate": 0.3811965811965812,
+      "prosecutor_expected_match_risk": 0.5111111111111111
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 20,
+      "sample_uniqueness_rate": 0.7,
+      "prosecutor_expected_match_risk": 0.8
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 360,
+      "sample_uniqueness_rate": 0.6111111111111112,
+      "prosecutor_expected_match_risk": 0.7444444444444445
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Joint",
+      "record_count": 226,
+      "sample_uniqueness_rate": 0.5398230088495575,
+      "prosecutor_expected_match_risk": 0.6902654867256636
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 8799,
+      "sample_uniqueness_rate": 0.10319354472099102,
+      "prosecutor_expected_match_risk": 0.19218092965109818
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 1102,
+      "sample_uniqueness_rate": 0.5208711433756806,
+      "prosecutor_expected_match_risk": 0.705081669691469
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 530,
+      "sample_uniqueness_rate": 0.590566037735849,
+      "prosecutor_expected_match_risk": 0.749056603773585
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Joint",
+      "record_count": 338,
+      "sample_uniqueness_rate": 0.6272189349112426,
+      "prosecutor_expected_match_risk": 0.7899408284023669
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 12228,
+      "sample_uniqueness_rate": 0.1656853123977756,
+      "prosecutor_expected_match_risk": 0.3277723258096146
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Free Form Text Only",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 32,
+      "sample_uniqueness_rate": 0.9375,
+      "prosecutor_expected_match_risk": 0.96875
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 209,
+      "sample_uniqueness_rate": 0.7368421052631579,
+      "prosecutor_expected_match_risk": 0.861244019138756
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 444,
+      "sample_uniqueness_rate": 0.6576576576576577,
+      "prosecutor_expected_match_risk": 0.7995495495495498
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Joint",
+      "record_count": 1168,
+      "sample_uniqueness_rate": 0.5633561643835616,
+      "prosecutor_expected_match_risk": 0.7405821917808215
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 3239,
+      "sample_uniqueness_rate": 0.42852732324791604,
+      "prosecutor_expected_match_risk": 0.6329113924050641
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 21,
+      "sample_uniqueness_rate": 0.8095238095238095,
+      "prosecutor_expected_match_risk": 0.9047619047619048
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 109,
+      "sample_uniqueness_rate": 0.7889908256880734,
+      "prosecutor_expected_match_risk": 0.8715596330275229
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 152,
+      "sample_uniqueness_rate": 0.631578947368421,
+      "prosecutor_expected_match_risk": 0.7960526315789476
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 56969,
+      "sample_uniqueness_rate": 0.08887289578542716,
+      "prosecutor_expected_match_risk": 0.1899454089065919
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 8878,
+      "sample_uniqueness_rate": 0.24701509348952466,
+      "prosecutor_expected_match_risk": 0.4458211308853337
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Joint",
+      "record_count": 670,
+      "sample_uniqueness_rate": 0.6671641791044776,
+      "prosecutor_expected_match_risk": 0.8119402985074623
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 2466,
+      "sample_uniqueness_rate": 0.5356853203568532,
+      "prosecutor_expected_match_risk": 0.6995133819951352
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 5109,
+      "sample_uniqueness_rate": 0.44411822274417695,
+      "prosecutor_expected_match_risk": 0.6580544137796013
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 72,
+      "sample_uniqueness_rate": 0.8888888888888888,
+      "prosecutor_expected_match_risk": 0.9444444444444444
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 32186,
+      "sample_uniqueness_rate": 0.10380289566892438,
+      "prosecutor_expected_match_risk": 0.2634685888274381
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Joint",
+      "record_count": 7446,
+      "sample_uniqueness_rate": 0.33749664249261346,
+      "prosecutor_expected_match_risk": 0.5486167069567536
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 92967,
+      "sample_uniqueness_rate": 0.03572235309303301,
+      "prosecutor_expected_match_risk": 0.15849710112190712
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 60,
+      "sample_uniqueness_rate": 0.8333333333333334,
+      "prosecutor_expected_match_risk": 0.9166666666666666
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 213,
+      "sample_uniqueness_rate": 0.8075117370892019,
+      "prosecutor_expected_match_risk": 0.896713615023474
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Joint",
+      "record_count": 124,
+      "sample_uniqueness_rate": 0.8629032258064516,
+      "prosecutor_expected_match_risk": 0.9274193548387096
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 469,
+      "sample_uniqueness_rate": 0.7100213219616205,
+      "prosecutor_expected_match_risk": 0.8272921108742004
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 318202,
+      "sample_uniqueness_rate": 0.10703578230180828,
+      "prosecutor_expected_match_risk": 0.22471574660117863
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 132,
+      "sample_uniqueness_rate": 0.8333333333333334,
+      "prosecutor_expected_match_risk": 0.9166666666666666
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 1616,
+      "sample_uniqueness_rate": 0.5253712871287128,
+      "prosecutor_expected_match_risk": 0.694925742574257
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Joint",
+      "record_count": 123,
+      "sample_uniqueness_rate": 0.8617886178861789,
+      "prosecutor_expected_match_risk": 0.926829268292683
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 692,
+      "sample_uniqueness_rate": 0.7427745664739884,
+      "prosecutor_expected_match_risk": 0.8583815028901732
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 1503,
+      "sample_uniqueness_rate": 0.39454424484364603,
+      "prosecutor_expected_match_risk": 0.556886227544909
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 55,
+      "sample_uniqueness_rate": 0.8909090909090909,
+      "prosecutor_expected_match_risk": 0.9454545454545454
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 874,
+      "sample_uniqueness_rate": 0.5263157894736842,
+      "prosecutor_expected_match_risk": 0.6967963386727686
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Joint",
+      "record_count": 523,
+      "sample_uniqueness_rate": 0.5487571701720841,
+      "prosecutor_expected_match_risk": 0.7151051625239004
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 28890,
+      "sample_uniqueness_rate": 0.0606092073381793,
+      "prosecutor_expected_match_risk": 0.14513672551055684
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 1244,
+      "sample_uniqueness_rate": 0.5836012861736335,
+      "prosecutor_expected_match_risk": 0.7491961414790993
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 43,
+      "sample_uniqueness_rate": 0.7209302325581395,
+      "prosecutor_expected_match_risk": 0.8372093023255814
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 1043,
+      "sample_uniqueness_rate": 0.5723873441994247,
+      "prosecutor_expected_match_risk": 0.7315436241610731
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Joint",
+      "record_count": 677,
+      "sample_uniqueness_rate": 0.5790251107828656,
+      "prosecutor_expected_match_risk": 0.7415066469719349
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 24000,
+      "sample_uniqueness_rate": 0.10308333333333333,
+      "prosecutor_expected_match_risk": 0.24591666666666742
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Free Form Text Only",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 55,
+      "sample_uniqueness_rate": 0.9636363636363636,
+      "prosecutor_expected_match_risk": 0.9818181818181818
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 190,
+      "sample_uniqueness_rate": 0.8210526315789474,
+      "prosecutor_expected_match_risk": 0.9
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 809,
+      "sample_uniqueness_rate": 0.5401730531520396,
+      "prosecutor_expected_match_risk": 0.7206427688504323
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Joint",
+      "record_count": 1747,
+      "sample_uniqueness_rate": 0.45506582713222665,
+      "prosecutor_expected_match_risk": 0.6473955352032055
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 4379,
+      "sample_uniqueness_rate": 0.34048869604932636,
+      "prosecutor_expected_match_risk": 0.5478419730532087
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 172,
+      "sample_uniqueness_rate": 0.8081395348837209,
+      "prosecutor_expected_match_risk": 0.8953488372093024
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Joint",
+      "record_count": 25,
+      "sample_uniqueness_rate": 0.92,
+      "prosecutor_expected_match_risk": 0.96
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 300,
+      "sample_uniqueness_rate": 0.6333333333333333,
+      "prosecutor_expected_match_risk": 0.7999999999999999
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 84831,
+      "sample_uniqueness_rate": 0.05903502257429477,
+      "prosecutor_expected_match_risk": 0.13853426223904017
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 11727,
+      "sample_uniqueness_rate": 0.22460987464824764,
+      "prosecutor_expected_match_risk": 0.4144282425172667
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Joint",
+      "record_count": 825,
+      "sample_uniqueness_rate": 0.656969696969697,
+      "prosecutor_expected_match_risk": 0.7987878787878785
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 4051,
+      "sample_uniqueness_rate": 0.44235991113305356,
+      "prosecutor_expected_match_risk": 0.6314490249321156
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 3937,
+      "sample_uniqueness_rate": 0.5201930403860807,
+      "prosecutor_expected_match_risk": 0.7028194056388112
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 76,
+      "sample_uniqueness_rate": 0.8421052631578947,
+      "prosecutor_expected_match_risk": 0.9210526315789473
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 49836,
+      "sample_uniqueness_rate": 0.07029055301388555,
+      "prosecutor_expected_match_risk": 0.20555421783449354
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Joint",
+      "record_count": 8695,
+      "sample_uniqueness_rate": 0.2580793559516964,
+      "prosecutor_expected_match_risk": 0.46083956296722
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 84200,
+      "sample_uniqueness_rate": 0.03902612826603325,
+      "prosecutor_expected_match_risk": 0.15288598574821383
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 32,
+      "sample_uniqueness_rate": 0.8125,
+      "prosecutor_expected_match_risk": 0.90625
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 131,
+      "sample_uniqueness_rate": 0.8778625954198473,
+      "prosecutor_expected_match_risk": 0.9389312977099237
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Joint",
+      "record_count": 83,
+      "sample_uniqueness_rate": 0.8433734939759037,
+      "prosecutor_expected_match_risk": 0.9156626506024096
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 276,
+      "sample_uniqueness_rate": 0.7934782608695652,
+      "prosecutor_expected_match_risk": 0.8876811594202898
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 192246,
+      "sample_uniqueness_rate": 0.16240650000520168,
+      "prosecutor_expected_match_risk": 0.31633428003700603
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 78,
+      "sample_uniqueness_rate": 0.8717948717948718,
+      "prosecutor_expected_match_risk": 0.9358974358974359
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 995,
+      "sample_uniqueness_rate": 0.6874371859296482,
+      "prosecutor_expected_match_risk": 0.8221105527638187
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Joint",
+      "record_count": 62,
+      "sample_uniqueness_rate": 0.8709677419354839,
+      "prosecutor_expected_match_risk": 0.9354838709677419
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 392,
+      "sample_uniqueness_rate": 0.75,
+      "prosecutor_expected_match_risk": 0.8647959183673469
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 793,
+      "sample_uniqueness_rate": 0.6469104665825978,
+      "prosecutor_expected_match_risk": 0.7767969735182846
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 29,
+      "sample_uniqueness_rate": 1.0,
+      "prosecutor_expected_match_risk": 1.0
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 445,
+      "sample_uniqueness_rate": 0.7662921348314606,
+      "prosecutor_expected_match_risk": 0.8629213483146068
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Joint",
+      "record_count": 333,
+      "sample_uniqueness_rate": 0.7117117117117117,
+      "prosecutor_expected_match_risk": 0.8288288288288288
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 15575,
+      "sample_uniqueness_rate": 0.1286035313001605,
+      "prosecutor_expected_match_risk": 0.27280898876404347
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 814,
+      "sample_uniqueness_rate": 0.699017199017199,
+      "prosecutor_expected_match_risk": 0.829238329238329
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 42,
+      "sample_uniqueness_rate": 0.9285714285714286,
+      "prosecutor_expected_match_risk": 0.9523809523809523
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 667,
+      "sample_uniqueness_rate": 0.6221889055472264,
+      "prosecutor_expected_match_risk": 0.7721139430284858
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Joint",
+      "record_count": 370,
+      "sample_uniqueness_rate": 0.6918918918918919,
+      "prosecutor_expected_match_risk": 0.8162162162162163
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 15817,
+      "sample_uniqueness_rate": 0.15894290952772333,
+      "prosecutor_expected_match_risk": 0.3370424227097403
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Free Form Text Only",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 42,
+      "sample_uniqueness_rate": 0.9523809523809523,
+      "prosecutor_expected_match_risk": 0.9761904761904762
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 99,
+      "sample_uniqueness_rate": 0.898989898989899,
+      "prosecutor_expected_match_risk": 0.9393939393939394
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 390,
+      "sample_uniqueness_rate": 0.7512820512820513,
+      "prosecutor_expected_match_risk": 0.8641025641025641
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Joint",
+      "record_count": 930,
+      "sample_uniqueness_rate": 0.6387096774193548,
+      "prosecutor_expected_match_risk": 0.7903225806451608
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 2447,
+      "sample_uniqueness_rate": 0.5173682059664896,
+      "prosecutor_expected_match_risk": 0.7073968124233765
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 22,
+      "sample_uniqueness_rate": 1.0,
+      "prosecutor_expected_match_risk": 1.0
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 109,
+      "sample_uniqueness_rate": 0.7981651376146789,
+      "prosecutor_expected_match_risk": 0.8807339449541285
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 196,
+      "sample_uniqueness_rate": 0.6581632653061225,
+      "prosecutor_expected_match_risk": 0.8112244897959183
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 48192,
+      "sample_uniqueness_rate": 0.10750747011952191,
+      "prosecutor_expected_match_risk": 0.22524485391765958
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 7147,
+      "sample_uniqueness_rate": 0.3647684343081013,
+      "prosecutor_expected_match_risk": 0.5753462991464945
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Joint",
+      "record_count": 491,
+      "sample_uniqueness_rate": 0.7576374745417516,
+      "prosecutor_expected_match_risk": 0.869653767820774
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 2626,
+      "sample_uniqueness_rate": 0.5769230769230769,
+      "prosecutor_expected_match_risk": 0.7414318354912426
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 2273,
+      "sample_uniqueness_rate": 0.6942366915970084,
+      "prosecutor_expected_match_risk": 0.8284205895292572
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 44,
+      "sample_uniqueness_rate": 0.9090909090909091,
+      "prosecutor_expected_match_risk": 0.9545454545454546
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 34773,
+      "sample_uniqueness_rate": 0.10246455583354902,
+      "prosecutor_expected_match_risk": 0.27731285767692665
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Joint",
+      "record_count": 4801,
+      "sample_uniqueness_rate": 0.42303686731930845,
+      "prosecutor_expected_match_risk": 0.6348677358883562
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 50680,
+      "sample_uniqueness_rate": 0.06552880820836622,
+      "prosecutor_expected_match_risk": 0.22525651144434922
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 25,
+      "sample_uniqueness_rate": 0.88,
+      "prosecutor_expected_match_risk": 0.92
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 76,
+      "sample_uniqueness_rate": 0.8947368421052632,
+      "prosecutor_expected_match_risk": 0.9473684210526315
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Joint",
+      "record_count": 46,
+      "sample_uniqueness_rate": 0.9565217391304348,
+      "prosecutor_expected_match_risk": 0.9782608695652174
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 254,
+      "sample_uniqueness_rate": 0.7440944881889764,
+      "prosecutor_expected_match_risk": 0.8425196850393699
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 159568,
+      "sample_uniqueness_rate": 0.19242579965907952,
+      "prosecutor_expected_match_risk": 0.3625726962799285
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 57,
+      "sample_uniqueness_rate": 0.8947368421052632,
+      "prosecutor_expected_match_risk": 0.9473684210526315
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 926,
+      "sample_uniqueness_rate": 0.693304535637149,
+      "prosecutor_expected_match_risk": 0.8315334773218138
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Joint",
+      "record_count": 45,
+      "sample_uniqueness_rate": 0.8666666666666667,
+      "prosecutor_expected_match_risk": 0.9333333333333333
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 352,
+      "sample_uniqueness_rate": 0.8125,
+      "prosecutor_expected_match_risk": 0.8977272727272727
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 610,
+      "sample_uniqueness_rate": 0.7278688524590164,
+      "prosecutor_expected_match_risk": 0.8508196721311475
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 21,
+      "sample_uniqueness_rate": 0.9047619047619048,
+      "prosecutor_expected_match_risk": 0.9523809523809523
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 360,
+      "sample_uniqueness_rate": 0.7972222222222223,
+      "prosecutor_expected_match_risk": 0.8916666666666667
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Joint",
+      "record_count": 190,
+      "sample_uniqueness_rate": 0.8210526315789474,
+      "prosecutor_expected_match_risk": 0.9
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 11223,
+      "sample_uniqueness_rate": 0.18497727880245923,
+      "prosecutor_expected_match_risk": 0.36968724939855424
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 667,
+      "sample_uniqueness_rate": 0.6956521739130435,
+      "prosecutor_expected_match_risk": 0.8320839580209896
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 28,
+      "sample_uniqueness_rate": 0.8571428571428571,
+      "prosecutor_expected_match_risk": 0.9285714285714286
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 561,
+      "sample_uniqueness_rate": 0.6987522281639929,
+      "prosecutor_expected_match_risk": 0.8253119429590022
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Joint",
+      "record_count": 279,
+      "sample_uniqueness_rate": 0.7096774193548387,
+      "prosecutor_expected_match_risk": 0.838709677419355
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 12480,
+      "sample_uniqueness_rate": 0.20721153846153847,
+      "prosecutor_expected_match_risk": 0.40600961538461333
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Free Form Text Only",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 60,
+      "sample_uniqueness_rate": 0.8666666666666667,
+      "prosecutor_expected_match_risk": 0.9333333333333333
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 81,
+      "sample_uniqueness_rate": 0.8765432098765432,
+      "prosecutor_expected_match_risk": 0.9382716049382716
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 327,
+      "sample_uniqueness_rate": 0.7675840978593272,
+      "prosecutor_expected_match_risk": 0.8776758409785933
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Joint",
+      "record_count": 801,
+      "sample_uniqueness_rate": 0.6754057428214731,
+      "prosecutor_expected_match_risk": 0.8177278401997503
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 2101,
+      "sample_uniqueness_rate": 0.5659209900047596,
+      "prosecutor_expected_match_risk": 0.7472632079961932
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 107,
+      "sample_uniqueness_rate": 0.8037383177570093,
+      "prosecutor_expected_match_risk": 0.897196261682243
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 165,
+      "sample_uniqueness_rate": 0.7151515151515152,
+      "prosecutor_expected_match_risk": 0.8484848484848485
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 39636,
+      "sample_uniqueness_rate": 0.13240488444848117,
+      "prosecutor_expected_match_risk": 0.2628418609345025
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 6459,
+      "sample_uniqueness_rate": 0.41043505186561385,
+      "prosecutor_expected_match_risk": 0.6197553800897965
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Joint",
+      "record_count": 382,
+      "sample_uniqueness_rate": 0.8429319371727748,
+      "prosecutor_expected_match_risk": 0.918848167539267
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 2207,
+      "sample_uniqueness_rate": 0.6615314907113728,
+      "prosecutor_expected_match_risk": 0.8047122791119172
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 1777,
+      "sample_uniqueness_rate": 0.7568936409679234,
+      "prosecutor_expected_match_risk": 0.8671918964546994
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 34,
+      "sample_uniqueness_rate": 0.9411764705882353,
+      "prosecutor_expected_match_risk": 0.9705882352941176
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 31427,
+      "sample_uniqueness_rate": 0.11550577528876443,
+      "prosecutor_expected_match_risk": 0.31084736054984197
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Joint",
+      "record_count": 4008,
+      "sample_uniqueness_rate": 0.49850299401197606,
+      "prosecutor_expected_match_risk": 0.6923652694610781
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 41726,
+      "sample_uniqueness_rate": 0.08790682068734122,
+      "prosecutor_expected_match_risk": 0.2680582850021481
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 56,
+      "sample_uniqueness_rate": 0.9285714285714286,
+      "prosecutor_expected_match_risk": 0.9642857142857143
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Joint",
+      "record_count": 26,
+      "sample_uniqueness_rate": 1.0,
+      "prosecutor_expected_match_risk": 1.0
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "2 or more minority races",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 195,
+      "sample_uniqueness_rate": 0.7743589743589744,
+      "prosecutor_expected_match_risk": 0.882051282051282
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 106537,
+      "sample_uniqueness_rate": 0.2337873227141744,
+      "prosecutor_expected_match_risk": 0.4166158236105803
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 28,
+      "sample_uniqueness_rate": 0.9285714285714286,
+      "prosecutor_expected_match_risk": 0.9642857142857143
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 726,
+      "sample_uniqueness_rate": 0.7341597796143251,
+      "prosecutor_expected_match_risk": 0.8539944903581266
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Joint",
+      "record_count": 31,
+      "sample_uniqueness_rate": 0.8709677419354839,
+      "prosecutor_expected_match_risk": 0.9354838709677419
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "American Indian or Alaska Native",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 220,
+      "sample_uniqueness_rate": 0.8045454545454546,
+      "prosecutor_expected_match_risk": 0.8954545454545455
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 443,
+      "sample_uniqueness_rate": 0.7200902934537246,
+      "prosecutor_expected_match_risk": 0.8397291196388263
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 265,
+      "sample_uniqueness_rate": 0.8415094339622642,
+      "prosecutor_expected_match_risk": 0.9207547169811321
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Joint",
+      "record_count": 133,
+      "sample_uniqueness_rate": 0.8195488721804511,
+      "prosecutor_expected_match_risk": 0.8947368421052632
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Asian",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 8577,
+      "sample_uniqueness_rate": 0.23458085577707824,
+      "prosecutor_expected_match_risk": 0.43570012824996807
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 411,
+      "sample_uniqueness_rate": 0.8126520681265207,
+      "prosecutor_expected_match_risk": 0.902676399026764
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 32,
+      "sample_uniqueness_rate": 1.0,
+      "prosecutor_expected_match_risk": 1.0
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 381,
+      "sample_uniqueness_rate": 0.7060367454068242,
+      "prosecutor_expected_match_risk": 0.8372703412073491
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Joint",
+      "record_count": 149,
+      "sample_uniqueness_rate": 0.8389261744966443,
+      "prosecutor_expected_match_risk": 0.912751677852349
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 7767,
+      "sample_uniqueness_rate": 0.28968713789107764,
+      "prosecutor_expected_match_risk": 0.5112656109179844
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Free Form Text Only",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 49,
+      "sample_uniqueness_rate": 0.8775510204081632,
+      "prosecutor_expected_match_risk": 0.9387755102040817
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 37,
+      "sample_uniqueness_rate": 0.8108108108108109,
+      "prosecutor_expected_match_risk": 0.8918918918918919
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 214,
+      "sample_uniqueness_rate": 0.8271028037383178,
+      "prosecutor_expected_match_risk": 0.9112149532710281
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Joint",
+      "record_count": 477,
+      "sample_uniqueness_rate": 0.7085953878406709,
+      "prosecutor_expected_match_risk": 0.8364779874213841
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Joint",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 1193,
+      "sample_uniqueness_rate": 0.6110645431684828,
+      "prosecutor_expected_match_risk": 0.7745180217937968
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 73,
+      "sample_uniqueness_rate": 0.863013698630137,
+      "prosecutor_expected_match_risk": 0.9315068493150684
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Native Hawaiian or Other Pacific Islander",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 102,
+      "sample_uniqueness_rate": 0.7450980392156863,
+      "prosecutor_expected_match_risk": 0.8627450980392157
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 25559,
+      "sample_uniqueness_rate": 0.17078132947298408,
+      "prosecutor_expected_match_risk": 0.31425329629484783
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 5168,
+      "sample_uniqueness_rate": 0.4436919504643963,
+      "prosecutor_expected_match_risk": 0.6493808049535588
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Joint",
+      "record_count": 262,
+      "sample_uniqueness_rate": 0.7595419847328244,
+      "prosecutor_expected_match_risk": 0.8625954198473281
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Race Not Available",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 1409,
+      "sample_uniqueness_rate": 0.6848828956706884,
+      "prosecutor_expected_match_risk": 0.8176011355571329
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Ethnicity Not Available",
+      "record_count": 1115,
+      "sample_uniqueness_rate": 0.7757847533632287,
+      "prosecutor_expected_match_risk": 0.8816143497757848
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Free Form Text Only",
+      "record_count": 31,
+      "sample_uniqueness_rate": 1.0,
+      "prosecutor_expected_match_risk": 1.0
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Hispanic or Latino",
+      "record_count": 24841,
+      "sample_uniqueness_rate": 0.13707177649853067,
+      "prosecutor_expected_match_risk": 0.3423775210337717
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Joint",
+      "record_count": 2108,
+      "sample_uniqueness_rate": 0.5744781783681214,
+      "prosecutor_expected_match_risk": 0.7556925996204943
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 24378,
+      "sample_uniqueness_rate": 0.13844449913856757,
+      "prosecutor_expected_match_risk": 0.3383788661908258
+    }
+  ]
+}

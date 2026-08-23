@@ -6,6 +6,8 @@ select
     derived_ethnicity,
     income,
     loan_amount,
+    loan_type,
+    debt_to_income_ratio,
     loan_purpose,
     occupancy_type,
     lien_status,
@@ -20,8 +22,9 @@ group by
     derived_ethnicity,
     income,
     loan_amount,
+    loan_type,
+    debt_to_income_ratio,
     loan_purpose,
     occupancy_type,
     lien_status,
     derived_dwelling_category
-

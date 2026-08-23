@@ -1,143 +1,126 @@
 # Technical Disclosure-Risk Determination Memo
 
-> **Decision status:** Completed technical recommendation for the scoped Texas 2023 analysis.
-> This is not a legal opinion or certification under a specific de-identification safe harbor.
-> A qualified reviewing organization must accept the recommendation and residual risk before use.
+> **Decision status: DRAFT TECHNICAL RECOMMENDATION.** The earlier release recommendation was
+> withdrawn after adversarial review changed the QI definition and corrected the utility cohort.
+> This is not a legal opinion or de-identification certification. Independent acceptance is pending.
 
-## Executive determination
+## Executive finding
 
-The current public-field configuration is not suitable for republication as an unsuppressed
-row-level analytical extract under the modeled institution-aware threat scenario. Of 1,041,819
-Texas 2023 HMDA applications, 94.18% are sample unique when tract, disclosed demographics,
-financial/loan context, and LEI are combined. This is a statistical disclosure-risk finding; no
-person was identified and no identified auxiliary source was acquired.
+The unsuppressed public HMDA file presents high exact-match uniqueness under the selected 14-field
+institution-aware threat model. Of 1,041,819 Texas 2023 applications, 95.70% are sample unique when
+tract, disclosed demographics, income, loan amount, loan type, debt-to-income band, loan context,
+and lender LEI are combined. This is conditional sample uniqueness—not an identification
+probability—and no person was identified or linked to an identified auxiliary source.
 
-For a derivative research release, adopt the **state-banded configuration with k≥5 suppression**:
-state geography, $50,000 income bands, $100,000 loan-amount bands, and removal of equivalence
-classes smaller than five. This configuration reduces pre-suppression sample uniqueness to
-30.24%, retains 49.71% of records at k≥5, supports an unadjusted Black–White denial-disparity MDE
-of 0.69 percentage points, and retains 135,223 decision records for the adjusted model. No
-row-level protected output is authorized by this repository; aggregate publication is the default.
+The former recommendation to adopt state-banded fields with k≥5 is no longer accepted as final.
+After aligning the privacy and utility field sets, state-banded pre-suppression uniqueness is
+57.34%, k≥5 retains 24.68% of records, and the decision-cohort Black–White MDE is 2.23 percentage
+points versus 0.56 points for today's unsuppressed public file. State-banded remains the strongest
+tested microdata candidate, but its 75.32% suppression cost requires independent purpose-specific
+acceptance. Aggregate publication remains the only currently authorized output.
 
-## 1. Scope and data
+## 1. Scope and integrity
 
-- Data: 2023 public HMDA Loan/Application Register, Texas full state-year release.
+- Data: 2023 public HMDA Loan/Application Register, complete Texas state-year release.
 - Applications: 1,041,819.
 - Bronze SHA-256: `2965d27916912b99d614764a75c0096290f1a35761b5c593725a4a33157b002a`.
-- Validation anchor: 38,026 Black-borrower Texas originations totaling $11,390,150,000. This
-  filtered query validates ingestion only and is not used to calculate subgroup uniqueness.
-- Residential context: 6,771 tracts from public HMDA `tract_population` joined to 2023 Census
-  Gazetteer land area; zero conflicting population values. Density analysis covers 1,015,333
-  applications, 97.46% of the state-year release.
+- QI definition: selected 14-field institution-aware set in `config/quasi_identifiers.yml`.
+- Residential context: 6,771 HMDA-active tracts; 1,015,333 applications matched (97.46%).
+- Preregistration: `docs/decisions/0001-preregister-group-size-decomposition.md`, committed and
+  hashed before the decomposition implementation or results.
 
-This determination applies only to this state, year, field set, transformation set, and threat
-model. It does not generalize automatically to national HMDA data or another release year.
+This determination is limited to this state, year, QI set, threat model, and transformation sweep.
 
-## 2. Ethical boundary and threat models
+## 2. Ethical boundary
 
-Guardrails were documented before empirical work. The analysis measures equivalence-class
-uniqueness and theoretical or synthetic linkage risk. It prohibits identified auxiliary datasets,
-attempted identification, row-level high-risk exports, and publication of cells below 20.
+The project prohibits identified auxiliary data, attempted identification, row-level high-risk
+exports, and published cells below 20. Export paths redact a complete aggregate record when any
+contributing reference or comparison cell is below the configured threshold. Real linkage is not
+performed; linkage modeling is synthetic only.
 
-- **Prosecutor:** knows a target is in the release and possesses some disclosed quasi-identifiers.
-- **Journalist:** has partial demographic, geographic, and transaction context but not a complete
-  identified registry.
-- **Marketer:** has broad commercial context. Real linkage is prohibited; only synthetic auxiliary
-  data may model this threat.
+## 3. Methods
 
-## 3. Methodology
+Equivalence classes are formed on the complete state-year universe before cohort filtering. SQL
+`GROUP BY` and Python `groupby(dropna=False)` retain missing QI values as explicit matching values.
+This generally enlarges missing-value classes and is conservative for uniqueness relative to
+dropping incomplete records.
 
-Equivalence classes are formed on the entire state-year release before demographic filtering.
-Three nested QI tiers isolate demographic/geographic fields, financial and loan context, and LEI.
-Risk is reported through sample uniqueness, shares below k thresholds, and prosecutor expected
-match risk. Published cohort cells contain at least 20 records.
+The utility diagnostic uses only decision actions 1, 2, 3, and 7. Denials are actions 3 and 7;
+withdrawn, incomplete, and purchased applications are excluded. The MDE is a two-sided normal
+approximation with alpha 0.05 and power 0.80. The actual unsuppressed file is reported separately
+from each hypothetical k≥5 release. Frontier columns distinguish pre-suppression uniqueness,
+post-suppression uniqueness, and suppression cost.
 
-Four protection configurations are evaluated: current tract-level fields, county geography,
-county plus numeric bands, and state plus wider numeric bands. The utility frontier reports k≥5
-retention and the two-sided 80%-power, 5%-alpha minimum detectable denial-rate disparity. A
-decision-only logistic model estimates descriptive Black–White disparity after configuration and
-k≥5 protection are applied.
+## 4. Group-size decomposition
 
-A zero-truncated gamma–Poisson population-uniqueness model was fit across declared coverage
-scenarios. Every real-data fit collapsed to a gamma-shape boundary, so the estimator returns
-`boundary_fit_not_reportable`. No population-unique point estimate is accepted.
+The raw demographic/geographic uniqueness ratio is 2.830: 16.03% for Black non-Hispanic versus
+5.66% for White non-Hispanic applicants. That raw comparison is not interpreted as an independent
+racial effect.
 
-## 4. Quantified risk findings
+The preregistered 1,000-iteration within-tract permutation preserved every tract's joint
+race/ethnicity margins. Its null ratio was 2.738 (95% interval 2.695–2.778); the observed ratio was
+above the null, two-sided plus-one p=0.001. However, in the preregistered size-matched analysis—243
+tracts, 5,193 Black and 5,162 White applications—the ratio was 0.975 (tract-bootstrap 95% interval
+0.878–1.084). Because both preregistered conditions were required, the unqualified residual racial
+disparity claim is withdrawn.
 
-| QI tier | Sample uniqueness | Prosecutor risk |
-|---|---:|---:|
-| Demographic + tract geography | 14.44% | 28.44% |
-| Financial/loan context added | 87.30% | 91.66% |
-| Institution-aware, including LEI | 94.18% | 96.18% |
+The supported policy interpretation is structural: much of the aggregate disparity arises because
+race is released and locally smaller demographic groups necessarily form smaller matching classes.
+The remedy should target geographic and financial resolution rather than removing race, which would
+undermine HMDA's fair-lending purpose. The permutation result also indicates residual within-tract
+association before size matching, but it does not survive the preregistered equal-size comparison.
 
-Financial and loan context is the dominant risk amplifier. LEI adds approximately 6.89 percentage
-points of sample uniqueness beyond the financial-context tier.
+## 5. Density findings
 
-Under the demographic/geographic threat model, Black non-Hispanic applicants have 16.03% sample
-uniqueness and 32.86% prosecutor risk, compared with 5.66% and 19.51% for White non-Hispanic
-applicants. The residual privacy burden is not evenly distributed.
+Black non-Hispanic uniqueness by residential-density quintile is 16.57%, 10.31%, 15.89%, 20.72%,
+and 28.97%. The series is U-shaped—not monotone—and the low-density expectation partially holds
+because quintile 1 exceeds quintiles 2 and 3. White non-Hispanic rates are 3.57%, 3.90%, 6.55%,
+8.79%, and 13.84%.
 
-The preregistered expectation that risk would peak in low-density residential tracts did not hold.
-Overall uniqueness is 12.34% in the lowest-density quintile and 23.38% in the highest. For Black
-non-Hispanic applicants it rises from 16.57% to 28.97%; for White non-Hispanic applicants, from
-3.57% to 13.84%. This differs from release density, where risk decreases as the number of HMDA
-applications per tract increases. Residential density and release density are not interchangeable.
+Residential- and release-density quintiles are related but not interchangeable: their tract-level
+correlation is -0.242 across 6,771 matched tracts. Within every residential quintile, uniqueness
+falls as release volume rises. Residential quintiles include only HMDA-active tracts with available
+population and positive land area, and equalize tract counts rather than application counts.
+The 26,486 unmatched applications are separately audited by race, ethnicity, action, dwelling type,
+and lender in the generated density-diagnostics artifact.
 
-## 5. Quantified utility impact
+## 6. Corrected privacy–utility frontier
 
-| Configuration | Uniqueness | Retained at k≥5 | Unadjusted MDE |
-|---|---:|---:|---:|
-| CFPB current | 94.18% | 1.70% | Not estimable |
-| County geography | 87.35% | 8.00% | Not estimable |
-| County + $25k/$50k bands | 69.48% | 14.63% | 2.50 points |
-| State + $50k/$100k bands | 30.24% | 49.71% | 0.69 points |
+| Release state | Pre-suppression uniqueness | Post-suppression uniqueness | Retained | Decision MDE |
+|---|---:|---:|---:|---:|
+| Actual CFPB unsuppressed | 95.70% | 95.70% | 100.00% | 0.56 pp |
+| Current fields + k≥5 | 95.70% | 0.00% | 1.20% | Not estimable |
+| County geography + k≥5 | 89.34% | 0.00% | 6.51% | Not estimable |
+| County + $25k/$50k bands + k≥5 | 82.29% | 0.00% | 10.56% | 10.15 pp |
+| State + $50k/$100k bands + k≥5 | 57.34% | 0.00% | 24.68% | 2.23 pp |
 
-Current and county-only configurations retain no usable Black–White comparison after k≥5. The
-banded configurations create larger equivalence classes and improve both privacy and analytical
-utility under suppression.
+The zero post-suppression uniqueness is mechanical under k≥5 and is not a claim of anonymity.
+Attribute disclosure, linkage under omitted QIs, and model misspecification remain possible.
 
-The adjusted models converge for both estimable configurations. County-banded adjusted odds
-ratio is 2.17 (95% CI 1.74–2.71; n=8,491). State-banded adjusted odds ratio is 2.04 (95% CI
-1.95–2.13; n=135,223). These are descriptive conditional disparities, not causal findings.
+The county-banded adjusted model did not converge (n=871) and cannot support comparison. The
+state-banded model converged (n=30,515) with descriptive adjusted OR 2.06 (95% CI 1.82–2.33).
+Exact covariate common support covers 37.0% of retained White records and 91.7% of retained Black
+records, confirming material selection into modal QI cells. The estimate is descriptive, not causal,
+and is not directly comparable with the failed county model.
 
-## 6. Recommendation and controls
+## 7. Draft recommendation
 
-1. Do not create an additional unsuppressed row-level derivative of the current public fields.
-2. If a derivative microdata research release is required, use state geography, $50,000 income
-   bands, $100,000 loan-amount bands, and k≥5 suppression.
-3. Keep LEI out unless a documented use case justifies its 6.89-point risk increment and additional
-   protection is applied.
-4. Publish project results as aggregate tables and figures with minimum cell size 20.
-5. Require purpose approval, immutable configuration metadata, and review for any exception.
+1. Do not republish an additional unsuppressed row-level derivative.
+2. Publish project findings only as aggregates with minimum cell size 20.
+3. If microdata are operationally required, treat state-banded plus k≥5 as a candidate for a
+   controlled-access environment—not an approved public release—pending purpose-specific review of
+   its 75.32% suppression and 2.23-point MDE.
+4. Keep LEI out of a derivative unless a documented analytical need and additional protection justify it.
+5. Re-evaluate for every year, QI change, geography vintage, threat-model change, or intended user.
 
-## 7. Residual risk accepted and rationale
+## 8. Residual uncertainty
 
-The recommendation does not make the source data anonymous. Pre-suppression uniqueness remains
-30.24%, half the release is removed at k≥5, model results are QI-sensitive, and population
-uniqueness is not estimable. Residual risk is accepted only for a controlled derivative because
-small classes are excluded, precision is reduced, and utility remains stronger than under other
-tested k≥5 alternatives. Aggregate-only publication accepts substantially less disclosure risk
-and remains the default.
-
-## 8. Re-evaluation triggers
-
-- A new HMDA year, geography vintage, or material source-schema change.
-- Addition or removal of a QI, especially LEI, tract, income, or loan amount.
-- New evidence about realistic auxiliary-data availability.
-- A change in thresholds, intended users, access controls, or publication purpose.
-- Subgroup risk exceeding the accepted level or a material density-pattern change.
-- A validated population-uniqueness estimator producing a stable result.
-- Model validation failure, non-convergence, or material specification change.
-
-## 9. Limitations and review record
-
-HMDA omits some legitimate underwriting factors, so adjusted disparities may contain omitted
-variable bias. Confidence intervals are model-based and not lender- or geography-cluster robust.
-Tract population density is contextual and not an official rural classification. Unmatched tracts
-are excluded. The protection sweep is not exhaustive. No real identified linkage was performed,
-so threat results remain conditional on stated adversary knowledge.
+Population uniqueness remains non-reportable because every gamma–Poisson fit reached a parameter
+boundary. The protection sweep is not exhaustive. Confidence intervals are model-based and not
+lender- or geography-cluster robust. HMDA omits legitimate underwriting variables. Density-join
+exclusions may be selective. No actual linkage attack was performed.
 
 - **Prepared by:** Cory Cooper
 - **Analysis date:** 2026-08-23
 - **Required approver:** Independent privacy/governance reviewer
-- **Review decision:** Pending external acceptance
+- **Review decision:** Pending

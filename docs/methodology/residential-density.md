@@ -4,6 +4,8 @@ This analysis tests whether disclosure risk concentrates in low-density Census t
 only aggregate geography context: the public HMDA LAR `tract_population` field and 2023 Census
 Gazetteer tract land area. Residential density is tract population divided by land square
 miles. Texas tracts are ranked into five equal-count tract groups; quintile 1 is lowest density.
+Because the population value is carried on HMDA records, the universe is HMDA-active tracts rather
+than every residential tract. Equal tract counts do not imply equal application counts.
 
 HMDA applications are joined to tract context by the 11-digit Census GEOID. Equivalence-class
 sizes are computed on the complete state-year HMDA release using the demographic/geographic QI
@@ -14,3 +16,5 @@ The HMDA tract-population field follows the census-data vintage used for the pub
 land area is created for statistical purposes. Density
 quintiles describe residential context, not an official rural/urban classification. The analysis
 must report join coverage and should not generalize unmatched tracts.
+The release includes a dropped-versus-retained composition audit and a two-way cross of residential
+density with HMDA applications-per-tract release density.

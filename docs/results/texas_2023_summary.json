@@ -1,21 +1,621 @@
 {
-  "scope": {"year": 2023, "state": "TX", "applications": 1041819},
+  "scope": {
+    "year": 2023,
+    "state": "TX",
+    "applications": 1041819
+  },
+  "qi_definition": "selected_14_field_institution_aware_set",
   "frontier": [
-    {"configuration": "cfpb_current", "current": true, "uniqueness": 0.9418430649, "retained_k5": 0.01702695, "mde_points": null},
-    {"configuration": "county_geo", "current": false, "uniqueness": 0.8735164170, "retained_k5": 0.0800186981, "mde_points": null},
-    {"configuration": "county_banded", "current": false, "uniqueness": 0.6947531193, "retained_k5": 0.1463488379, "mde_points": 2.5035726178},
-    {"configuration": "state_banded", "current": false, "uniqueness": 0.3023855391, "retained_k5": 0.4971314595, "mde_points": 0.6893287525}
+    {
+      "configuration": "cfpb_current_unsuppressed",
+      "is_current_baseline": true,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.9570069273069506,
+      "pre_suppression_prosecutor_risk": 0.9718741931179984,
+      "post_suppression_uniqueness_rate": 0.9570069273069506,
+      "suppression_cost_share": 0.0,
+      "retained_share": 1.0,
+      "reference_n": 233686.0,
+      "comparison_n": 56249.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.23394212747019505,
+      "minimum_detectable_disparity_points": 0.5570130667302308,
+      "utility_status": "estimated"
+    },
+    {
+      "configuration": "cfpb_current",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.9570069273069506,
+      "pre_suppression_prosecutor_risk": 0.9718741931179984,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.9880295905526776,
+      "retained_share": 0.011970409447322423,
+      "reference_n": null,
+      "comparison_n": null,
+      "utility_estimable": null,
+      "reference_denial_rate": null,
+      "minimum_detectable_disparity_points": null,
+      "utility_status": "insufficient_protected_cohort_retention"
+    },
+    {
+      "configuration": "county_geo",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.8934325444247033,
+      "pre_suppression_prosecutor_risk": 0.9157655984388843,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.9348927212884388,
+      "retained_share": 0.06510727871156122,
+      "reference_n": null,
+      "comparison_n": null,
+      "utility_estimable": null,
+      "reference_denial_rate": null,
+      "minimum_detectable_disparity_points": null,
+      "utility_status": "insufficient_protected_cohort_retention"
+    },
+    {
+      "configuration": "county_banded",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.8228905404873591,
+      "pre_suppression_prosecutor_risk": 0.8600812617162866,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.8944423167555977,
+      "retained_share": 0.10555768324440234,
+      "reference_n": 687.0,
+      "comparison_n": 184.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.7438136826783115,
+      "minimum_detectable_disparity_points": 10.151626899911589,
+      "utility_status": "estimated"
+    },
+    {
+      "configuration": "state_banded",
+      "is_current_baseline": false,
+      "record_count": 1041819,
+      "pre_suppression_uniqueness_rate": 0.5734134240208711,
+      "pre_suppression_prosecutor_risk": 0.662039183389821,
+      "post_suppression_uniqueness_rate": 0.0,
+      "suppression_cost_share": 0.7531941728841574,
+      "retained_share": 0.2468058271158426,
+      "reference_n": 26019.0,
+      "comparison_n": 4496.0,
+      "utility_estimable": true,
+      "reference_denial_rate": 0.4201929359314347,
+      "minimum_detectable_disparity_points": 2.2334084936541947,
+      "utility_status": "estimated"
+    }
+  ],
+  "qi_sensitivity": [
+    {
+      "qi_tier": "demographic_geo",
+      "record_count": 1041819.0,
+      "sample_uniqueness_rate": 0.14442719896642314,
+      "prosecutor_expected_match_risk": 0.28440448868757434
+    },
+    {
+      "qi_tier": "financial_context",
+      "record_count": 1041819.0,
+      "sample_uniqueness_rate": 0.9199784223555147,
+      "prosecutor_expected_match_risk": 0.9465079826726139
+    },
+    {
+      "qi_tier": "institution_aware",
+      "record_count": 1041819.0,
+      "sample_uniqueness_rate": 0.9570069273069506,
+      "prosecutor_expected_match_risk": 0.9718741931179984
+    }
   ],
   "residential_density": [
-    {"quintile": 1, "overall_uniqueness": 0.1234316107, "black_non_hispanic_uniqueness": 0.1656853124, "white_non_hispanic_uniqueness": 0.0357223531},
-    {"quintile": 2, "overall_uniqueness": 0.1070357823, "black_non_hispanic_uniqueness": 0.1030833333, "white_non_hispanic_uniqueness": 0.0390261283},
-    {"quintile": 3, "overall_uniqueness": 0.1624065000, "black_non_hispanic_uniqueness": 0.1589429095, "white_non_hispanic_uniqueness": 0.0655288082},
-    {"quintile": 4, "overall_uniqueness": 0.1924257997, "black_non_hispanic_uniqueness": 0.2072115385, "white_non_hispanic_uniqueness": 0.0879068207},
-    {"quintile": 5, "overall_uniqueness": 0.2337873227, "black_non_hispanic_uniqueness": 0.2896871379, "white_non_hispanic_uniqueness": 0.1384444991}
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 238780,
+      "sample_uniqueness_rate": 0.12343161068766229,
+      "prosecutor_expected_match_risk": 0.25686824692180193
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 12228,
+      "sample_uniqueness_rate": 0.1656853123977756,
+      "prosecutor_expected_match_risk": 0.3277723258096146
+    },
+    {
+      "residential_density_quintile": 1,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 92967,
+      "sample_uniqueness_rate": 0.03572235309303301,
+      "prosecutor_expected_match_risk": 0.15849710112190712
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 318202,
+      "sample_uniqueness_rate": 0.10703578230180828,
+      "prosecutor_expected_match_risk": 0.22471574660117863
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 24000,
+      "sample_uniqueness_rate": 0.10308333333333333,
+      "prosecutor_expected_match_risk": 0.24591666666666742
+    },
+    {
+      "residential_density_quintile": 2,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 84200,
+      "sample_uniqueness_rate": 0.03902612826603325,
+      "prosecutor_expected_match_risk": 0.15288598574821383
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 192246,
+      "sample_uniqueness_rate": 0.16240650000520168,
+      "prosecutor_expected_match_risk": 0.31633428003700603
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 15817,
+      "sample_uniqueness_rate": 0.15894290952772333,
+      "prosecutor_expected_match_risk": 0.3370424227097403
+    },
+    {
+      "residential_density_quintile": 3,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 50680,
+      "sample_uniqueness_rate": 0.06552880820836622,
+      "prosecutor_expected_match_risk": 0.22525651144434922
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 159568,
+      "sample_uniqueness_rate": 0.19242579965907952,
+      "prosecutor_expected_match_risk": 0.3625726962799285
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 12480,
+      "sample_uniqueness_rate": 0.20721153846153847,
+      "prosecutor_expected_match_risk": 0.40600961538461333
+    },
+    {
+      "residential_density_quintile": 4,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 41726,
+      "sample_uniqueness_rate": 0.08790682068734122,
+      "prosecutor_expected_match_risk": 0.2680582850021481
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "ALL",
+      "derived_ethnicity": "ALL",
+      "record_count": 106537,
+      "sample_uniqueness_rate": 0.2337873227141744,
+      "prosecutor_expected_match_risk": 0.4166158236105803
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "Black or African American",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 7767,
+      "sample_uniqueness_rate": 0.28968713789107764,
+      "prosecutor_expected_match_risk": 0.5112656109179844
+    },
+    {
+      "residential_density_quintile": 5,
+      "derived_race": "White",
+      "derived_ethnicity": "Not Hispanic or Latino",
+      "record_count": 24378,
+      "sample_uniqueness_rate": 0.13844449913856757,
+      "prosecutor_expected_match_risk": 0.3383788661908258
+    }
   ],
+  "density_diagnostics": {
+    "density_association": {
+      "tract_quintile_correlation": -0.2421267871924147,
+      "matched_tracts": 6771
+    },
+    "two_way_risk": [
+      {
+        "residential_density_quintile": 1,
+        "release_density_quintile": 1,
+        "record_count": 5273,
+        "sample_uniqueness_rate": 0.3193627915797459,
+        "prosecutor_expected_match_risk": 0.5336620519628315
+      },
+      {
+        "residential_density_quintile": 1,
+        "release_density_quintile": 2,
+        "record_count": 15830,
+        "sample_uniqueness_rate": 0.22703727100442198,
+        "prosecutor_expected_match_risk": 0.42672141503474215
+      },
+      {
+        "residential_density_quintile": 1,
+        "release_density_quintile": 3,
+        "record_count": 26578,
+        "sample_uniqueness_rate": 0.1833471292046053,
+        "prosecutor_expected_match_risk": 0.3594326134396858
+      },
+      {
+        "residential_density_quintile": 1,
+        "release_density_quintile": 4,
+        "record_count": 46004,
+        "sample_uniqueness_rate": 0.15796452482392837,
+        "prosecutor_expected_match_risk": 0.3167550647769734
+      },
+      {
+        "residential_density_quintile": 1,
+        "release_density_quintile": 5,
+        "record_count": 145095,
+        "sample_uniqueness_rate": 0.08308349701919432,
+        "prosecutor_expected_match_risk": 0.19050277404460164
+      },
+      {
+        "residential_density_quintile": 2,
+        "release_density_quintile": 1,
+        "record_count": 6867,
+        "sample_uniqueness_rate": 0.3652249890782001,
+        "prosecutor_expected_match_risk": 0.5709916994320672
+      },
+      {
+        "residential_density_quintile": 2,
+        "release_density_quintile": 2,
+        "record_count": 12888,
+        "sample_uniqueness_rate": 0.2571384233395407,
+        "prosecutor_expected_match_risk": 0.4503414028553678
+      },
+      {
+        "residential_density_quintile": 2,
+        "release_density_quintile": 3,
+        "record_count": 23383,
+        "sample_uniqueness_rate": 0.201043493136039,
+        "prosecutor_expected_match_risk": 0.3804900996450385
+      },
+      {
+        "residential_density_quintile": 2,
+        "release_density_quintile": 4,
+        "record_count": 34759,
+        "sample_uniqueness_rate": 0.1648781610518139,
+        "prosecutor_expected_match_risk": 0.32791507235535833
+      },
+      {
+        "residential_density_quintile": 2,
+        "release_density_quintile": 5,
+        "record_count": 240305,
+        "sample_uniqueness_rate": 0.07409333971411332,
+        "prosecutor_expected_match_risk": 0.17263477663804477
+      },
+      {
+        "residential_density_quintile": 3,
+        "release_density_quintile": 1,
+        "record_count": 6258,
+        "sample_uniqueness_rate": 0.3772770853307766,
+        "prosecutor_expected_match_risk": 0.574145094279323
+      },
+      {
+        "residential_density_quintile": 3,
+        "release_density_quintile": 2,
+        "record_count": 17480,
+        "sample_uniqueness_rate": 0.270766590389016,
+        "prosecutor_expected_match_risk": 0.4672196796338671
+      },
+      {
+        "residential_density_quintile": 3,
+        "release_density_quintile": 3,
+        "record_count": 28378,
+        "sample_uniqueness_rate": 0.21640002819085208,
+        "prosecutor_expected_match_risk": 0.3998519980266356
+      },
+      {
+        "residential_density_quintile": 3,
+        "release_density_quintile": 4,
+        "record_count": 46928,
+        "sample_uniqueness_rate": 0.17656836004091375,
+        "prosecutor_expected_match_risk": 0.3456145584725485
+      },
+      {
+        "residential_density_quintile": 3,
+        "release_density_quintile": 5,
+        "record_count": 93202,
+        "sample_uniqueness_rate": 0.10408574923284908,
+        "prosecutor_expected_match_risk": 0.2305529924250558
+      },
+      {
+        "residential_density_quintile": 4,
+        "release_density_quintile": 1,
+        "record_count": 5972,
+        "sample_uniqueness_rate": 0.3796048225050234,
+        "prosecutor_expected_match_risk": 0.5859008707300745
+      },
+      {
+        "residential_density_quintile": 4,
+        "release_density_quintile": 2,
+        "record_count": 20009,
+        "sample_uniqueness_rate": 0.2786246189214853,
+        "prosecutor_expected_match_risk": 0.47488630116447417
+      },
+      {
+        "residential_density_quintile": 4,
+        "release_density_quintile": 3,
+        "record_count": 32731,
+        "sample_uniqueness_rate": 0.22605481042436834,
+        "prosecutor_expected_match_risk": 0.41214750542298667
+      },
+      {
+        "residential_density_quintile": 4,
+        "release_density_quintile": 4,
+        "record_count": 49749,
+        "sample_uniqueness_rate": 0.18291824961305755,
+        "prosecutor_expected_match_risk": 0.3549820096886344
+      },
+      {
+        "residential_density_quintile": 4,
+        "release_density_quintile": 5,
+        "record_count": 51107,
+        "sample_uniqueness_rate": 0.12452305946347858,
+        "prosecutor_expected_match_risk": 0.26814330717905577
+      },
+      {
+        "residential_density_quintile": 5,
+        "release_density_quintile": 1,
+        "record_count": 11266,
+        "sample_uniqueness_rate": 0.4131013669447896,
+        "prosecutor_expected_match_risk": 0.6140600035505057
+      },
+      {
+        "residential_density_quintile": 5,
+        "release_density_quintile": 2,
+        "record_count": 22823,
+        "sample_uniqueness_rate": 0.28436226613503923,
+        "prosecutor_expected_match_risk": 0.483415852429563
+      },
+      {
+        "residential_density_quintile": 5,
+        "release_density_quintile": 3,
+        "record_count": 27463,
+        "sample_uniqueness_rate": 0.22878054109165058,
+        "prosecutor_expected_match_risk": 0.4191457597494783
+      },
+      {
+        "residential_density_quintile": 5,
+        "release_density_quintile": 4,
+        "record_count": 27096,
+        "sample_uniqueness_rate": 0.19036020076764099,
+        "prosecutor_expected_match_risk": 0.3651092412164122
+      },
+      {
+        "residential_density_quintile": 5,
+        "release_density_quintile": 5,
+        "record_count": 17889,
+        "sample_uniqueness_rate": 0.1298004360221365,
+        "prosecutor_expected_match_risk": 0.2811783777740475
+      }
+    ],
+    "join_exclusion_artifact": "docs/results/texas_2023_density_diagnostics.json"
+  },
+  "group_size_decomposition": {
+    "metadata": {
+      "aggregate_only": true,
+      "preregistration": "docs/decisions/0001-preregister-group-size-decomposition.md",
+      "equivalence_universe": "full_state_year",
+      "iterations": 1000,
+      "seed": 20260823,
+      "minimum_cell_size": 20
+    },
+    "uniqueness_by_group_size": [
+      {
+        "group_size_bin": "20-49",
+        "derived_race": "White",
+        "record_count": 63605,
+        "unique_records": 5716,
+        "sample_uniqueness_rate": 0.08986714880905589
+      },
+      {
+        "group_size_bin": "100+",
+        "derived_race": "White",
+        "record_count": 115593,
+        "unique_records": 1297,
+        "sample_uniqueness_rate": 0.011220402619535785
+      },
+      {
+        "group_size_bin": "50-99",
+        "derived_race": "White",
+        "record_count": 101587,
+        "unique_records": 3210,
+        "sample_uniqueness_rate": 0.03159853130813982
+      },
+      {
+        "group_size_bin": "10-19",
+        "derived_race": "White",
+        "record_count": 12337,
+        "unique_records": 3300,
+        "sample_uniqueness_rate": 0.26748804409499877
+      },
+      {
+        "group_size_bin": "100+",
+        "derived_race": "Black or African American",
+        "record_count": 18853,
+        "unique_records": 217,
+        "sample_uniqueness_rate": 0.011510104492653689
+      },
+      {
+        "group_size_bin": "20-49",
+        "derived_race": "Black or African American",
+        "record_count": 18813,
+        "unique_records": 1825,
+        "sample_uniqueness_rate": 0.09700738850794663
+      },
+      {
+        "group_size_bin": "50-99",
+        "derived_race": "Black or African American",
+        "record_count": 11517,
+        "unique_records": 384,
+        "sample_uniqueness_rate": 0.033342016150039074
+      },
+      {
+        "group_size_bin": "2",
+        "derived_race": "White",
+        "record_count": 424,
+        "unique_records": 330,
+        "sample_uniqueness_rate": 0.7783018867924528
+      },
+      {
+        "group_size_bin": "10-19",
+        "derived_race": "Black or African American",
+        "record_count": 11900,
+        "unique_records": 2724,
+        "sample_uniqueness_rate": 0.2289075630252101
+      },
+      {
+        "group_size_bin": "5-9",
+        "derived_race": "White",
+        "record_count": 4572,
+        "unique_records": 2022,
+        "sample_uniqueness_rate": 0.442257217847769
+      },
+      {
+        "group_size_bin": "3-4",
+        "derived_race": "Black or African American",
+        "record_count": 3024,
+        "unique_records": 1755,
+        "sample_uniqueness_rate": 0.5803571428571429
+      },
+      {
+        "group_size_bin": "5-9",
+        "derived_race": "Black or African American",
+        "record_count": 7714,
+        "unique_records": 3167,
+        "sample_uniqueness_rate": 0.41055224267565466
+      },
+      {
+        "group_size_bin": "3-4",
+        "derived_race": "White",
+        "record_count": 1318,
+        "unique_records": 841,
+        "sample_uniqueness_rate": 0.6380880121396054
+      },
+      {
+        "group_size_bin": "1",
+        "derived_race": "Black or African American",
+        "record_count": 866,
+        "unique_records": 866,
+        "sample_uniqueness_rate": 1.0
+      },
+      {
+        "group_size_bin": "1",
+        "derived_race": "White",
+        "record_count": 256,
+        "unique_records": 256,
+        "sample_uniqueness_rate": 1.0
+      },
+      {
+        "group_size_bin": "2",
+        "derived_race": "Black or African American",
+        "record_count": 1248,
+        "unique_records": 912,
+        "sample_uniqueness_rate": 0.7307692307692307
+      }
+    ],
+    "size_matched_comparison": {
+      "matching_tolerance_ratio": 1.2,
+      "matched_tracts": 243,
+      "black_records": 5193,
+      "white_records": 5162,
+      "black_uniqueness": 0.11072597727710379,
+      "white_uniqueness": 0.11352189074002325,
+      "uniqueness_ratio": 0.9753711513727128,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260823,
+      "ratio_ci_low": 0.8779544637369933,
+      "ratio_ci_high": 1.0840939936720067,
+      "underpowered": false
+    },
+    "permutation_null": {
+      "observed_ratio": 2.830156164746566,
+      "null_mean": 2.7375317192989135,
+      "null_std": 0.02085057289510931,
+      "null_ci_low": 2.6950262019642808,
+      "null_ci_high": 2.7782347381291124,
+      "p_value_two_sided": 0.000999000999000999,
+      "iterations": 1000,
+      "seed": 20260823
+    },
+    "decision": {
+      "withdraw_unqualified_residual_disparity_claim": true,
+      "rule": "observed above null 97.5th percentile with p<0.05 and supported size-match"
+    }
+  },
   "adjusted_utility": [
-    {"configuration": "county_banded", "odds_ratio": 2.1715951778, "ci_low": 1.7410457457, "ci_high": 2.7086167195, "records": 8491},
-    {"configuration": "state_banded", "odds_ratio": 2.0359848691, "ci_low": 1.9486431627, "ci_high": 2.1272413885, "records": 135223}
+    {
+      "configuration": "cfpb_current",
+      "status": "insufficient_retained_comparison",
+      "suppression_status": "suppressed_minimum_cell",
+      "minimum_cell_size": 20
+    },
+    {
+      "configuration": "county_geo",
+      "status": "insufficient_retained_comparison",
+      "suppression_status": "suppressed_minimum_cell",
+      "minimum_cell_size": 20
+    },
+    {
+      "status": "maximum_iterations_reached",
+      "record_count": 871,
+      "reference_n": 687,
+      "comparison_n": 184,
+      "reference_denial_rate": 0.7438136826783115,
+      "comparison_denial_rate": 0.5815217391304348,
+      "adjusted_log_odds_coefficient": 0.10523364873883222,
+      "adjusted_odds_ratio": 1.1109701568091923,
+      "odds_ratio_ci_low": 0.041287644421349044,
+      "odds_ratio_ci_high": 29.894044734662366,
+      "approximate_average_marginal_effect_points": 0.14496929875653786,
+      "common_support_reference_share": 0.21106259097525473,
+      "common_support_comparison_share": 0.42391304347826086,
+      "converged": false,
+      "iterations": 100,
+      "configuration": "county_banded"
+    },
+    {
+      "status": "estimated",
+      "record_count": 30515,
+      "reference_n": 26019,
+      "comparison_n": 4496,
+      "reference_denial_rate": 0.4201929359314347,
+      "comparison_denial_rate": 0.4859875444839858,
+      "adjusted_log_odds_coefficient": 0.7217990061801585,
+      "adjusted_odds_ratio": 2.0581324751887493,
+      "odds_ratio_ci_low": 1.8185655453710274,
+      "odds_ratio_ci_high": 2.329258517081576,
+      "approximate_average_marginal_effect_points": 7.6415963855947,
+      "common_support_reference_share": 0.3702294477112879,
+      "common_support_comparison_share": 0.916814946619217,
+      "converged": true,
+      "iterations": 26,
+      "configuration": "state_banded"
+    }
   ],
-  "population_uniqueness": {"status": "boundary_fit_not_reportable"}
+  "population_uniqueness": {
+    "status": "boundary_fit_not_reportable"
+  }
 }

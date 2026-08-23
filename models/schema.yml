@@ -71,6 +71,8 @@ models:
       - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: income, data_type: double, meta: {classification: sensitive}}
       - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: debt_to_income_ratio, data_type: varchar, meta: {classification: sensitive}}
       - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -113,6 +115,8 @@ models:
       - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: income, data_type: double, meta: {classification: sensitive}}
       - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: debt_to_income_ratio, data_type: varchar, meta: {classification: sensitive}}
       - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -187,14 +191,46 @@ models:
       - {name: configuration, data_type: varchar, meta: {classification: public}}
       - {name: is_current_baseline, data_type: boolean, meta: {classification: public}}
       - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: pre_suppression_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: pre_suppression_prosecutor_risk, data_type: double, meta: {classification: sensitive}}
+      - {name: post_suppression_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: suppression_cost_share, data_type: double, meta: {classification: public}}
+      - {name: retained_share, data_type: double, meta: {classification: public}}
+      - {name: reference_n, data_type: double, meta: {classification: sensitive}}
+      - {name: comparison_n, data_type: double, meta: {classification: sensitive}}
+      - {name: utility_estimable, data_type: boolean, meta: {classification: public}}
+      - {name: reference_denial_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: minimum_detectable_disparity_points, data_type: double, meta: {classification: sensitive}}
+
+  - name: protection_utility_cells
+    description: Internal aggregate decision and class-size cells for frontier utility.
+    meta: {publication: prohibited}
+    columns:
+      - {name: configuration, data_type: varchar, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: action_taken, data_type: integer, meta: {classification: sensitive}}
+      - {name: k, data_type: bigint, meta: {classification: sensitive}}
+      - {name: record_count, data_type: bigint, meta: {classification: sensitive}}
+
+  - name: risk_by_density_cross
+    description: Aggregate uniqueness crossing residential and release-density quintiles.
+    meta: {publication: published}
+    columns:
+      - {name: residential_density_quintile, data_type: bigint, meta: {classification: public}}
+      - {name: release_density_quintile, data_type: bigint, meta: {classification: public}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
       - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
       - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
-      - {name: retained_share_k5, data_type: double, meta: {classification: public}}
-      - {name: reference_n_k5, data_type: double, meta: {classification: sensitive}}
-      - {name: comparison_n_k5, data_type: double, meta: {classification: sensitive}}
-      - {name: utility_estimable_k5, data_type: boolean, meta: {classification: public}}
-      - {name: reference_denial_rate, data_type: double, meta: {classification: sensitive}}
-      - {name: minimum_detectable_disparity_points_k5, data_type: double, meta: {classification: sensitive}}
+
+  - name: density_join_exclusion_audit
+    description: Aggregate dropped-versus-retained density-join composition audit.
+    meta: {publication: published}
+    columns:
+      - {name: join_status, data_type: varchar, meta: {classification: public}}
+      - {name: dimension, data_type: varchar, meta: {classification: public}}
+      - {name: category, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
 
   - name: fair_lending_modeling_cohort
     description: Internal-only decision cohort retained after configuration-specific k5 suppression.
@@ -204,6 +240,7 @@ models:
       - {name: is_black, data_type: integer, meta: {classification: sensitive}}
       - {name: is_denied, data_type: integer, meta: {classification: sensitive}}
       - {name: protected_income, data_type: double, meta: {classification: sensitive}}
+      - {name: protected_geography, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: protected_loan_amount, data_type: double, meta: {classification: quasi_identifier}}
       - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: applicant_sex, data_type: varchar, meta: {classification: quasi_identifier}}

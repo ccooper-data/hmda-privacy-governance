@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "outcome": "denial among action_taken 1, 2, 3, or 7; denials are 3 or 7",
+    "comparison": "Black non-Hispanic versus White non-Hispanic",
+    "protection_order": "configuration-specific transformation and k>=5 retention precede fitting",
+    "model": "logistic IRLS adjusted for disclosed borrower and loan characteristics",
+    "interpretation": "descriptive disparity model; not causal evidence of discrimination"
+  },
+  "configurations": [
+    {
+      "configuration": "cfpb_current",
+      "status": "insufficient_retained_comparison",
+      "suppression_status": "suppressed_minimum_cell",
+      "minimum_cell_size": 20
+    },
+    {
+      "configuration": "county_geo",
+      "status": "insufficient_retained_comparison",
+      "suppression_status": "suppressed_minimum_cell",
+      "minimum_cell_size": 20
+    },
+    {
+      "status": "maximum_iterations_reached",
+      "record_count": 871,
+      "reference_n": 687,
+      "comparison_n": 184,
+      "reference_denial_rate": 0.7438136826783115,
+      "comparison_denial_rate": 0.5815217391304348,
+      "adjusted_log_odds_coefficient": 0.10523364873883222,
+      "adjusted_odds_ratio": 1.1109701568091923,
+      "odds_ratio_ci_low": 0.041287644421349044,
+      "odds_ratio_ci_high": 29.894044734662366,
+      "approximate_average_marginal_effect_points": 0.14496929875653786,
+      "common_support_reference_share": 0.21106259097525473,
+      "common_support_comparison_share": 0.42391304347826086,
+      "converged": false,
+      "iterations": 100,
+      "configuration": "county_banded"
+    },
+    {
+      "status": "estimated",
+      "record_count": 30515,
+      "reference_n": 26019,
+      "comparison_n": 4496,
+      "reference_denial_rate": 0.4201929359314347,
+      "comparison_denial_rate": 0.4859875444839858,
+      "adjusted_log_odds_coefficient": 0.7217990061801585,
+      "adjusted_odds_ratio": 2.0581324751887493,
+      "odds_ratio_ci_low": 1.8185655453710274,
+      "odds_ratio_ci_high": 2.329258517081576,
+      "approximate_average_marginal_effect_points": 7.6415963855947,
+      "common_support_reference_share": 0.3702294477112879,
+      "common_support_comparison_share": 0.916814946619217,
+      "converged": true,
+      "iterations": 26,
+      "configuration": "state_banded"
+    }
+  ]
+}

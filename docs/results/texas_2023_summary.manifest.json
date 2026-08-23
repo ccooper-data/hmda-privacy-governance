@@ -1,0 +1,37 @@
+{
+  "generator": "python scripts/build_release_summary.py",
+  "inputs": {
+    "frontier": {
+      "path": "docs/results/texas_2023_privacy_utility_frontier.json",
+      "sha256": "8855b436a02f536a1747d47f1b468bd16ab31b1e79b959431fb847d3bf2a634f"
+    },
+    "adjusted_utility": {
+      "path": "docs/results/texas_2023_adjusted_fair_lending_utility.json",
+      "sha256": "150d522c5ed81ed70f7de45be8147b2d40ccbea0634e38988d51430207fbc960"
+    },
+    "qi_sensitivity": {
+      "path": "docs/results/texas_2023_qi_sensitivity.json",
+      "sha256": "bbb71a39d89591899f03112a0a9222c20de6989fda670a47d0a540ebec89f682"
+    },
+    "residential_density": {
+      "path": "docs/results/texas_2023_residential_density_risk.json",
+      "sha256": "6206de831ff96b8984530e79825d24ab5717183d568434dd4fb8c28f02de03ef"
+    },
+    "density_diagnostics": {
+      "path": "docs/results/texas_2023_density_diagnostics.json",
+      "sha256": "6f3ccb43017070f4aa275f109506f779e28447f466669727d4cb3510c63de4c4"
+    },
+    "group_size_decomposition": {
+      "path": "docs/results/texas_2023_group_size_decomposition.json",
+      "sha256": "9cc8bad4e656f410fb14aaf945fb258ddb41307860dab6ca7cb485f0fb9d0d00"
+    },
+    "population_uniqueness": {
+      "path": "docs/results/texas_2023_population_uniqueness_sensitivity.json",
+      "sha256": "71ab63dd54cec770f3a2c49848cc7c97e540923a04510c4433b833ccae31899c"
+    }
+  },
+  "output": {
+    "path": "docs/results/texas_2023_summary.json",
+    "sha256": "0aaabfc3ce87dda85caef68c6c70db5dc51607f5316f4dd6b8621a288847df2f"
+  }
+}

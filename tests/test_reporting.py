@@ -12,5 +12,5 @@ def test_release_figures_are_svg_and_mark_current_configuration(tmp_path: Path) 
         assert output.read_text(encoding="utf-8").startswith("<svg")
     frontier = outputs[0].read_text(encoding="utf-8")
     assert "cfpb current" in frontier
-    assert "Sample uniqueness" in frontier
+    assert "Pre-suppression uniqueness" in frontier
     assert json.loads(summary.read_text())["population_uniqueness"]["status"] == "boundary_fit_not_reportable"

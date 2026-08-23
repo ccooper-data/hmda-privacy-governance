@@ -16,9 +16,18 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e '.[dev]'
+      - run: pip install -e '.[dev,warehouse]'
       - run: ruff check src tests
       - run: pytest --cov=hmda_privacy --cov-report=term-missing
+      - run: cp profiles.example.yml profiles.yml
+      - run: >-
+          dbt build --vars
+          '{hmda_lar_path: tests/fixtures/hmda_small.csv,
+          census_tract_context_path: tests/fixtures/census_tract_context.csv}'
+      - run: >-
+          dbt test --vars
+          '{hmda_lar_path: tests/fixtures/hmda_small.csv,
+          census_tract_context_path: tests/fixtures/census_tract_context.csv}'
       - run: python scripts/check_governance.py
       - run: python scripts/check_dbt_classifications.py
       - run: python scripts/verify_analysis_scope.py

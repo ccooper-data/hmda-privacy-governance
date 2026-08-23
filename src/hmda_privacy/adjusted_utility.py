@@ -19,6 +19,8 @@ class AdjustedDisparityResult:
     odds_ratio_ci_low: float | None
     odds_ratio_ci_high: float | None
     approximate_average_marginal_effect_points: float | None
+    common_support_reference_share: float | None
+    common_support_comparison_share: float | None
     converged: bool
     iterations: int
 
@@ -44,6 +46,7 @@ def _design_matrix(frame: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, list[st
     categorical_fields = [
         "applicant_age",
         "applicant_sex",
+        "protected_geography",
         "loan_type",
         "debt_to_income_ratio",
         "loan_purpose",
@@ -76,12 +79,23 @@ def adjusted_denial_disparity(
     """Fit an aggregate-safe adjusted logistic model with deterministic IRLS."""
     reference = frame.loc[frame["is_black"] == 0, "is_denied"]
     comparison = frame.loc[frame["is_black"] == 1, "is_denied"]
+    support_fields = sorted(
+        set(frame.columns)
+        - {"is_black", "is_denied"}
+    )
+    support = frame[support_fields].fillna("<MISSING>").astype(str).copy()
+    support["is_black"] = frame["is_black"].to_numpy()
+    represented = support.groupby(support_fields, observed=True)["is_black"].transform("nunique")
+    common = represented.eq(2)
+    reference_support_share = float(common.loc[frame["is_black"].eq(0)].mean()) if len(reference) else None
+    comparison_support_share = float(common.loc[frame["is_black"].eq(1)].mean()) if len(comparison) else None
     if len(reference) < 2 or len(comparison) < 2:
         return AdjustedDisparityResult(
             "insufficient_retained_comparison", len(frame), len(reference), len(comparison),
             float(reference.mean()) if len(reference) else None,
             float(comparison.mean()) if len(comparison) else None,
-            None, None, None, None, None, False, 0,
+            None, None, None, None, None,
+            reference_support_share, comparison_support_share, False, 0,
         )
 
     x, y, names = _design_matrix(frame)
@@ -123,6 +137,8 @@ def adjusted_denial_disparity(
         approximate_average_marginal_effect_points=float(
             100 * coefficient * np.mean(probability * (1 - probability))
         ),
+        common_support_reference_share=reference_support_share,
+        common_support_comparison_share=comparison_support_share,
         converged=converged,
         iterations=iteration,
     )

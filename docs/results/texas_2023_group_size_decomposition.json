@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "aggregate_only": true,
+    "preregistration": "docs/decisions/0001-preregister-group-size-decomposition.md",
+    "equivalence_universe": "full_state_year",
+    "iterations": 1000,
+    "seed": 20260823,
+    "minimum_cell_size": 20
+  },
+  "uniqueness_by_group_size": [
+    {
+      "group_size_bin": "20-49",
+      "derived_race": "White",
+      "record_count": 63605,
+      "unique_records": 5716,
+      "sample_uniqueness_rate": 0.08986714880905589
+    },
+    {
+      "group_size_bin": "100+",
+      "derived_race": "White",
+      "record_count": 115593,
+      "unique_records": 1297,
+      "sample_uniqueness_rate": 0.011220402619535785
+    },
+    {
+      "group_size_bin": "50-99",
+      "derived_race": "White",
+      "record_count": 101587,
+      "unique_records": 3210,
+      "sample_uniqueness_rate": 0.03159853130813982
+    },
+    {
+      "group_size_bin": "10-19",
+      "derived_race": "White",
+      "record_count": 12337,
+      "unique_records": 3300,
+      "sample_uniqueness_rate": 0.26748804409499877
+    },
+    {
+      "group_size_bin": "100+",
+      "derived_race": "Black or African American",
+      "record_count": 18853,
+      "unique_records": 217,
+      "sample_uniqueness_rate": 0.011510104492653689
+    },
+    {
+      "group_size_bin": "20-49",
+      "derived_race": "Black or African American",
+      "record_count": 18813,
+      "unique_records": 1825,
+      "sample_uniqueness_rate": 0.09700738850794663
+    },
+    {
+      "group_size_bin": "50-99",
+      "derived_race": "Black or African American",
+      "record_count": 11517,
+      "unique_records": 384,
+      "sample_uniqueness_rate": 0.033342016150039074
+    },
+    {
+      "group_size_bin": "2",
+      "derived_race": "White",
+      "record_count": 424,
+      "unique_records": 330,
+      "sample_uniqueness_rate": 0.7783018867924528
+    },
+    {
+      "group_size_bin": "10-19",
+      "derived_race": "Black or African American",
+      "record_count": 11900,
+      "unique_records": 2724,
+      "sample_uniqueness_rate": 0.2289075630252101
+    },
+    {
+      "group_size_bin": "5-9",
+      "derived_race": "White",
+      "record_count": 4572,
+      "unique_records": 2022,
+      "sample_uniqueness_rate": 0.442257217847769
+    },
+    {
+      "group_size_bin": "3-4",
+      "derived_race": "Black or African American",
+      "record_count": 3024,
+      "unique_records": 1755,
+      "sample_uniqueness_rate": 0.5803571428571429
+    },
+    {
+      "group_size_bin": "5-9",
+      "derived_race": "Black or African American",
+      "record_count": 7714,
+      "unique_records": 3167,
+      "sample_uniqueness_rate": 0.41055224267565466
+    },
+    {
+      "group_size_bin": "3-4",
+      "derived_race": "White",
+      "record_count": 1318,
+      "unique_records": 841,
+      "sample_uniqueness_rate": 0.6380880121396054
+    },
+    {
+      "group_size_bin": "1",
+      "derived_race": "Black or African American",
+      "record_count": 866,
+      "unique_records": 866,
+      "sample_uniqueness_rate": 1.0
+    },
+    {
+      "group_size_bin": "1",
+      "derived_race": "White",
+      "record_count": 256,
+      "unique_records": 256,
+      "sample_uniqueness_rate": 1.0
+    },
+    {
+      "group_size_bin": "2",
+      "derived_race": "Black or African American",
+      "record_count": 1248,
+      "unique_records": 912,
+      "sample_uniqueness_rate": 0.7307692307692307
+    }
+  ],
+  "size_matched_comparison": {
+    "matching_tolerance_ratio": 1.2,
+    "matched_tracts": 243,
+    "black_records": 5193,
+    "white_records": 5162,
+    "black_uniqueness": 0.11072597727710379,
+    "white_uniqueness": 0.11352189074002325,
+    "uniqueness_ratio": 0.9753711513727128,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260823,
+    "ratio_ci_low": 0.8779544637369933,
+    "ratio_ci_high": 1.0840939936720067,
+    "underpowered": false
+  },
+  "permutation_null": {
+    "observed_ratio": 2.830156164746566,
+    "null_mean": 2.7375317192989135,
+    "null_std": 0.02085057289510931,
+    "null_ci_low": 2.6950262019642808,
+    "null_ci_high": 2.7782347381291124,
+    "p_value_two_sided": 0.000999000999000999,
+    "iterations": 1000,
+    "seed": 20260823
+  },
+  "decision": {
+    "withdraw_unqualified_residual_disparity_claim": true,
+    "rule": "observed above null 97.5th percentile with p<0.05 and supported size-match"
+  }
+}

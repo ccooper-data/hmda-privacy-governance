@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="34" font-family="Arial" font-size="24" font-weight="700" fill="#172033">Uniqueness by residential-density quintile</text>
-<text x="90" y="59" font-family="Arial" font-size="14" fill="#556070">Quintile 1 is lowest density; risk increases toward the highest-density tracts</text>
+<text x="90" y="59" font-family="Arial" font-size="14" fill="#556070">Black non-Hispanic risk is U-shaped; quintile 1 is lowest density</text>
 <line x1="90" y1="440.0" x2="865" y2="440.0" stroke="#e5e9f0"/>
 <text x="78" y="445.0" text-anchor="end" font-family="Arial" font-size="12" fill="#556070">0%</text>
 <line x1="90" y1="369.0" x2="865" y2="369.0" stroke="#e5e9f0"/>

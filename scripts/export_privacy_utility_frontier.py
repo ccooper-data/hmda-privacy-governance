@@ -18,7 +18,10 @@ def main() -> None:
     args = parser.parse_args()
     rows = (
         duckdb.connect(str(args.database), read_only=True)
-        .execute("select * from privacy_utility_frontier order by sample_uniqueness_rate desc")
+        .execute(
+            "select * from privacy_utility_frontier "
+            "order by pre_suppression_uniqueness_rate desc"
+        )
         .fetchdf()
     )
     records = rows.to_dict(orient="records")
@@ -27,14 +30,16 @@ def main() -> None:
             if isinstance(value, float) and not math.isfinite(value):
                 record[key] = None
         record["utility_status"] = (
-            "estimated" if record["utility_estimable_k5"] else "insufficient_k5_cohort_retention"
+            "estimated"
+            if record.get("minimum_detectable_disparity_points") is not None
+            else "insufficient_protected_cohort_retention"
         )
     payload = {
         "metadata": {
             "aggregate_only": True,
             "alpha": 0.05,
             "power": 0.80,
-            "utility_metric": "unadjusted two-proportion MDE after k>=5 suppression",
+            "utility_metric": "decision-only two-proportion MDE for each declared release state",
             "limitations": "Adjusted fair-lending model remains required for final determination",
         },
         "frontier": records,
