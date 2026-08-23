@@ -20,7 +20,7 @@ def main() -> None:
         "metadata": {
             "aggregate_only": True,
             "minimum_cell_size": 20,
-            "density_definition": "ACS population divided by Census Gazetteer land square miles",
+            "density_definition": "HMDA tract_population divided by Census Gazetteer land square miles",
             "quintile_order": "1 is lowest residential density; 5 is highest",
             "risk_qi_tier": "demographic_geo",
         },

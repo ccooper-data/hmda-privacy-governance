@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import io
 import json
 import zipfile
@@ -10,51 +9,35 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-ACS_URL = "https://api.census.gov/data/2023/acs/acs5"
 GAZETTEER_URL = (
     "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/"
     "2023_Gazetteer/2023_Gaz_tracts_national.zip"
 )
 
 
-def _sha256(content: bytes) -> str:
-    return hashlib.sha256(content).hexdigest()
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--state-fips", default="48")
+    parser.add_argument("--hmda-lar-path", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    acs_response = requests.get(
-        ACS_URL,
-        params={
-            "get": "NAME,B01003_001E",
-            "for": "tract:*",
-            "in": f"state:{args.state_fips} county:*",
-        },
-        headers={
-            "Accept": "application/json",
-            "User-Agent": "hmda-privacy-governance/0.1 aggregate-research",
-        },
-        timeout=120,
+    hmda = pd.read_csv(
+        args.hmda_lar_path,
+        usecols=["census_tract", "tract_population"],
+        dtype=str,
+        low_memory=False,
     )
-    acs_response.raise_for_status()
-    acs_bytes = acs_response.content
-    try:
-        acs_rows = acs_response.json()
-    except requests.exceptions.JSONDecodeError as error:
-        preview = acs_response.text[:300].replace("\n", " ")
-        raise RuntimeError(
-            f"Census ACS response was not JSON; content-type="
-            f"{acs_response.headers.get('content-type')!r}; body={preview!r}"
-        ) from error
-    if not isinstance(acs_rows, list) or len(acs_rows) < 2:
-        raise RuntimeError("Census ACS response contained no tract records")
-    acs = pd.DataFrame(acs_rows[1:], columns=acs_rows[0])
-    acs["census_tract"] = acs["state"] + acs["county"] + acs["tract"]
-    acs["population"] = pd.to_numeric(acs["B01003_001E"], errors="coerce")
+    hmda["census_tract"] = hmda["census_tract"].str.strip()
+    hmda["population"] = pd.to_numeric(hmda["tract_population"], errors="coerce")
+    population_conflicts = int(
+        (hmda.groupby("census_tract", observed=True)["population"].nunique() > 1).sum()
+    )
+    population = (
+        hmda.dropna(subset=["census_tract", "population"])
+        .groupby("census_tract", as_index=False, observed=True)["population"]
+        .median()
+    )
 
     gazetteer_response = requests.get(
         GAZETTEER_URL,
@@ -73,7 +56,7 @@ def main() -> None:
         gazetteer["ALAND_SQMI"].str.strip(), errors="coerce"
     )
 
-    context = acs[["census_tract", "population"]].merge(
+    context = population.merge(
         gazetteer[["census_tract", "land_area_sqmi"]],
         on="census_tract",
         how="inner",
@@ -87,12 +70,11 @@ def main() -> None:
         "aggregate_geography_only": True,
         "state_fips": args.state_fips,
         "records": len(context),
-        "acs_source": ACS_URL,
-        "acs_sha256": _sha256(acs_bytes),
+        "population_source": "public HMDA LAR tract_population field",
+        "hmda_lar_path": str(args.hmda_lar_path),
+        "tracts_with_conflicting_population_values": population_conflicts,
         "gazetteer_source": GAZETTEER_URL,
-        "gazetteer_sha256": _sha256(gazetteer_bytes),
-        "population_variable": "B01003_001E",
-        "density_formula": "ACS total population / Gazetteer land area square miles",
+        "density_formula": "HMDA tract_population / Census Gazetteer land area square miles",
     }
     manifest_path = args.output.with_suffix(".manifest.json")
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")

@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_census_tract_context
-    description: Aggregate Census tract population and land-area context; contains no person records.
+    description: Aggregate public HMDA tract population and Census land-area context; no person records.
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: public}}
       - {name: population, data_type: bigint, meta: {classification: public}}
@@ -143,7 +143,7 @@ models:
       - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
 
   - name: tract_residential_density
-    description: Aggregate ACS population density by tract and statewide tract quintile.
+    description: Aggregate HMDA/Census population density by tract and statewide tract quintile.
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: public}}
       - {name: population, data_type: bigint, meta: {classification: public}}

@@ -1,9 +1,9 @@
 from pathlib import Path
 
 
-def test_census_request_uses_required_tract_hierarchy_and_diagnostics() -> None:
+def test_context_ingestion_uses_public_hmda_population_and_census_land_area() -> None:
     source = Path("scripts/ingest_census_tract_context.py").read_text(encoding="utf-8")
-    assert '"for": "tract:*"' in source
-    assert 'county:*' in source
-    assert '"Accept": "application/json"' in source
-    assert "response was not JSON" in source
+    assert '"census_tract", "tract_population"' in source
+    assert "GAZETTEER_URL" in source
+    assert "population_conflicts" in source
+    assert "address" not in source.lower()

@@ -45,7 +45,7 @@ The initial implementation contains the two components where early design mistak
 13. A real-data protection sweep and operational privacy–utility frontier with CFPB current marked as baseline.
 14. A configuration-specific adjusted fair-lending model fitted only after k≥5 protection, with aggregate-only coefficient export.
 15. A zero-truncated gamma–Poisson population-uniqueness sensitivity model that refuses to label an unidentified HMDA coverage fraction as truth.
-16. Residential-density risk concentration using aggregate ACS tract population and Census Gazetteer land area, with no resident-level data.
+16. Residential-density risk concentration using public HMDA tract population and Census Gazetteer land area, with no resident-level data.
 
 Export the frontier:
 
