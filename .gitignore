@@ -8,6 +8,7 @@ __pycache__/
 data/bronze/**
 data/silver/**
 data/gold/**
+data/external/**
 artifacts/**
 !data/**/.gitkeep
 !artifacts/.gitkeep
