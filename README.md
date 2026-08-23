@@ -40,6 +40,14 @@ The initial implementation contains the two components where early design mistak
 8. Live CFPB aggregation validation contracts and aggregate-only reconciliation for downloaded HMDA slices.
 9. Enforced analysis-scope ordering: form equivalence classes on a full state-year or national-year release before publishing aggregate cohort risk.
 10. DuckDB-native full-universe QI profiling and small-cell-suppressed race/ethnicity risk marts for large state files.
+11. Three nested threat-informed QI tiers that isolate the incremental risk of financial context and lender LEI.
+
+Export the QI sensitivity results:
+
+```bash
+python scripts/export_qi_sensitivity.py \
+  --output artifacts/texas_2023_qi_sensitivity.json
+```
 
 For the full Texas file, build the warehouse and export only the aggregate mart:
 
