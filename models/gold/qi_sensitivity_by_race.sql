@@ -35,5 +35,4 @@ select
     count(*) * 1.0 / sum(k) as prosecutor_expected_match_risk
 from tiered
 group by qi_tier, derived_race, derived_ethnicity
-having sum(k) >= 20
-
+having sum(k) >= {{ var('minimum_cell_size') }}

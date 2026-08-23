@@ -6,6 +6,9 @@ from pathlib import Path
 
 import duckdb
 
+from hmda_privacy.config import load_qi_config
+from hmda_privacy.publication import enforce_minimum_cell
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -42,6 +45,8 @@ def main() -> None:
         "overall": overall.to_dict(orient="records"),
         "cohorts": rows.to_dict(orient="records"),
     }
+    minimum_cell_size = load_qi_config("config/quasi_identifiers.yml").minimum_cell_size
+    payload = enforce_minimum_cell(payload, minimum_cell_size=minimum_cell_size)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(payload["metadata"], indent=2))
@@ -49,4 +54,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

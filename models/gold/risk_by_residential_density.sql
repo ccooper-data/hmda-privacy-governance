@@ -28,4 +28,4 @@ select
     avg(1.0 / k) as prosecutor_expected_match_risk
 from cohorts
 group by residential_density_quintile, derived_race, derived_ethnicity
-having count(*) >= 20
+having count(*) >= {{ var('minimum_cell_size') }}

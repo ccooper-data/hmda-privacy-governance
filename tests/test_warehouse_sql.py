@@ -6,7 +6,7 @@ def test_race_risk_is_scored_before_grouping() -> None:
     assert "ref('fct_application')" in sql
     assert "ref('qi_profile')" in sql
     assert "is not distinct from" in sql
-    assert "having count(*) >= 20" in sql
+    assert "having count(*) >= {{ var('minimum_cell_size') }}" in sql
     assert "'full_state_year' as equivalence_universe" in sql
 
 
@@ -27,4 +27,3 @@ def test_qi_profile_uses_configured_qi_fields() -> None:
         "lei",
     ):
         assert field in sql
-

@@ -13,5 +13,4 @@ group by
     density.release_density_quintile,
     profile.derived_race,
     profile.derived_ethnicity
-having sum(profile.k) >= 20
-
+having sum(profile.k) >= {{ var('minimum_cell_size') }}

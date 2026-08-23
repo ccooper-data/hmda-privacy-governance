@@ -7,6 +7,8 @@ from pathlib import Path
 import duckdb
 
 from hmda_privacy.adjusted_utility import adjusted_denial_disparity
+from hmda_privacy.config import load_qi_config
+from hmda_privacy.publication import enforce_minimum_cell
 
 
 def main() -> None:
@@ -39,6 +41,8 @@ def main() -> None:
         },
         "configurations": results,
     }
+    minimum_cell_size = load_qi_config("config/quasi_identifiers.yml").minimum_cell_size
+    payload = enforce_minimum_cell(payload, minimum_cell_size=minimum_cell_size)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print(json.dumps(payload, indent=2, allow_nan=False))

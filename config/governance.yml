@@ -1,7 +1,6 @@
 version: 1
 allowed_classifications:
   - public
-  - internal
   - quasi_identifier
   - sensitive
 restricted_in_published_marts:
@@ -13,10 +12,45 @@ purposes:
   - disclosure_risk_research
   - fair_lending_utility_analysis
 published_marts:
-  risk_metrics:
+  risk_cohort_counts:
     columns:
-      configuration: public
-      cohort: quasi_identifier
+      activity_year: public
+      derived_race: quasi_identifier
+      derived_ethnicity: quasi_identifier
+      record_count: public
+      denial_rate: sensitive
+  risk_metrics_by_race:
+    columns:
+      equivalence_universe: public
+      derived_race: quasi_identifier
+      derived_ethnicity: quasi_identifier
+      record_count: public
+      sample_uniqueness_rate: sensitive
+      share_records_k_lt_5: sensitive
+      share_records_k_lt_10: sensitive
+      prosecutor_expected_match_risk: sensitive
+  qi_sensitivity_by_race:
+    columns:
+      qi_tier: public
+      derived_race: quasi_identifier
+      derived_ethnicity: quasi_identifier
+      record_count: public
+      sample_uniqueness_rate: sensitive
+      share_records_k_lt_5: sensitive
+      prosecutor_expected_match_risk: sensitive
+  risk_by_release_density:
+    columns:
+      release_density_quintile: public
+      derived_race: quasi_identifier
+      derived_ethnicity: quasi_identifier
+      record_count: public
+      sample_uniqueness_rate: sensitive
+      prosecutor_expected_match_risk: sensitive
+  risk_by_residential_density:
+    columns:
+      residential_density_quintile: public
+      derived_race: quasi_identifier
+      derived_ethnicity: quasi_identifier
       record_count: public
       sample_uniqueness_rate: sensitive
       prosecutor_expected_match_risk: sensitive
@@ -24,8 +58,12 @@ published_marts:
     columns:
       configuration: public
       is_current_baseline: public
-      retained_records: public
-      retained_share: public
+      record_count: public
       sample_uniqueness_rate: sensitive
-      minimum_detectable_disparity_points: sensitive
-
+      prosecutor_expected_match_risk: sensitive
+      retained_share_k5: public
+      reference_n_k5: sensitive
+      comparison_n_k5: sensitive
+      utility_estimable_k5: public
+      reference_denial_rate: sensitive
+      minimum_detectable_disparity_points_k5: sensitive

@@ -30,5 +30,4 @@ select
     avg(1.0 / k) as prosecutor_expected_match_risk
 from scored
 group by derived_race, derived_ethnicity
-having count(*) >= 20
-
+having count(*) >= {{ var('minimum_cell_size') }}

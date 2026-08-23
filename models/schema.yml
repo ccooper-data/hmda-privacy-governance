@@ -52,6 +52,7 @@ models:
 
   - name: risk_cohort_counts
     description: Small-cell-suppressed aggregate cohort mart.
+    meta: {publication: published}
     columns:
       - {name: activity_year, data_type: integer, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -61,6 +62,7 @@ models:
 
   - name: qi_profile
     description: Internal aggregate QI equivalence classes formed across the full release universe.
+    meta: {publication: prohibited}
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -78,6 +80,7 @@ models:
 
   - name: risk_metrics_by_race
     description: Aggregate-only race and ethnicity risk after full-universe equivalence scoring.
+    meta: {publication: published}
     columns:
       - {name: equivalence_universe, data_type: varchar, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -90,6 +93,7 @@ models:
 
   - name: qi_profile_demographic_geo
     description: QI tier containing only demographic and tract geography fields.
+    meta: {publication: prohibited}
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -100,6 +104,7 @@ models:
 
   - name: qi_profile_financial_context
     description: Demographic/geographic QIs plus financial and loan-context fields, excluding LEI.
+    meta: {publication: prohibited}
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -116,6 +121,7 @@ models:
 
   - name: qi_sensitivity_by_race
     description: Aggregate risk by threat-informed QI tier and demographic cohort.
+    meta: {publication: published}
     columns:
       - {name: qi_tier, data_type: varchar, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -127,6 +133,7 @@ models:
 
   - name: tract_release_density
     description: Application volume per tract; not residential population density.
+    meta: {publication: prohibited}
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: application_count, data_type: bigint, meta: {classification: sensitive}}
@@ -134,6 +141,7 @@ models:
 
   - name: risk_by_release_density
     description: Demographic/geographic risk by HMDA application-volume quintile and cohort.
+    meta: {publication: published}
     columns:
       - {name: release_density_quintile, data_type: integer, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -144,6 +152,7 @@ models:
 
   - name: tract_residential_density
     description: Aggregate HMDA/Census population density by tract and statewide tract quintile.
+    meta: {publication: prohibited}
     columns:
       - {name: census_tract, data_type: varchar, meta: {classification: public}}
       - {name: population, data_type: bigint, meta: {classification: public}}
@@ -153,6 +162,7 @@ models:
 
   - name: risk_by_residential_density
     description: Demographic/geographic risk by Census residential-density quintile and cohort.
+    meta: {publication: published}
     columns:
       - {name: residential_density_quintile, data_type: bigint, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -163,6 +173,7 @@ models:
 
   - name: protection_equivalence_classes
     description: Internal class sizes across four protection configurations.
+    meta: {publication: prohibited}
     columns:
       - {name: configuration, data_type: varchar, meta: {classification: public}}
       - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -171,6 +182,7 @@ models:
 
   - name: privacy_utility_frontier
     description: Aggregate risk, k5 retention, and denial-disparity detection power.
+    meta: {publication: published}
     columns:
       - {name: configuration, data_type: varchar, meta: {classification: public}}
       - {name: is_current_baseline, data_type: boolean, meta: {classification: public}}

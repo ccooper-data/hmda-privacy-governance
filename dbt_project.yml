@@ -16,3 +16,4 @@ models:
       +materialized: table
 vars:
   census_tract_context_path: tests/fixtures/census_tract_context.csv
+  minimum_cell_size: 20

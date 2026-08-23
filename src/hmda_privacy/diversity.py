@@ -24,9 +24,13 @@ def equivalence_class_diversity(
     for key, group in grouped:
         values = group[sensitive_attribute].value_counts(normalize=True, dropna=False)
         support = global_distribution.index.union(values.index)
-        t_distance = 0.5 * np.abs(
-            values.reindex(support, fill_value=0) - global_distribution.reindex(support, fill_value=0)
-        ).sum()
+        t_distance = (
+            0.5
+            * np.abs(
+                values.reindex(support, fill_value=0)
+                - global_distribution.reindex(support, fill_value=0)
+            ).sum()
+        )
         keys = key if isinstance(key, tuple) else (key,)
         row = dict(zip(config.fields, keys, strict=True))
         row.update(
@@ -37,7 +41,10 @@ def equivalence_class_diversity(
             }
         )
         rows.append(row)
-    return pd.DataFrame(rows)
+    classes = pd.DataFrame(rows)
+    if classes.empty:
+        return classes
+    return classes.loc[classes["k"] >= config.minimum_cell_size].reset_index(drop=True)
 
 
 def summarize_diversity(
@@ -60,4 +67,3 @@ def summarize_diversity(
         "records_failing_t_closeness": failing_t,
         "share_failing_t_closeness": failing_t / records if records else 0.0,
     }
-

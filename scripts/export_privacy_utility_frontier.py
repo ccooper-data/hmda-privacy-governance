@@ -7,15 +7,20 @@ from pathlib import Path
 
 import duckdb
 
+from hmda_privacy.config import load_qi_config
+from hmda_privacy.publication import enforce_minimum_cell
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--database", type=Path, default=Path("data/hmda_privacy.duckdb"))
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    rows = duckdb.connect(str(args.database), read_only=True).execute(
-        "select * from privacy_utility_frontier order by sample_uniqueness_rate desc"
-    ).fetchdf()
+    rows = (
+        duckdb.connect(str(args.database), read_only=True)
+        .execute("select * from privacy_utility_frontier order by sample_uniqueness_rate desc")
+        .fetchdf()
+    )
     records = rows.to_dict(orient="records")
     for record in records:
         for key, value in list(record.items()):
@@ -34,6 +39,8 @@ def main() -> None:
         },
         "frontier": records,
     }
+    minimum_cell_size = load_qi_config("config/quasi_identifiers.yml").minimum_cell_size
+    payload = enforce_minimum_cell(payload, minimum_cell_size=minimum_cell_size)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(payload, indent=2))

@@ -18,5 +18,4 @@ def test_sensitivity_mart_weights_class_sizes() -> None:
     sql = Path("models/gold/qi_sensitivity_by_race.sql").read_text().lower()
     assert "sum(k)" in sql
     assert "count(*) * 1.0 / sum(k)" in sql
-    assert "having sum(k) >= 20" in sql
-
+    assert "having sum(k) >= {{ var('minimum_cell_size') }}" in sql
