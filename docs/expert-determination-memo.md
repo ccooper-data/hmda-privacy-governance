@@ -59,16 +59,23 @@ racial effect.
 
 The preregistered 1,000-iteration within-tract permutation preserved every tract's joint
 race/ethnicity margins. Its null ratio was 2.738 (95% interval 2.695–2.778); the observed ratio was
-above the null, two-sided plus-one p=0.001. However, in the preregistered size-matched analysis—243
-tracts, 5,193 Black and 5,162 White applications—the ratio was 0.975 (tract-bootstrap 95% interval
-0.878–1.084). Because both preregistered conditions were required, the unqualified residual racial
-disparity claim is withdrawn.
+above the null, two-sided plus-one p=0.001. The null mean is 96.7% of the observed ratio, so local
+group size accounts for roughly 97% of the raw disparity. With approximately one million records,
+the remaining 3.3% is statistically detectable but substantively small.
+
+The preregistered size-matched analysis is cleaner but lower-powered: across 243 tracts, 5,193
+Black and 5,162 White applications, the ratio was 0.975 (tract-bootstrap 95% interval 0.878–1.084).
+The residual therefore vanishes under equal local group-size matching. These results are not
+contradictory: the permutation detects a small departure from its marginal-preserving null in the
+full sample, while size matching estimates no disparity in the narrower comparable population.
+Because both preregistered conditions were required, the unqualified residual racial-disparity
+claim is withdrawn.
 
 The supported policy interpretation is structural: much of the aggregate disparity arises because
 race is released and locally smaller demographic groups necessarily form smaller matching classes.
 The remedy should target geographic and financial resolution rather than removing race, which would
-undermine HMDA's fair-lending purpose. The permutation result also indicates residual within-tract
-association before size matching, but it does not survive the preregistered equal-size comparison.
+undermine HMDA's fair-lending purpose. Statistical significance in the full-sample permutation is
+not treated as evidence of a policy-material racial effect.
 
 ## 5. Density findings
 

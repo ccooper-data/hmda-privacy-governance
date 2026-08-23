@@ -51,8 +51,10 @@ The initial implementation contains the two components where early design mistak
 ## Texas 2023 findings
 
 - The selected 14-field institution-aware QI set produces **95.70%** sample uniqueness.
-- The raw Black/White demographic uniqueness ratio is **2.83**, but a preregistered equal-size
-  tract comparison is **0.98** (95% CI 0.88–1.08); the unqualified racial-disparity claim is withdrawn.
+- The raw Black/White demographic uniqueness ratio is **2.83**. Group size explains roughly
+  **97%** of it; the small residual is statistically detectable in the full-sample permutation but
+  vanishes in the equal-size tract comparison (**0.98**, 95% CI 0.88–1.08). The unqualified
+  racial-disparity claim is withdrawn.
 - Black non-Hispanic density risk is U-shaped: **16.57%, 10.31%, 15.89%, 20.72%, 28.97%**.
 - State-banded plus k≥5 is a controlled-access candidate, not a final public-release recommendation:
   it retains **24.68%** and has a corrected decision-cohort MDE of **2.23 points**, versus **0.56**

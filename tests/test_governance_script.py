@@ -1,3 +1,4 @@
+import os
 import shutil
 import subprocess
 import sys
@@ -17,6 +18,8 @@ def test_governance_script_fails_for_unauthorized_gold_model(tmp_path: Path) -> 
         text=True,
         capture_output=True,
         check=False,
+        env={**os.environ, "PYTHONPATH": str(source / "src")},
     )
     assert completed.returncode == 1
+    assert "ModuleNotFoundError" not in completed.stderr
     assert "UNDECLARED_GOLD_MODEL" in completed.stdout
