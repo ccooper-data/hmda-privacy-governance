@@ -46,6 +46,28 @@ The initial implementation contains the two components where early design mistak
 14. A configuration-specific adjusted fair-lending model fitted only after k≥5 protection, with aggregate-only coefficient export.
 15. A zero-truncated gamma–Poisson population-uniqueness sensitivity model that refuses to label an unidentified HMDA coverage fraction as truth.
 16. Residential-density risk concentration using public HMDA tract population and Census Gazetteer land area, with no resident-level data.
+17. Reproducible Dagster asset orchestration, aggregate release figures, and a completed technical disclosure-risk determination memo.
+
+## Texas 2023 findings
+
+- Institution-aware sample uniqueness is **94.18%**; financial and loan context is the dominant
+  risk amplifier, and LEI adds **6.89 percentage points**.
+- Black non-Hispanic applicants carry higher demographic/geographic risk than White non-Hispanic
+  applicants: **16.03% versus 5.66%** sample uniqueness.
+- The low-residential-density hypothesis was rejected. Uniqueness is highest in the most densely
+  populated tract quintile, including **28.97%** for Black non-Hispanic applicants.
+- The recommended derivative-release configuration is state geography, $50,000 income bands,
+  $100,000 loan-amount bands, and k≥5 suppression. It retains **49.71%** of records and detects an
+  unadjusted disparity of approximately **0.69 percentage points**.
+- Population uniqueness is not reported because the fitted gamma–Poisson model reached a boundary
+  solution under every declared coverage scenario.
+
+See the [technical determination memo](docs/expert-determination-memo.md) and the aggregate
+[Texas 2023 result summary](docs/results/texas_2023_summary.json).
+
+![Texas 2023 privacy–utility frontier](docs/figures/privacy_utility_frontier.svg)
+
+![Uniqueness by residential-density quintile](docs/figures/residential_density_risk.svg)
 
 Export the frontier:
 
@@ -152,9 +174,9 @@ hmda synthetic-linkage --input <file>.csv --records 10000 \
   --output artifacts/synthetic-linkage.json
 ```
 
-The current population-uniqueness routine is explicitly labeled a repeated-subsampling
-proxy. It is not represented as a Zayatz or Pitman implementation. A validated standard-model
-estimator must be added and compared before the expert-determination memo is finalized.
+Population uniqueness includes a repeated-subsampling proxy and a zero-truncated gamma–Poisson
+comparison. The real-data gamma–Poisson fits reached a parameter boundary, so the release artifact
+correctly reports the result as non-estimable instead of publishing unstable point estimates.
 
 Protection configurations are versioned in `config/protection.yml`. The differential-privacy
 implementation documents its event-level contribution assumption and does not expose true
@@ -167,13 +189,16 @@ causation or discrimination. See `docs/methodology/adjusted-fair-lending-utility
 ## Architecture
 
 - **Bronze:** immutable source files plus request/receipt metadata and SHA-256 manifests
-- **Silver:** classified, tested models (planned dbt checkpoint)
+- **Silver:** classified, tested application-grain models prohibited from publication
 - **Gold:** aggregate equivalence classes, risk metrics, and fair-lending estimates
 - **Privacy:** protection configurations and the risk–utility frontier
 - **Serve:** aggregate figures and `docs/expert-determination-memo.md`
+- **Orchestrate:** optional Dagster assets spanning context ingestion, dbt, aggregate exports, and figures
 
 No HMDA loan-level data is committed to Git. Generated data and analysis artifacts are ignored by default.
 
 ## Status
 
-This repository is under active development. Results are not an expert determination until the methodology, data validation, uncertainty analysis, and memo are complete.
+The Texas 2023 technical analysis is complete and reproducible. The determination memo contains a
+scoped recommendation and awaits independent organizational acceptance; it is not legal advice or
+a universal certification for other states, years, or field configurations.

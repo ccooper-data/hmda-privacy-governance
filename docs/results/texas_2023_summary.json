@@ -1,0 +1,21 @@
+{
+  "scope": {"year": 2023, "state": "TX", "applications": 1041819},
+  "frontier": [
+    {"configuration": "cfpb_current", "current": true, "uniqueness": 0.9418430649, "retained_k5": 0.01702695, "mde_points": null},
+    {"configuration": "county_geo", "current": false, "uniqueness": 0.8735164170, "retained_k5": 0.0800186981, "mde_points": null},
+    {"configuration": "county_banded", "current": false, "uniqueness": 0.6947531193, "retained_k5": 0.1463488379, "mde_points": 2.5035726178},
+    {"configuration": "state_banded", "current": false, "uniqueness": 0.3023855391, "retained_k5": 0.4971314595, "mde_points": 0.6893287525}
+  ],
+  "residential_density": [
+    {"quintile": 1, "overall_uniqueness": 0.1234316107, "black_non_hispanic_uniqueness": 0.1656853124, "white_non_hispanic_uniqueness": 0.0357223531},
+    {"quintile": 2, "overall_uniqueness": 0.1070357823, "black_non_hispanic_uniqueness": 0.1030833333, "white_non_hispanic_uniqueness": 0.0390261283},
+    {"quintile": 3, "overall_uniqueness": 0.1624065000, "black_non_hispanic_uniqueness": 0.1589429095, "white_non_hispanic_uniqueness": 0.0655288082},
+    {"quintile": 4, "overall_uniqueness": 0.1924257997, "black_non_hispanic_uniqueness": 0.2072115385, "white_non_hispanic_uniqueness": 0.0879068207},
+    {"quintile": 5, "overall_uniqueness": 0.2337873227, "black_non_hispanic_uniqueness": 0.2896871379, "white_non_hispanic_uniqueness": 0.1384444991}
+  ],
+  "adjusted_utility": [
+    {"configuration": "county_banded", "odds_ratio": 2.1715951778, "ci_low": 1.7410457457, "ci_high": 2.7086167195, "records": 8491},
+    {"configuration": "state_banded", "odds_ratio": 2.0359848691, "ci_low": 1.9486431627, "ci_high": 2.1272413885, "records": 135223}
+  ],
+  "population_uniqueness": {"status": "boundary_fit_not_reportable"}
+}

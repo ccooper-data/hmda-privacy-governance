@@ -5,17 +5,21 @@ configurations:
     income_band_width: null
     loan_amount_band_width: null
     suppress_k_below: null
-  moderate:
+  county_geo:
+    geography: county
+    income_band_width: null
+    loan_amount_band_width: null
+    suppress_k_below: 5
+  county_banded:
     geography: county
     income_band_width: 25000
     loan_amount_band_width: 50000
     suppress_k_below: 5
-  strong:
+  state_banded:
     geography: state
     income_band_width: 50000
     loan_amount_band_width: 100000
-    suppress_k_below: 10
+    suppress_k_below: 5
 dp_aggregate:
   epsilons: [0.1, 0.5, 1.0, 2.0, 5.0]
   sensitivity: 1.0
-
