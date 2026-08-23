@@ -42,6 +42,14 @@ The initial implementation contains the two components where early design mistak
 10. DuckDB-native full-universe QI profiling and small-cell-suppressed race/ethnicity risk marts for large state files.
 11. Three nested threat-informed QI tiers that isolate the incremental risk of financial context and lender LEI.
 12. Risk concentration by HMDA tract release-density quintile, explicitly distinguished from residential population density.
+13. A real-data protection sweep and operational privacy–utility frontier with CFPB current marked as baseline.
+
+Export the frontier:
+
+```bash
+python scripts/export_privacy_utility_frontier.py \
+  --output artifacts/texas_2023_privacy_utility_frontier.json
+```
 
 Export release-density results:
 

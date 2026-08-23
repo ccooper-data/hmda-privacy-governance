@@ -129,3 +129,25 @@ models:
       - {name: record_count, data_type: bigint, meta: {classification: public}}
       - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
       - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
+
+  - name: protection_equivalence_classes
+    description: Internal class sizes across four protection configurations.
+    columns:
+      - {name: configuration, data_type: varchar, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: k, data_type: bigint, meta: {classification: sensitive}}
+
+  - name: privacy_utility_frontier
+    description: Aggregate risk, k5 retention, and denial-disparity detection power.
+    columns:
+      - {name: configuration, data_type: varchar, meta: {classification: public}}
+      - {name: is_current_baseline, data_type: boolean, meta: {classification: public}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
+      - {name: retained_share_k5, data_type: double, meta: {classification: public}}
+      - {name: reference_n_k5, data_type: double, meta: {classification: sensitive}}
+      - {name: comparison_n_k5, data_type: double, meta: {classification: sensitive}}
+      - {name: reference_denial_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: minimum_detectable_disparity_points_k5, data_type: double, meta: {classification: sensitive}}
