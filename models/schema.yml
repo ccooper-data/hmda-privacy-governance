@@ -13,6 +13,8 @@ models:
       - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: income, data_type: double, meta: {classification: sensitive}}
       - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: debt_to_income_ratio, data_type: varchar, meta: {classification: sensitive}}
       - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -31,6 +33,8 @@ models:
       - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: income, data_type: double, meta: {classification: sensitive}}
       - {name: loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: loan_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: debt_to_income_ratio, data_type: varchar, meta: {classification: sensitive}}
       - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
       - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
@@ -152,3 +156,21 @@ models:
       - {name: utility_estimable_k5, data_type: boolean, meta: {classification: public}}
       - {name: reference_denial_rate, data_type: double, meta: {classification: sensitive}}
       - {name: minimum_detectable_disparity_points_k5, data_type: double, meta: {classification: sensitive}}
+
+  - name: fair_lending_modeling_cohort
+    description: Internal-only decision cohort retained after configuration-specific k5 suppression.
+    meta: {publication: prohibited}
+    columns:
+      - {name: configuration, data_type: varchar, meta: {classification: internal}}
+      - {name: is_black, data_type: integer, meta: {classification: sensitive}}
+      - {name: is_denied, data_type: integer, meta: {classification: sensitive}}
+      - {name: protected_income, data_type: double, meta: {classification: sensitive}}
+      - {name: protected_loan_amount, data_type: double, meta: {classification: quasi_identifier}}
+      - {name: applicant_age, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: applicant_sex, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: loan_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: debt_to_income_ratio, data_type: varchar, meta: {classification: sensitive}}
+      - {name: loan_purpose, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: occupancy_type, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: lien_status, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_dwelling_category, data_type: varchar, meta: {classification: quasi_identifier}}

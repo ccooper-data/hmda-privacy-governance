@@ -1,3 +1,3 @@
-activity_year,lei,census_tract,applicant_age,applicant_sex,derived_race,derived_ethnicity,income,loan_amount,loan_purpose,occupancy_type,lien_status,derived_dwelling_category,action_taken
-2023,L1,48201310100,35-44,1,White,Not Hispanic or Latino,100,300000,1,1,1,Single Family (1-4 Units):Site-Built,1
-2023,L2,48201310100,35-44,2,Black or African American,Not Hispanic or Latino,80,250000,1,1,1,Single Family (1-4 Units):Site-Built,3
+activity_year,lei,census_tract,applicant_age,applicant_sex,derived_race,derived_ethnicity,income,loan_amount,loan_type,debt_to_income_ratio,loan_purpose,occupancy_type,lien_status,derived_dwelling_category,action_taken
+2023,L1,48201310100,35-44,1,White,Not Hispanic or Latino,100,300000,1,30%-<36%,1,1,1,Single Family (1-4 Units):Site-Built,1
+2023,L2,48201310100,35-44,2,Black or African American,Not Hispanic or Latino,80,250000,1,43%-<50%,1,1,1,Single Family (1-4 Units):Site-Built,3

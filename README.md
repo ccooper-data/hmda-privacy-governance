@@ -43,12 +43,20 @@ The initial implementation contains the two components where early design mistak
 11. Three nested threat-informed QI tiers that isolate the incremental risk of financial context and lender LEI.
 12. Risk concentration by HMDA tract release-density quintile, explicitly distinguished from residential population density.
 13. A real-data protection sweep and operational privacy–utility frontier with CFPB current marked as baseline.
+14. A configuration-specific adjusted fair-lending model fitted only after k≥5 protection, with aggregate-only coefficient export.
 
 Export the frontier:
 
 ```bash
 python scripts/export_privacy_utility_frontier.py \
   --output artifacts/texas_2023_privacy_utility_frontier.json
+```
+
+Export adjusted fair-lending utility after building the warehouse:
+
+```bash
+python scripts/export_adjusted_fair_lending_utility.py \
+  --output artifacts/texas_2023_adjusted_fair_lending_utility.json
 ```
 
 Export release-density results:
@@ -142,8 +150,9 @@ Protection configurations are versioned in `config/protection.yml`. The differen
 implementation documents its event-level contribution assumption and does not expose true
 counts in its returned public table.
 
-The first utility metric is an unadjusted two-proportion power analysis. It is deliberately
-identified as a diagnostic rather than the final adjusted fair-lending model.
+The frontier's MDE metric is an unadjusted two-proportion power analysis. The separate adjusted
+model is also a diagnostic: it estimates descriptive conditional disparity and does not establish
+causation or discrimination. See `docs/methodology/adjusted-fair-lending-utility.md`.
 
 ## Architecture
 
