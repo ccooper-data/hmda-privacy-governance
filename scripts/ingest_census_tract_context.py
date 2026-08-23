@@ -32,18 +32,35 @@ def main() -> None:
         params={
             "get": "NAME,B01003_001E",
             "for": "tract:*",
-            "in": f"state:{args.state_fips}",
+            "in": f"state:{args.state_fips} county:*",
+        },
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "hmda-privacy-governance/0.1 aggregate-research",
         },
         timeout=120,
     )
     acs_response.raise_for_status()
     acs_bytes = acs_response.content
-    acs_rows = acs_response.json()
+    try:
+        acs_rows = acs_response.json()
+    except requests.exceptions.JSONDecodeError as error:
+        preview = acs_response.text[:300].replace("\n", " ")
+        raise RuntimeError(
+            f"Census ACS response was not JSON; content-type="
+            f"{acs_response.headers.get('content-type')!r}; body={preview!r}"
+        ) from error
+    if not isinstance(acs_rows, list) or len(acs_rows) < 2:
+        raise RuntimeError("Census ACS response contained no tract records")
     acs = pd.DataFrame(acs_rows[1:], columns=acs_rows[0])
     acs["census_tract"] = acs["state"] + acs["county"] + acs["tract"]
     acs["population"] = pd.to_numeric(acs["B01003_001E"], errors="coerce")
 
-    gazetteer_response = requests.get(GAZETTEER_URL, timeout=120)
+    gazetteer_response = requests.get(
+        GAZETTEER_URL,
+        headers={"User-Agent": "hmda-privacy-governance/0.1 aggregate-research"},
+        timeout=120,
+    )
     gazetteer_response.raise_for_status()
     gazetteer_bytes = gazetteer_response.content
     with zipfile.ZipFile(io.BytesIO(gazetteer_bytes)) as archive:
