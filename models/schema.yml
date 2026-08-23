@@ -149,5 +149,6 @@ models:
       - {name: retained_share_k5, data_type: double, meta: {classification: public}}
       - {name: reference_n_k5, data_type: double, meta: {classification: sensitive}}
       - {name: comparison_n_k5, data_type: double, meta: {classification: sensitive}}
+      - {name: utility_estimable_k5, data_type: boolean, meta: {classification: public}}
       - {name: reference_denial_rate, data_type: double, meta: {classification: sensitive}}
       - {name: minimum_detectable_disparity_points_k5, data_type: double, meta: {classification: sensitive}}

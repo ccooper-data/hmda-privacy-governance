@@ -33,6 +33,7 @@ select
     risk.retained_share_k5,
     cohort_n.reference_n_k5,
     cohort_n.comparison_n_k5,
+    cohort_n.reference_n_k5 > 0 and cohort_n.comparison_n_k5 > 0 as utility_estimable_k5,
     baseline.reference_denial_rate,
     100 * 2.801585 * sqrt(
         baseline.reference_denial_rate * (1 - baseline.reference_denial_rate)
@@ -42,4 +43,3 @@ select
 from risk
 inner join cohort_n using (configuration)
 cross join baseline
-

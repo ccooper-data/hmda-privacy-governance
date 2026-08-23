@@ -14,5 +14,5 @@ def test_frontier_marks_baseline_and_reports_mde() -> None:
     assert "is_current_baseline" in sql
     assert "retained_share_k5" in sql
     assert "minimum_detectable_disparity_points_k5" in sql
+    assert "utility_estimable_k5" in sql
     assert "2.801585" in sql
-
