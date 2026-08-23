@@ -9,7 +9,7 @@ import pandas as pd
 from .config import load_qi_config
 from .ingestion import ingest_slice
 from .population import estimate_population_uniqueness_subsample
-from .risk import summarize_risk
+from .risk import cohort_risk_report, summarize_risk
 from .synthetic_linkage import simulate_synthetic_linkage
 
 DEFAULT_CONFIG = Path("config/quasi_identifiers.yml")
@@ -41,6 +41,16 @@ def _parser() -> argparse.ArgumentParser:
     linkage.add_argument("--records", type=int, default=10_000)
     linkage.add_argument("--output", type=Path, required=True)
     linkage.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    cohort = commands.add_parser("cohort-risk")
+    cohort.add_argument("--input", type=Path, required=True)
+    cohort.add_argument("--cohort-fields", nargs="+", required=True)
+    cohort.add_argument(
+        "--equivalence-universe",
+        choices=["full_state_year", "full_national_year"],
+        required=True,
+    )
+    cohort.add_argument("--output", type=Path, required=True)
+    cohort.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     return parser
 
 
@@ -69,10 +79,24 @@ def main() -> None:
             sample_fraction=args.sample_fraction,
             replicates=args.replicates,
         )
-    else:
+    elif args.command == "synthetic-linkage":
         summary = simulate_synthetic_linkage(
             frame, config, synthetic_records=args.records
         )
+    else:
+        cohorts, metadata = cohort_risk_report(
+            frame,
+            config,
+            args.cohort_fields,
+            equivalence_universe=args.equivalence_universe,
+        )
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "metadata": metadata.to_dict(),
+            "cohorts": cohorts.to_dict(orient="records"),
+        }
+        args.output.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        return
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(summary.to_dict(), indent=2) + "\n", encoding="utf-8")
 

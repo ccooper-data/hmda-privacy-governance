@@ -38,6 +38,7 @@ The initial implementation contains the two components where early design mistak
 6. Executable governance gates for column classification, restricted publication, expiring exceptions, retention, and a synthetic-only subject-rights path.
 7. A DuckDB/dbt bronze-to-silver-to-gold warehouse with classified schema metadata and CI schema-drift enforcement.
 8. Live CFPB aggregation validation contracts and aggregate-only reconciliation for downloaded HMDA slices.
+9. Enforced analysis-scope ordering: form equivalence classes on a full state-year or national-year release before publishing aggregate cohort risk.
 
 Validate the confirmed live contract:
 
@@ -50,6 +51,17 @@ Download the corresponding filtered CSV slice:
 ```bash
 hmda ingest --year 2023 --state TX --actions-taken 1 \
   --race 'Black or African American' --output data/bronze
+```
+
+The filtered slice above is **validation-only**. Do not cite its uniqueness result. For a
+defensible subgroup analysis, first download the full state-year release and then run:
+
+```bash
+hmda cohort-risk \
+  --input data/bronze/year=2023/hmda_2023_TX_all.csv \
+  --cohort-fields derived_race derived_ethnicity \
+  --equivalence-universe full_state_year \
+  --output artifacts/texas_2023_cohort_risk.json
 ```
 
 The default quasi-identifier set is explicitly versioned in `config/quasi_identifiers.yml`. It can be changed only through configuration and CI review.

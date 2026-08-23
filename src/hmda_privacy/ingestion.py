@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import tempfile
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
@@ -28,6 +29,30 @@ class IngestionManifest:
 
 def build_slice_url() -> str:
     return f"{BASE_URL}/view/csv"
+
+
+def _safe_scope(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+
+
+def build_output_name(
+    *,
+    year: int,
+    state: str | None,
+    county: str | None,
+    lei: str | None,
+    actions_taken: int | None,
+    race: str | None,
+) -> str:
+    geography = state or county or lei or "slice"
+    parts = [str(geography)]
+    if actions_taken is not None:
+        parts.append(f"action-{actions_taken}")
+    if race:
+        parts.append(f"race-{_safe_scope(race)}")
+    if actions_taken is None and not race:
+        parts.append("all")
+    return f"hmda_{year}_{'_'.join(parts)}.csv"
 
 
 def _stream_to_file(response: requests.Response, handle: BinaryIO) -> tuple[str, int]:
@@ -72,8 +97,14 @@ def ingest_slice(
 
     destination = Path(output_dir) / f"year={year}"
     destination.mkdir(parents=True, exist_ok=True)
-    scope = state or county or lei or "slice"
-    final_path = destination / f"hmda_{year}_{scope}.csv"
+    final_path = destination / build_output_name(
+        year=year,
+        state=state,
+        county=county,
+        lei=lei,
+        actions_taken=actions_taken,
+        race=race,
+    )
     manifest_path = final_path.with_suffix(".manifest.json")
     requested = datetime.now(UTC).isoformat()
     client = session or requests.Session()

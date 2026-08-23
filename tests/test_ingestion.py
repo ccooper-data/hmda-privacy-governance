@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from hmda_privacy.ingestion import ingest_slice
+from hmda_privacy.ingestion import build_output_name, ingest_slice
 
 
 class FakeResponse:
@@ -42,3 +42,19 @@ def test_ingest_requires_filter(tmp_path: Path) -> None:
     with pytest.raises(ValueError, match="filter is required"):
         ingest_slice(year=2023, output_dir=tmp_path, session=FakeSession())
 
+
+def test_filtered_and_full_state_names_cannot_collide() -> None:
+    full = build_output_name(
+        year=2023, state="TX", county=None, lei=None, actions_taken=None, race=None
+    )
+    filtered = build_output_name(
+        year=2023,
+        state="TX",
+        county=None,
+        lei=None,
+        actions_taken=1,
+        race="Black or African American",
+    )
+    assert full == "hmda_2023_TX_all.csv"
+    assert filtered == "hmda_2023_TX_action-1_race-black-or-african-american.csv"
+    assert full != filtered

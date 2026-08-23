@@ -1,0 +1,15 @@
+version: 1
+scopes:
+  texas_2023_black_originations_validation:
+    status: validation_only
+    reason: >-
+      Filtering by race and action before forming equivalence classes shrinks the
+      comparison universe and can inflate uniqueness. Do not cite as a population
+      or subgroup disclosure-risk estimate.
+  texas_2023_full_release:
+    status: analytical_universe
+    equivalence_universe: full_state_year
+    cohort_fields:
+      - derived_race
+      - derived_ethnicity
+

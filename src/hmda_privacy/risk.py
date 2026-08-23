@@ -21,6 +21,19 @@ class RiskSummary:
         return asdict(self)
 
 
+@dataclass(frozen=True)
+class CohortRiskMetadata:
+    equivalence_universe: str
+    cohort_fields: tuple[str, ...]
+    source_record_count: int
+    published_cohort_count: int
+    minimum_cell_size: int
+    aggregate_only: bool = True
+
+    def to_dict(self) -> dict[str, str | int | bool | tuple[str, ...]]:
+        return asdict(self)
+
+
 def validate_analysis_frame(frame: pd.DataFrame, config: QIConfig) -> None:
     missing = sorted(set(config.fields) - set(frame.columns))
     if missing:
@@ -85,3 +98,28 @@ def cohort_risk(
         .reset_index()
     )
     return result.loc[result["record_count"] >= config.minimum_cell_size].reset_index(drop=True)
+
+
+def cohort_risk_report(
+    frame: pd.DataFrame,
+    config: QIConfig,
+    cohort_fields: list[str],
+    *,
+    equivalence_universe: str,
+) -> tuple[pd.DataFrame, CohortRiskMetadata]:
+    """Compute k on the complete declared universe, then summarize by cohort."""
+    allowed_universes = {"full_state_year", "full_national_year"}
+    if equivalence_universe not in allowed_universes:
+        raise ValueError(
+            "equivalence_universe must be full_state_year or full_national_year; "
+            "filtered cohorts are validation-only"
+        )
+    report = cohort_risk(frame, config, cohort_fields)
+    metadata = CohortRiskMetadata(
+        equivalence_universe=equivalence_universe,
+        cohort_fields=tuple(cohort_fields),
+        source_record_count=len(frame),
+        published_cohort_count=len(report),
+        minimum_cell_size=config.minimum_cell_size,
+    )
+    return report, metadata
