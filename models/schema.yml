@@ -112,3 +112,20 @@ models:
       - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
       - {name: share_records_k_lt_5, data_type: double, meta: {classification: sensitive}}
       - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}
+
+  - name: tract_release_density
+    description: Application volume per tract; not residential population density.
+    columns:
+      - {name: census_tract, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: application_count, data_type: bigint, meta: {classification: sensitive}}
+      - {name: release_density_quintile, data_type: integer, meta: {classification: public}}
+
+  - name: risk_by_release_density
+    description: Demographic/geographic risk by HMDA application-volume quintile and cohort.
+    columns:
+      - {name: release_density_quintile, data_type: integer, meta: {classification: public}}
+      - {name: derived_race, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: derived_ethnicity, data_type: varchar, meta: {classification: quasi_identifier}}
+      - {name: record_count, data_type: bigint, meta: {classification: public}}
+      - {name: sample_uniqueness_rate, data_type: double, meta: {classification: sensitive}}
+      - {name: prosecutor_expected_match_risk, data_type: double, meta: {classification: sensitive}}

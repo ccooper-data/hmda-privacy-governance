@@ -41,6 +41,14 @@ The initial implementation contains the two components where early design mistak
 9. Enforced analysis-scope ordering: form equivalence classes on a full state-year or national-year release before publishing aggregate cohort risk.
 10. DuckDB-native full-universe QI profiling and small-cell-suppressed race/ethnicity risk marts for large state files.
 11. Three nested threat-informed QI tiers that isolate the incremental risk of financial context and lender LEI.
+12. Risk concentration by HMDA tract release-density quintile, explicitly distinguished from residential population density.
+
+Export release-density results:
+
+```bash
+python scripts/export_release_density_risk.py \
+  --output artifacts/texas_2023_release_density_risk.json
+```
 
 Export the QI sensitivity results:
 
