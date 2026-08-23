@@ -44,6 +44,7 @@ The initial implementation contains the two components where early design mistak
 12. Risk concentration by HMDA tract release-density quintile, explicitly distinguished from residential population density.
 13. A real-data protection sweep and operational privacy–utility frontier with CFPB current marked as baseline.
 14. A configuration-specific adjusted fair-lending model fitted only after k≥5 protection, with aggregate-only coefficient export.
+15. A zero-truncated gamma–Poisson population-uniqueness sensitivity model that refuses to label an unidentified HMDA coverage fraction as truth.
 
 Export the frontier:
 
@@ -57,6 +58,14 @@ Export adjusted fair-lending utility after building the warehouse:
 ```bash
 python scripts/export_adjusted_fair_lending_utility.py \
   --output artifacts/texas_2023_adjusted_fair_lending_utility.json
+```
+
+Export population-uniqueness sensitivity scenarios:
+
+```bash
+python scripts/export_population_uniqueness_sensitivity.py \
+  --coverage-fractions 0.1 0.25 0.5 \
+  --output artifacts/texas_2023_population_uniqueness_sensitivity.json
 ```
 
 Export release-density results:

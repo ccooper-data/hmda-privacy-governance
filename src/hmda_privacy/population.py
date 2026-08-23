@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from math import lgamma
 
 import numpy as np
 import pandas as pd
@@ -24,6 +25,114 @@ class PopulationUniquenessEstimate:
 
     def to_dict(self) -> dict[str, str | int | float]:
         return asdict(self)
+
+
+@dataclass(frozen=True)
+class GammaPoissonUniquenessEstimate:
+    method: str
+    coverage_fraction: float
+    observed_equivalence_classes: int
+    sample_unique_records: int
+    gamma_shape: float
+    gamma_rate: float
+    probability_sample_unique_is_population_unique: float
+    estimated_population_unique_records: float
+    log_likelihood: float
+    assumption_status: str
+
+    def to_dict(self) -> dict[str, str | int | float]:
+        return asdict(self)
+
+
+def _zt_negative_binomial_log_likelihood(
+    log_shape: float,
+    log_rate: float,
+    sizes: np.ndarray,
+    frequencies: np.ndarray,
+    coverage_fraction: float,
+) -> float:
+    shape = float(np.exp(log_shape))
+    rate = float(np.exp(log_rate))
+    p_zero = (rate / (rate + coverage_fraction)) ** shape
+    if not 0 <= p_zero < 1 or 1 - p_zero < 1e-14:
+        return float("-inf")
+    log_normalizer = np.log1p(-p_zero)
+    total = 0.0
+    for size, frequency in zip(sizes, frequencies, strict=True):
+        log_probability = (
+            lgamma(float(size) + shape)
+            - lgamma(shape)
+            - lgamma(float(size) + 1)
+            + shape * np.log(rate / (rate + coverage_fraction))
+            + float(size) * np.log(coverage_fraction / (rate + coverage_fraction))
+            - log_normalizer
+        )
+        total += float(frequency) * log_probability
+    return total
+
+
+def estimate_population_uniqueness_gamma_poisson(
+    equivalence_class_sizes: np.ndarray | pd.Series | list[int],
+    *,
+    coverage_fraction: float,
+) -> GammaPoissonUniquenessEstimate:
+    """Fit a zero-truncated gamma-Poisson cell model and estimate population uniques.
+
+    The coverage fraction is a declared scenario, not inferred from HMDA. The model treats
+    released and unreleased counts as independent Poisson thinnings of latent cell intensity.
+    """
+    if not 0 < coverage_fraction < 1:
+        raise ValueError("coverage_fraction must be strictly between 0 and 1")
+    values = np.asarray(equivalence_class_sizes, dtype=int)
+    if len(values) < 2 or np.any(values < 1):
+        raise ValueError("At least two positive equivalence-class sizes are required")
+    sizes, frequencies = np.unique(values, return_counts=True)
+
+    best = (float("-inf"), 0.0, 0.0)
+    for log_shape in np.linspace(np.log(0.03), np.log(30.0), 28):
+        for log_rate in np.linspace(np.log(0.01), np.log(100.0), 32):
+            score = _zt_negative_binomial_log_likelihood(
+                log_shape, log_rate, sizes, frequencies, coverage_fraction
+            )
+            if score > best[0]:
+                best = (score, float(log_shape), float(log_rate))
+
+    score, log_shape, log_rate = best
+    step = 0.5
+    for _ in range(80):
+        improved = False
+        for delta_shape, delta_rate in ((step, 0), (-step, 0), (0, step), (0, -step)):
+            candidate_shape = log_shape + delta_shape
+            candidate_rate = log_rate + delta_rate
+            candidate = _zt_negative_binomial_log_likelihood(
+                candidate_shape, candidate_rate, sizes, frequencies, coverage_fraction
+            )
+            if candidate > score:
+                score, log_shape, log_rate = candidate, candidate_shape, candidate_rate
+                improved = True
+        if not improved:
+            step /= 2
+        if step < 1e-6:
+            break
+
+    shape = float(np.exp(log_shape))
+    rate = float(np.exp(log_rate))
+    population_unique_probability = float(
+        ((rate + coverage_fraction) / (rate + 1.0)) ** (shape + 1.0)
+    )
+    sample_unique_records = int(frequencies[sizes == 1].sum()) if np.any(sizes == 1) else 0
+    return GammaPoissonUniquenessEstimate(
+        method="zero_truncated_gamma_poisson",
+        coverage_fraction=coverage_fraction,
+        observed_equivalence_classes=len(values),
+        sample_unique_records=sample_unique_records,
+        gamma_shape=shape,
+        gamma_rate=rate,
+        probability_sample_unique_is_population_unique=population_unique_probability,
+        estimated_population_unique_records=sample_unique_records * population_unique_probability,
+        log_likelihood=float(score),
+        assumption_status="scenario_only_hmda_coverage_fraction_not_identified",
+    )
 
 
 def _unique_keys(frame: pd.DataFrame, fields: tuple[str, ...]) -> pd.MultiIndex:
@@ -88,4 +197,3 @@ def estimate_population_uniqueness_subsample(
         replicates=len(estimates),
         random_seed=random_seed,
     )
-
